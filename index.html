@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>L'instant critique</title>
+  <meta name="description" content="Quelques minutes par jour pour retenir trente classiques et penser le monde avec eux. D'après le dossier du Magazine littéraire « 30 classiques pour penser le monde » (2017).">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17140f" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="src/css/app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="masthead">
+    <a class="wordmark" href="#/" aria-label="L'instant critique, accueil">
+      <span class="wordmark-mark" aria-hidden="true">§</span>
+      <span class="wordmark-text">L'instant <em>critique</em></span>
+    </a>
+    <nav class="topnav" aria-label="Navigation principale">
+      <a href="#/" data-nav="accueil">Aujourd'hui</a>
+      <a href="#/seance" data-nav="seance">Séance</a>
+      <a href="#/bibliotheque" data-nav="bibliotheque">Bibliothèque</a>
+      <a href="#/reflexion" data-nav="reflexion">Réflexion</a>
+      <a href="#/progression" data-nav="progression">Progression</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <p class="loading">Ouverture du cabinet de lecture…</p>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation">
+    <a href="#/" data-nav="accueil"><span aria-hidden="true">◐</span>Aujourd'hui</a>
+    <a href="#/seance" data-nav="seance"><span aria-hidden="true">▶</span>Séance</a>
+    <a href="#/bibliotheque" data-nav="bibliotheque"><span aria-hidden="true">≡</span>Classiques</a>
+    <a href="#/reflexion" data-nav="reflexion"><span aria-hidden="true">⁂</span>Réflexion</a>
+    <a href="#/progression" data-nav="progression"><span aria-hidden="true">↗</span>Progrès</a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="report-dialog" aria-labelledby="report-title">
+    <form method="dialog" class="report-form">
+      <h2 id="report-title">Signaler une erreur</h2>
+      <p class="report-target"></p>
+      <label for="report-text">Que faut-il corriger ?</label>
+      <textarea id="report-text" rows="5" placeholder="Ex. : la date indiquée ne correspond pas à la page 92 du dossier…"></textarea>
+      <p class="hint">Le signalement est enregistré sur cet appareil (et inclus dans l'export). Vous pouvez aussi l'envoyer aux mainteneurs sous forme de ticket GitHub.</p>
+      <div class="report-actions">
+        <button value="cancel" class="btn ghost">Annuler</button>
+        <button value="github" class="btn ghost">Enregistrer et ouvrir un ticket</button>
+        <button value="save" class="btn">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <noscript><p class="noscript">L'instant critique a besoin de JavaScript pour fonctionner.</p></noscript>
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

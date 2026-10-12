@@ -1,0 +1,748 @@
+{
+  "schema": 1,
+  "contenu": "2026-10-12",
+  "source": {
+    "magazine": "Le Magazine littéraire",
+    "numero": "n° 581-582",
+    "date": "juillet-août 2017",
+    "dossier": "30 classiques pour penser le monde",
+    "coordination": "Pierre Assouline et Alexis Brocas",
+    "pagesMagazine": "82-124",
+    "pagesPdf": 42,
+    "correspondance": "Page PDF 1 = page 82 du magazine ; page PDF n (n ≥ 2) = page 82 + n du magazine. La page 83 du magazine ne figure pas dans le PDF.",
+    "perimetre": "Le PDF s'arrête à la page 124 du magazine. L'introduction annonce des œuvres (1984, L'Étranger, Don Quichotte, Les Bacchantes) qui ne sont traitées dans aucune des pages fournies : le dossier se poursuit vraisemblablement au-delà. Les fiches ci-dessous ne couvrent que ce que le PDF permet d'établir."
+  },
+  "legende": {
+    "magazine": "Analyse ou fait présent dans le dossier (page indiquée).",
+    "synthese": "Reformulation pédagogique de l'application à partir du dossier.",
+    "prolongement": "Piste contemporaine proposée par l'application : elle ne figure pas dans l'article.",
+    "repere": "Repère général hors dossier (date, contexte), donné pour situer l'œuvre ; non utilisé dans les questions."
+  },
+  "themes": [
+    { "id": "amour", "label": "Amour et couple" },
+    { "id": "identites", "label": "Identités" },
+    { "id": "mondialisation", "label": "Mondialisation" },
+    { "id": "alterite", "label": "Altérité et regard sur l'autre" },
+    { "id": "savoir", "label": "Savoir, réseaux, lecture" },
+    { "id": "argent", "label": "Argent et travail" },
+    { "id": "pouvoir", "label": "Pouvoir" },
+    { "id": "liberte", "label": "Liberté" },
+    { "id": "religion", "label": "Religion" },
+    { "id": "violence", "label": "Violence politique et terreur" },
+    { "id": "manipulation", "label": "Manipulation et vérité" },
+    { "id": "ecologie", "label": "Écologie et vivant" }
+  ],
+  "introduction": {
+    "titre": "30 classiques pour penser le monde",
+    "auteur": "A. B. (Alexis Brocas)",
+    "pagesMagazine": "82",
+    "pagePdf": 1,
+    "idees": [
+      "Michel Tournier définissait avec malice le classique comme « un livre étudié dans les classes ». Le dossier retient plutôt un attribut commun : la persistance. On peut brûler, dénigrer, interdire ou expurger les classiques, on ne parvient pas à les faire taire.",
+      "Le discours des auteurs se répète, mais « s'augmente, à chaque époque, d'une couche de sens nouveau ».",
+      "« Le monde change, la littérature reste : elle est ce miroir magique qui n'embellit rien mais éclaire ses sujets. »"
+    ],
+    "annonces": [
+      { "oeuvre": "1984", "formule": "renverra toujours les dictatures à leurs fondamentaux" },
+      { "oeuvre": "L'Étranger", "formule": "décillera à jamais les jeunes gens sur la fragilité des conventions déposées sur l'absurdité du monde" },
+      { "oeuvre": "Don Quichotte (« le Quichotte »)", "formule": "les vaccinera contre les illusions romanesques et les élans héroïques" },
+      { "oeuvre": "La Chanson de Roland", "formule": "a-t-elle contribué à forger notre défiance du monde musulman ?" },
+      { "oeuvre": "Borges", "formule": "avec ses rêves de bibliothèque infinie et de romans-rhizomes, a-t-il envisagé nos modernes réseaux ?" },
+      { "oeuvre": "Le Tour du monde en quatre-vingts jours", "formule": "la mondialisation commence-t-elle avec Jules Verne ?" },
+      { "oeuvre": "Les Bacchantes (Euripide)", "formule": "l'ivresse dionysiaque nous renvoie à des barbaries modernes, comme la folie mutilatrice de certaines guérillas africaines" },
+      { "oeuvre": "La Princesse de Clèves", "formule": "nous ne pratiquons plus la fidélité à la mode de la princesse, et pourtant son aspiration à une vertu idéale nous touche" }
+    ]
+  },
+  "articles": [
+    { "id": "couple", "rubrique": "Couple", "titre": "Une « science du cœur »", "auteurs": "Robert Kopp", "presentation": "Professeur de littérature française à l'université de Bâle ; a dirigé la collection « Bouquins » de 1989 à 2006.", "chapo": "Quoi qu'ait pu prétendre en son temps Nicolas Sarkozy, La Princesse de Clèves demeure d'une brûlante actualité, à l'heure où la définition du couple est plus que jamais à dimension variable et la fidélité aussi recherchée que mise à l'épreuve.", "pagesMagazine": "84-87", "pagesPdf": "2-5" },
+    { "id": "identites", "rubrique": "Identités sexuelles", "titre": "À la recherche du genre", "auteurs": "Pierre Zoberman", "presentation": "Professeur à l'université Paris-XIII. Article paru dans Le Magazine littéraire n° 496 (repris dans ce dossier).", "chapo": "La Recherche de Proust isole certains signes trahissant l'homosexualité. Ce faisant, l'écrivain fait de la sexualité une composante essentielle de l'identité. Au risque des stéréotypes ? Bien plutôt pour les remettre en question.", "pagesMagazine": "88-90", "pagesPdf": "6-8" },
+    { "id": "mondialisation", "rubrique": "Mondialisation", "titre": "Quand la Terre accélère et rétrécit", "auteurs": "Maialen Berasategui", "presentation": "", "chapo": "À l'heure du Tour du monde en quatre-vingts jours, il ne s'agit plus de découvrir mais de traverser, dans une fuite en avant perpétuelle, de plus en plus énergivore : immense moteur dont les hommes deviennent le carburant.", "pagesMagazine": "91-94", "pagesPdf": "9-12" },
+    { "id": "internet", "rubrique": "Internet", "titre": "Jorge Luis Borges, l'oracle du big data", "auteurs": "Alexandre Gefen", "presentation": "Critique littéraire et chercheur au CNRS, fondateur du groupe de recherche Fabula, spécialiste des humanités numériques.", "chapo": "L'auteur argentin n'a jamais formulé le moindre intérêt pour les robots ou l'informatique. Certaines de ses nouvelles, pourtant, semblent préfigurer l'infinie combinatoire des réseaux électroniques contemporains.", "pagesMagazine": "95-97", "pagesPdf": "13-15" },
+    { "id": "argent", "rubrique": "Argent", "titre": "Le sinistre des finances", "auteurs": "Camille Riquier", "presentation": "Agrégé et docteur en philosophie, spécialiste de Bergson, maître de conférences à l'Institut catholique de Paris ; auteur de Philosophie de Péguy (PUF).", "chapo": "Pour Charles Péguy, en 1913, le « cataclysme » a déjà eu lieu : l'argent est devenu le seul et unique maître étalon, dans tous les domaines. Il dissout toute solidarité sociale et en vient même à dévaluer le travail bien fait.", "pagesMagazine": "98-101", "pagesPdf": "16-19" },
+    { "id": "liberte", "rubrique": "Liberté", "titre": "« La Fontaine était un paria absolu »", "auteurs": "Entretien avec Érik Orsenna, propos recueillis par Jean-Claude Perrier", "presentation": "Érik Orsenna, académicien, auteur de La Fontaine. Une école buissonnière (Stock/France Inter).", "chapo": "Jean de La Fontaine ne fut nullement un poète officiel de Versailles : toute sa vie, il tira le diable par la queue et connut même les foudres du roi. Érik Orsenna salue cet été son indépendance et sa lucidité face au pouvoir.", "pagesMagazine": "102-103", "pagesPdf": "20-21" },
+    { "id": "orient-occident", "rubrique": "Relations Orient-Occident", "titre": "La Chanson de Roland, ou la guerre des mondes", "auteurs": "Alexis Brocas", "presentation": "", "chapo": "Le texte épique cultive des stéréotypes toujours agissants dans le racisme contemporain : le Sarrasin y est pour l'essentiel fourbe, monstrueux, émane de hordes indifférenciées. Mais qu'il se convertisse, et il devient le parfait égal des chevaliers.", "pagesMagazine": "104-108", "pagesPdf": "22-26" },
+    { "id": "islam", "rubrique": "Islam", "titre": "Un triste tropisme pour Lévi-Strauss", "auteurs": "Pierre Assouline", "presentation": "", "chapo": "Dans Tristes Tropiques, l'ethnologue formulait sans fard son « antipathie » à l'égard de la confession musulmane, selon lui fondamentalement repliée sur elle-même. Ce passage provocateur mêle observations inattendues et mauvaise foi.", "pagesMagazine": "109-111", "pagesPdf": "27-29" },
+    { "id": "terrorisme", "rubrique": "Terrorisme", "titre": "Les scansions du chaos", "auteurs": "Marc Weitzmann", "presentation": "", "chapo": "Violence de l'arbitraire, justification des attentats par les kamikazes, pièges d'une « raison perverse »… Les paramètres du terrorisme actuel transparaissent déjà chez Dostoïevski, Conrad, Kafka ou, plus près de nous, DeLillo.", "pagesMagazine": "112-116", "pagesPdf": "30-34" },
+    { "id": "populisme", "rubrique": "Populisme", "titre": "Une farce ancienne", "auteurs": "Marc Weitzmann", "presentation": "", "chapo": "Si Shakespeare est déjà instructif sur l'art et la manière de manipuler les masses, c'est à Rousseau que l'on doit l'invention du populisme moderne, destiné non plus à l'ensemble des citoyens mais seulement aux plus modestes d'entre eux.", "pagesMagazine": "117-119", "pagesPdf": "35-37" },
+    { "id": "ecologie", "rubrique": "Écologie", "titre": "Yourcenar, l'œuvre au vert", "auteurs": "Juliette et Pierre-Édouard Peillon", "presentation": "Juliette Peillon, agrégée de lettres modernes, doctorante (université de Poitiers), prépare une thèse sur la représentation du règne vivant chez Yourcenar ; Pierre-Édouard Peillon est journaliste.", "chapo": "Longtemps, l'écrivaine fut considérée comme une ermite inactuelle, recluse dans un humanisme passéiste. Ses écrits autobiographiques révèlent une pensée profondément environnementale, dans laquelle la singularité humaine se dissout.", "pagesMagazine": "120-124", "pagesPdf": "38-42" }
+  ],
+  "oeuvres": [
+    {
+      "id": "princesse-de-cleves",
+      "titre": "La Princesse de Clèves",
+      "auteur": "Madame de Lafayette",
+      "date": "1678",
+      "dateNature": "magazine",
+      "statut": "principale",
+      "article": "couple",
+      "pages": { "magazine": "84-87", "pdf": 2 },
+      "themes": ["amour", "liberte"],
+      "contexte": "Roman paru sans nom d'auteur chez Claude Barbin en 1678, à une époque où une femme de la haute noblesse ne signait pas une « nouvelle galante ». L'action se situe à la cour d'Henri II, au milieu du XVIe siècle.",
+      "question": "Comment rester fidèle — et libre — quand la passion s'impose comme une maladie sans remède ?",
+      "ideeCentrale": "Premier grand roman d'analyse, il fonde une « science du cœur » : dans une cour où tout est dissimulation, la princesse finit par préférer à l'impossible fidélité à autrui la fidélité à l'idée d'un amour plus élevé — seule manière de préserver une forme de liberté.",
+      "idees": [
+        "Nouveauté du propos : non plus un roman d'aventures dominé par l'action, mais un roman d'analyse, de réalisme psychologique, qui inaugure un courant majeur du roman français (de Prévost et Rousseau à Stendhal, Radiguet et Proust).",
+        "La cour est un univers de la dissimulation ; l'éducation de Mme de Chartres consiste en mises en garde contre les faux-semblants, sans conseiller de fuir le monde.",
+        "La passion est soudaine, « violente », une « maladie » qui ne connaît guère de « remède » : l'aveu au mari, remède extravagant et inefficace, cause la mort de M. de Clèves ; le renoncement final exprime une révolte contre la finitude et l'aliénation dans la passion."
+      ],
+      "exemple": "La scène de l'aveu : la princesse confie à son mari la passion qu'elle éprouve pour le duc de Nemours. La scène fit scandale ; Le Mercure galant lança même une enquête auprès de ses lecteurs, dont l'un répondit qu'un homme est plus heureux d'être trahi sans le savoir que confident d'une femme qui le hait vertueusement.",
+      "notion": { "terme": "Science du cœur", "definition": "Expression de Fontenelle (1687) : l'art d'analyser les mouvements intérieurs plutôt que d'enchaîner des événements surprenants. Kopp y voit la marque d'un des courants majeurs du roman français." },
+      "aujourdhui": {
+        "magazine": "Kopp rappelle les attaques de Nicolas Sarkozy contre l'œuvre (2006, 2008) et la riposte qu'elles ont provoquée (lectures publiques, badge « Je lis La Princesse de Clèves », adaptations comme La Belle Personne de Christophe Honoré, documentaire Nous, princesses de Clèves de Régis Sauder). Le chapô souligne l'actualité du roman à l'heure où le couple est « à dimension variable » et la fidélité « aussi recherchée que mise à l'épreuve ». L'aspiration à un idéal qui nous dépasse expliquerait son succès auprès d'un lectorat jeune.",
+        "piste": "À l'heure des applications de rencontre et du « polyamour » revendiqué, le roman pose une question qui reste vive : la liberté consiste-t-elle à suivre son désir, ou parfois à s'en protéger ?"
+      },
+      "questionReflexion": "Le renoncement de la princesse est-il une défaite face à la passion ou la conquête d'une liberté ?",
+      "limites": "Kopp lit le renoncement dans une perspective augustinienne (méfiance envers l'amour, maladie de l'âme) ; c'est une interprétation parmi d'autres. Il note lui-même que l'on ne pratique plus aujourd'hui la fidélité « à la mode » de la princesse.",
+      "approfondir": [
+        "L'œuvre parut sans nom d'auteur ; Mme de Lafayette nia toujours y avoir pris part, et l'on spécule encore sur la participation de La Rochefoucauld, d'autant que le texte est constellé de maximes.",
+        "Parallèle avec Phèdre de Racine (1677) : dans les deux œuvres, l'aveu révèle la dimension tragique de la passion.",
+        "Camus notait que, pour Mme de Lafayette, « l'amour est un péril »."
+      ],
+      "citations": [
+        { "texte": "Si vous jugez sur les apparences en ces lieux, vous serez souvent trompée : ce qui paraît n'est presque jamais la vérité.", "attribution": "Mme de Chartres à sa fille, cité par R. Kopp", "page": 85 },
+        { "texte": "Tromper, être trompé, c'est l'essence de la vie de cour, si ce n'est de la vie tout court.", "attribution": "R. Kopp", "page": 85 },
+        { "texte": "À l'impossible fidélité à autrui dans l'amour elle préfère la fidélité à l'idée même d'un amour plus élevé.", "attribution": "R. Kopp", "page": 86 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Titres, dates, noms et citations relus sur les pages PDF 2 à 5." }
+    },
+    {
+      "id": "recherche",
+      "titre": "À la recherche du temps perdu",
+      "auteur": "Marcel Proust",
+      "date": "1913-1927",
+      "dateNature": "repere",
+      "statut": "principale",
+      "article": "identites",
+      "pages": { "magazine": "88-90", "pdf": 6 },
+      "themes": ["identites", "alterite"],
+      "contexte": "L'article (repris du n° 496 du magazine) relit La Recherche à la lumière des études de genre et de la théorie queer. Proust est contemporain du moment où, selon Foucault, la sexualité devient une composante définitoire de l'identité.",
+      "question": "Nommer une identité, est-ce l'enfermer — ou commencer à la défaire ?",
+      "ideeCentrale": "Proust repère et nomme des signes identitaires (juifs, homosexuels) au point de frôler le stéréotype ; mais il remet en cause les identités mêmes que son texte construit : la masculinité apparaît comme une performance, l'identité est à la fois affirmée et mise en question.",
+      "idees": [
+        "Le narrateur construit des « prototypes interdépendants », le Juif et l'homosexuel (« les deux races maudites » de Sion et de Sodome), en multipliant des signes : le nez de Swann, les manières de Saint-Loup, des couleurs significatives.",
+        "Identifier, pour Proust, c'est rattacher l'individu à son espèce : le nom propre devient nom commun (« un Charlus »), par antonomase.",
+        "La voix trahit l'identité (« C'est un Charlus ! »), mais ce démasquage glisse vers une définition du genre comme performativité (Judith Butler) : l'identité n'est jamais définie positivement."
+      ],
+      "exemple": "Le narrateur reconnaît à l'oreille, « comme le diapason d'un accordeur », un homme qui copie le langage de son milieu mais dont la « voix fausse » suffit à lui faire dire : « C'est un Charlus ! »",
+      "notion": { "terme": "Performativité", "definition": "Idée, formulée par Judith Butler, que le genre n'est pas une essence mais se produit dans des actes répétés. Zoberman montre que Proust invite à lire la masculinité comme une performance, réussie ou ratée." },
+      "aujourdhui": {
+        "magazine": "La modernité de Proust tient à sa pertinence pour penser l'identité sexuelle et, plus encore, à sa manière de remettre en cause les identités qu'il nomme — ce que la théorie queer met en avant comme résistance aux identités figées. L'article est illustré par le premier mariage gay célébré en France (29 mai 2013, Montpellier).",
+        "piste": "Les débats actuels sur les étiquettes identitaires (se nommer pour être reconnu, ou refuser d'être assigné) rejouent la tension proustienne entre nommer et défaire."
+      },
+      "questionReflexion": "Peut-on décrire des « signes » d'appartenance sans reconduire des stéréotypes ?",
+      "limites": "L'article adopte délibérément une lecture queer de La Recherche, nourrie de Foucault, Sedgwick et Butler ; la critique a longtemps privilégié d'autres approches, comme celle qui cherchait à « démasquer » le narrateur comme double de l'auteur.",
+      "approfondir": [
+        "Kristeva fait du « problème juif » le « secret de Polichinelle » de La Recherche.",
+        "Eve Kosofsky Sedgwick analyse le « spectacle du placard » à partir de Charlus.",
+        "L'homosexualité féminine (Gomorrhe) reste inscrutable, « désir du même », quand les invertis désirent « l'autre »."
+      ],
+      "citations": [
+        { "texte": "Proust se révèle d'une frappante actualité lorsqu'il remet en cause les identités mêmes qu'il travaille à nommer.", "attribution": "P. Zoberman", "page": 89 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 6 à 8 relues. Les dates de parution de La Recherche ne figurent pas dans l'article (repère général)." }
+    },
+    {
+      "id": "tour-du-monde",
+      "titre": "Le Tour du monde en quatre-vingts jours",
+      "auteur": "Jules Verne",
+      "date": "1873",
+      "dateNature": "magazine",
+      "statut": "principale",
+      "article": "mondialisation",
+      "pages": { "magazine": "91-94", "pdf": 9 },
+      "themes": ["mondialisation", "alterite"],
+      "contexte": "Publié en 1873, au cœur d'un XIXe siècle fasciné par le progrès et la vitesse : le canal de Suez est inauguré en 1869, l'empire colonial britannique facilite la circulation des Occidentaux.",
+      "question": "Que devient le monde quand il ne s'agit plus de le découvrir, mais de le traverser ?",
+      "ideeCentrale": "Le pari de Phileas Fogg marque un basculement : le voyage n'est plus découverte de mondes inconnus mais course contre la montre, adossée aux progrès techniques et aux empires. Son trajet en train est déjà un « concentré de mondialisation », avec ses circulations et ses exploitations.",
+      "idees": [
+        "Loin du Devisement du monde de Marco Polo (1298), qui décrivait des mondes inconnus, Fogg ne découvre ni ne colonise : « c'est chose faite » ; il traverse, en sautant « mathématiquement » des railways dans les paquebots.",
+        "Les Lumières avaient changé le paradigme de l'altérité : l'Occident est aussi regardé et jugé par les autres (Lettres persanes, L'Ingénu, Supplément au voyage de Bougainville). Verne, lui, valorise les apports de la colonisation.",
+        "Le voyage repose sur une exploitation : la voie transcontinentale américaine a été construite par des ouvriers chinois et passe illégalement par les terres indiennes."
+      ],
+      "exemple": "Mrs. Aouda, que Fogg sauve de la sati en Inde : l'article précise que cette tradition, tombée en désuétude, avait repris un second souffle en réaction à l'occupation britannique, vécue comme une menace pour l'identité des sociétés colonisées.",
+      "notion": { "terme": "Traverser plutôt que découvrir", "definition": "Formule de l'article pour le nouveau rapport au monde : une « fuite en avant perpétuelle, de plus en plus énergivore », où les hommes deviennent le « carburant » d'un immense moteur." },
+      "aujourdhui": {
+        "magazine": "Aux circulations des idées, des personnes et des biens s'ajoutent des migrations économiques importantes. L'article rappelle que la mondialisation dérégulée de l'économie ne doit pas faire oublier que la libre circulation des personnes est parfois leur seule chance de survivre ; il conclut qu'il est temps de faire mentir la phrase de l'inspecteur Fix sur les passeports. Photo : la grève de l'usine Whirlpool d'Amiens, dont la production devait être délocalisée en Pologne en 2018.",
+        "piste": "Le contraste entre la fluidité du voyageur fortuné et les obstacles opposés aux migrants reste un fil conducteur pour analyser les frontières d'aujourd'hui."
+      },
+      "questionReflexion": "La mondialisation rend-elle le monde plus petit pour tous, ou seulement pour certains ?",
+      "limites": "Lire Verne comme annonciateur de la mondialisation est une relecture rétrospective ; l'article note d'ailleurs que George Francis Train avait accompli un tour du monde en quatre-vingts jours deux ans avant le roman.",
+      "approfondir": [
+        "Fogg garde quelque chose des anciens explorateurs : en pariant la moitié de sa fortune, il se met en situation de tout gagner ou tout perdre.",
+        "L'article rapproche Verne de Tolstoï (La Guerre et la Paix) et d'Upton Sinclair (La Jungle) : voir ces fiches."
+      ],
+      "citations": [
+        { "texte": "Après tout, la Terre est vaste ! – Elle l'était autrefois...", "attribution": "Jules Verne, dialogue cité en ouverture de l'article", "page": 91 },
+        { "texte": "Les passeports ne servent jamais qu'à gêner les honnêtes gens et à favoriser la fuite des coquins.", "attribution": "L'inspecteur Fix, cité par M. Berasategui", "page": 92 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 9 à 12 relues (pages photographiées de biais, redressées pour lecture)." }
+    },
+    {
+      "id": "guerre-et-paix",
+      "titre": "La Guerre et la Paix",
+      "auteur": "Léon Tolstoï",
+      "date": "1865-1869",
+      "dateNature": "repere",
+      "statut": "encadre",
+      "article": "mondialisation",
+      "pages": { "magazine": "92", "pdf": 10 },
+      "themes": ["mondialisation", "identites"],
+      "contexte": "Œuvre mobilisée dans l'article sur la mondialisation (encadré « À lire ») : face à l'avancée des troupes napoléoniennes, l'aristocratie russe doit se défaire d'une francophilie devenue dangereuse.",
+      "question": "Comment une élite cosmopolite réagit-elle quand son modèle culturel devient celui de l'ennemi ?",
+      "ideeCentrale": "Tolstoï montre une aristocratie russe tiraillée : son adhésion aux Lumières est inversement proportionnelle à l'avancée de Napoléon, mais elle ne parle pas russe pour autant. Les conversions au catholicisme traduisent le désir d'une idéologie permettant de faire corps avec les élites européennes.",
+      "idees": [
+        "On se donne des gages pour chaque mot français prononcé, tandis que des émigrés français, influents depuis vingt ans, entretiennent des conversions au catholicisme, religion de l'envahisseur.",
+        "Les ambitions de cette aristocratie sont plus mondiales que nationales : elle veut faire corps avec les élites européennes.",
+        "Hélène Kouraguine, comme Mrs. Aouda chez Verne, s'oppose aux normes de sa société ; Tolstoï choisit de la faire mourir d'un avortement raté, symbole d'une loi naturelle à laquelle elle a refusé de se soumettre."
+      ],
+      "exemple": "Hélène Kouraguine, « belle et dépourvue de moralité », voit dans la conversion au catholicisme le premier pas vers l'annulation d'un ennuyeux mariage.",
+      "notion": { "terme": "Élites mondialisées", "definition": "Synthèse : l'article lit dans la francophilie de l'aristocratie russe une forme ancienne de mondialisation des élites, distincte des intérêts nationaux." },
+      "aujourdhui": {
+        "magazine": "L'article l'inscrit dans une réflexion sur la mondialisation et la « peur de la disparition » des identités, qui se retrouve sous des formes très diverses.",
+        "piste": "Le soupçon envers des élites jugées plus proches de leurs homologues étrangers que de leur propre peuple traverse aussi les débats contemporains (voir l'article sur le populisme et les « élites cosmopolites »)."
+      },
+      "questionReflexion": "Peut-on appartenir à une élite internationale et rester solidaire de sa nation ?",
+      "limites": "L'œuvre n'est traitée qu'en un paragraphe, sous l'angle de la mondialisation ; c'est un éclairage partiel d'un roman beaucoup plus vaste.",
+      "approfondir": ["Vassili Grossman, Vie et destin, est présenté dans le dossier comme « le Guerre et paix des totalitarismes du XXe siècle » (p. 113)."],
+      "citations": [],
+      "verification": { "statut": "verifie", "notes": "Page PDF 10 redressée et relue. Date : repère général, non donnée par l'article." }
+    },
+    {
+      "id": "la-jungle",
+      "titre": "La Jungle",
+      "auteur": "Upton Sinclair",
+      "date": "1906",
+      "dateNature": "magazine",
+      "statut": "encadre",
+      "article": "mondialisation",
+      "pages": { "magazine": "92", "pdf": 10 },
+      "themes": ["mondialisation", "argent"],
+      "contexte": "Roman de 1906 cité dans l'article sur la mondialisation (encadré « À lire ») pour son tableau de l'exploitation des immigrés.",
+      "question": "Qui paie le prix de la circulation mondiale des personnes et des marchandises ?",
+      "ideeCentrale": "Sinclair décrit le combat désespéré des immigrés d'Europe de l'Est à Chicago ; mais, à son grand désarroi, le public retint surtout l'horreur des abattoirs.",
+      "idees": [
+        "Les ravages de l'exploitation liée aux migrations économiques sont dénoncés depuis longtemps.",
+        "La réception du livre a déplacé son message : l'indignation a porté sur l'hygiène alimentaire plus que sur le sort des travailleurs."
+      ],
+      "exemple": "La phrase de Sinclair sur la réception de son livre : « J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac. »",
+      "notion": { "terme": "Migrations économiques", "definition": "L'article distingue les migrations motivées par des raisons économiques du simple désir de découvrir le monde." },
+      "aujourdhui": {
+        "magazine": "La mondialisation dérégulée de l'économie ne doit pas faire oublier que la libre circulation des personnes est parfois leur seule chance de survivre.",
+        "piste": "Les scandales sanitaires suscitent souvent plus d'émotion que les conditions de travail de ceux qui produisent : l'écart relevé par Sinclair reste une grille pour lire l'actualité."
+      },
+      "questionReflexion": "Pourquoi une dénonciation sociale est-elle parfois reçue d'abord comme une question de consommation ?",
+      "limites": "Traitement en quelques lignes : le dossier en retient surtout l'image des immigrés exploités et l'anecdote de sa réception.",
+      "approfondir": [],
+      "citations": [
+        { "texte": "J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac.", "attribution": "Upton Sinclair, cité par M. Berasategui", "page": 92 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Page PDF 10 redressée et relue." }
+    },
+    {
+      "id": "fictions",
+      "titre": "Fictions",
+      "auteur": "Jorge Luis Borges",
+      "date": "1944",
+      "dateNature": "repere",
+      "statut": "principale",
+      "article": "internet",
+      "pages": { "magazine": "95-97", "pdf": 13 },
+      "themes": ["savoir", "manipulation"],
+      "contexte": "Recueil de nouvelles de l'écrivain argentin, qui n'a jamais manifesté d'intérêt pour l'informatique. L'article mobilise « La Bibliothèque de Babel », « Tlön, Uqbar, Orbis Tertius », « Pierre Ménard, auteur du Quichotte », « Le Jardin aux sentiers qui bifurquent » et « Funes ou la mémoire ».",
+      "question": "Un écrivain sans ordinateur a-t-il imaginé Internet ?",
+      "ideeCentrale": "Borges est devenu le « saint patron » d'Internet : sa bibliothèque infinie, qui contiendrait tous les savoirs, et ses récits qui bifurquent préfigurent la combinatoire des réseaux, où les textes deviennent des rhizomes que les internautes, tour à tour lecteurs et auteurs, transforment sans cesse.",
+      "idees": [
+        "« La Bibliothèque de Babel » : un univers de galeries hexagonales à l'infini ; à l'angoisse de « la certitude que tout est écrit » répond l'idée postmoderne que le monde n'est qu'un texte possible parmi d'autres — Wikipédia, encyclopédie toujours extensible, en serait l'anticipation.",
+        "« Le Jardin aux sentiers qui bifurquent » : dans le roman de Ts'ui Pên, au lieu de choisir une possibilité et d'éliminer les autres, on les adopte toutes simultanément — modèle des narrations hypertextuelles, des jeux vidéo et des créations collaboratives.",
+        "« Funes ou la mémoire » fait de Borges, pour certains, un précurseur du transhumanisme (mémoire infinie, monde sans oubli) — un « post-humaniste sans la technologie » selon Katherine Hayles."
+      ],
+      "exemple": "Le site libraryofbabel.info de Jonathan Basile transpose réellement la bibliothèque imaginaire de Borges : une quasi-infinité de livres de 410 pages.",
+      "notion": { "terme": "Rhizome / jardin aux sentiers qui bifurquent", "definition": "Image d'un texte en réseau, sans centre ni fin, où toutes les possibilités coexistent : c'est ainsi que l'article décrit le web." },
+      "aujourdhui": {
+        "magazine": "Le web serait « la Babel de Borges » ; l'article cite des prolongements concrets (libraryofbabel.info, le « Borges Project » de Jean-Philippe Toussaint, romans hypertextes, fanfiction) et l'essai Borges 2.0, qui fait du rôle actif du lecteur un modèle pour le web des interactions et des réécritures.",
+        "piste": "Les systèmes qui génèrent des textes à l'infini relancent la question de Borges : que vaut un savoir où tout a déjà été écrit, y compris le faux ?"
+      },
+      "questionReflexion": "Si tout est écrit quelque part, comment distinguer le vrai du possible ?",
+      "limites": "L'article lui-même invite à la prudence : Borges n'a-t-il pas promu de telles interprétations « folles » à travers Pierre Ménard et sa « technique de l'anachronisme délibéré et des attributions erronées » ? Faire de lui un prophète d'Internet relève en partie de cet anachronisme.",
+      "approfondir": [
+        "L'article indique que « Le Jardin aux sentiers qui bifurquent » fut « rédigé en 1928 » ; la date usuelle de publication de la nouvelle est 1941 (à vérifier).",
+        "Le manuscrit autographe de la nouvelle a été vendu en 2010 à New York à un prix faramineux.",
+        "Érik Orsenna voit en Borges une exception : le genre du conte philosophique se serait éteint avec La Fontaine, « à l'exception, peut-être, de ceux de Borges » (p. 103)."
+      ],
+      "citations": [
+        { "texte": "Le web serait la Babel de Borges, cette bibliothèque infinie qui contient tous les savoirs et englobe le monde lui-même.", "attribution": "A. Gefen", "page": 95 },
+        { "texte": "Dans toutes les fictions, chaque fois que diverses possibilités se présentent, l'homme en adopte une et élimine les autres ; dans la fiction du presque inextricable Ts'ui Pên, il les adopte toutes simultanément.", "attribution": "Borges, cité par A. Gefen", "page": 96 }
+      ],
+      "verification": { "statut": "partiel", "notes": "Pages PDF 13 à 15 relues (p. 96 photographiée à l'envers, redressée). Date de 1928 donnée par l'article pour « Le Jardin… » à vérifier." }
+    },
+    {
+      "id": "argent-peguy",
+      "titre": "L'Argent",
+      "auteur": "Charles Péguy",
+      "date": "1913",
+      "dateNature": "magazine",
+      "statut": "principale",
+      "article": "argent",
+      "pages": { "magazine": "98-101", "pdf": 16 },
+      "themes": ["argent", "pouvoir"],
+      "contexte": "Péguy (1873-1914), socialiste dreyfusard et écrivain inclassable, philosophe hors des lieux consacrés, depuis la boutique des Cahiers de la quinzaine, en face de la Sorbonne. Il publie L'Argent et L'Argent suite en 1913.",
+      "question": "Que devient une société où l'argent est devenu l'unique étalon de toute valeur ?",
+      "ideeCentrale": "Pour Péguy, le « cataclysme » a déjà eu lieu : l'argent est devenu le seul maître, dans tous les domaines. Pouvoir invisible, il dissout toute solidarité organique, creuse un abîme entre riches et pauvres et dévalue le travail bien fait.",
+      "idees": [
+        "Le règne de l'argent est d'autant plus sûr que son pouvoir est invisible : nous y sommes si habitués que nous ne le voyons plus, et l'hypocrisie bourgeoise s'interdit d'en parler.",
+        "Il sépare les individus par la seule quantité d'argent dont ils disposent, sans former de vraies classes : il dissout toute solidarité organique. Le monde se règle sur « le caprice du consommateur », stupidement nommé « loi du marché », au lieu de la santé du travailleur.",
+        "Péguy n'est pas marxiste : derrière l'économie, il traque une métaphysique moderne inavouée — la croyance au progrès comme « théorie de caisse d'épargne », le temps homogène et linéaire critiqué par Bergson, une morale de prudence qui met de l'argent de côté pour demain au lieu de travailler pour aujourd'hui."
+      ],
+      "exemple": "Le paradoxe que relève Péguy : ceux qui travaillent n'ont pas le temps de gagner de l'argent, tandis que ceux qui ne travaillent pas ont tout loisir de penser à la manière d'en gagner.",
+      "notion": { "terme": "Le temps de la caisse d'épargne", "definition": "Image de Péguy pour une conception du temps et du progrès où rien ne se perd et tout s'accumule : la métaphysique moderne dont l'économie n'est que « le verre grossissant »." },
+      "aujourdhui": {
+        "magazine": "Les ravages de l'argent constituent « l'angle mort de nos sociétés modernes » : tout s'achète, se vend, se négocie ; chacun se demande « combien ? ». L'article est illustré par une manifestation de salariés en grève (Paris, 2014) : « Tant qu'il y aura des actionnaires, il y aura de la misère ».",
+        "piste": "L'extension de la logique marchande à des domaines jusque-là protégés (santé, éducation, données personnelles) prolonge la question de Péguy : y a-t-il encore des valeurs qui ne s'échangent pas ?"
+      },
+      "questionReflexion": "Le « travail bien fait » peut-il encore être une valeur dans une économie réglée par la demande ?",
+      "limites": "Péguy, reconnaît l'article, peut irriter par ses litanies et son style répétitif ; sa critique est morale et métaphysique plus qu'économique, et l'on peut lui reprocher une idéalisation du travail d'autrefois.",
+      "approfondir": [
+        "Extraits : L'Argent (« De mon temps tout le monde chantait ») et Note conjointe sur M. Descartes et la philosophie cartésienne (« Pour la première fois dans l'histoire du monde l'argent est maître sans limitation ni mesure »), p. 100-101.",
+        "Péguy ne lisait Descartes, Pascal, Corneille, Molière, Kant, Hugo ou Bergson que dans la mesure où ils aidaient à comprendre le présent."
+      ],
+      "citations": [
+        { "texte": "Quand on ne nomme pas [l'argent], c'est lui que l'on nomme. […] Quand on ne pense pas, c'est à lui que l'on pense.", "attribution": "Péguy, cité par C. Riquier", "page": 98 },
+        { "texte": "C'est un cataclysme aussi nouveau […] que si le calendrier se mettait à être l'année elle-même, l'année réelle.", "attribution": "Péguy, Note conjointe, cité par C. Riquier", "page": 99 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 16 à 19 redressées et relues." }
+    },
+    {
+      "id": "fables",
+      "titre": "Fables",
+      "auteur": "Jean de La Fontaine",
+      "date": "1668-1694",
+      "dateNature": "repere",
+      "statut": "principale",
+      "article": "liberte",
+      "pages": { "magazine": "102-103", "pdf": 20 },
+      "themes": ["liberte", "pouvoir", "argent"],
+      "contexte": "La Fontaine (1621-1695), fils de bourgeois de Château-Thierry, vécut sous le règne de Louis XIV, qui exerce seul le pouvoir à partir de 1661 et de la mort de Mazarin. Derrière la façade classique : une double guerre civile, politique et religieuse.",
+      "question": "Comment un écrivain reste-t-il libre quand il dépend du pouvoir pour vivre ?",
+      "ideeCentrale": "Loin d'être un poète officiel, La Fontaine fut, selon Érik Orsenna, un « paria absolu » : fidèle au surintendant Fouquet après sa chute, en butte à Louis XIV et Colbert, exilé, jamais pensionné par le roi. Homme libre, donc pauvre, il se méfie du pouvoir, et ses fables portent des morales toujours contemporaines.",
+      "idees": [
+        "Sans droits d'auteur (Beaumarchais se battra plus tard pour eux), l'écrivain dépend des mécènes : Fouquet, puis Mme de La Sablière. Chateaubriand : « pour Fouquet les artistes étaient des amis, pour Louis XIV des ouvriers ».",
+        "Fidèle à Fouquet après sa chute (1661), La Fontaine prend sa défense ; il est exilé en 1663, le roi refuse d'abord son élection à l'Académie (1683) — revanche : il est élu au fauteuil de Colbert et doit prononcer son éloge.",
+        "Sa modernité : il reprend des sources antiques (Ésope, Horace) et italiennes, des thèmes du patrimoine commun, et son génie est dans l'écriture, « cette incroyable concision »."
+      ],
+      "exemple": "Le contraste entre ses deux œuvres : les Contes, plus sulfureux, sont attaqués, censurés, diffusés sous le manteau (il risque la prison), tandis que les Fables sont célébrées.",
+      "notion": { "terme": "Écrivain « sponsorisé »", "definition": "Formule d'Orsenna : faute de vivre de sa plume, l'écrivain du XVIIe siècle doit être soutenu par le pouvoir — d'où une cour d'artistes et un art officiel, qui n'ont pourtant pas tué les chefs-d'œuvre." },
+      "aujourdhui": {
+        "magazine": "Ce qui est très actuel, selon Orsenna, c'est le rapport de La Fontaine au pouvoir et à l'argent, qui n'a que partiellement évolué : même professionnalisé, quel poète vit aujourd'hui de sa plume ? Il observe aussi, depuis une vingtaine d'années, un rétrécissement de la liberté d'expression en matière de mœurs, de société ou de religion — pas dans le domaine politique.",
+        "piste": "La dépendance des créateurs envers les financements publics, les mécènes ou les plateformes repose la question de l'indépendance face à ceux qui paient."
+      },
+      "questionReflexion": "Peut-on critiquer le pouvoir tout en dépendant de lui ?",
+      "limites": "Il s'agit d'un entretien : le portrait d'un La Fontaine « paria » et « rétif à l'autorité » est le point de vue d'Érik Orsenna. Il rappelle lui-même qu'on sait « assez peu de chose » de sa vie, et qu'à la fin il renia ses écrits licencieux, dans la terreur de l'enfer.",
+      "approfondir": [
+        "La Fontaine se présente comme un paresseux mais travaillait « comme un fou » : le seul manuscrit de fable retrouvé (« Le Renard, les Mouches et le Hérisson ») en témoigne.",
+        "Extrait : « Le Vieillard et ses enfants » (p. 103).",
+        "Orsenna voit en lui, comme en Montaigne, « notre frère »."
+      ],
+      "citations": [
+        { "texte": "C'est un homme libre, donc pauvre !", "attribution": "É. Orsenna", "page": 103 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 20 et 21 redressées et relues. Dates des Fables : repère général." }
+    },
+    {
+      "id": "chanson-de-roland",
+      "titre": "La Chanson de Roland",
+      "auteur": "Anonyme (attribuée au clerc normand Turold)",
+      "date": "XIe-XIIe siècles",
+      "dateNature": "magazine",
+      "statut": "principale",
+      "article": "orient-occident",
+      "pages": { "magazine": "104-108", "pdf": 22 },
+      "themes": ["alterite", "religion", "violence"],
+      "contexte": "Texte fondateur de la littérature française, conservé dans les 4 002 vers du manuscrit d'Oxford, inspiré du désastre pyrénéen subi par l'arrière-garde carolingienne le 15 août 778. Écrit entre le XIe et le XIIe siècle, il sert les enjeux de son temps : encouragement à la croisade, éloge de la féodalité.",
+      "question": "La peur de l'autre s'habille-t-elle toujours des mêmes formes ? La littérature a-t-elle contribué à en fixer les contours ?",
+      "ideeCentrale": "La Chanson ne dit rien de l'islam médiéval : elle fait du monde musulman un antimonde chrétien, peuplé de hordes indifférenciées, monstrueuses et parjures — des stéréotypes toujours agissants dans le racisme contemporain. Pourtant, elle n'est pas raciste : la religion prime sur l'origine, et le Sarrasin converti devient le parfait égal des chevaliers.",
+      "idees": [
+        "Négation du monothéisme musulman : les Sarrasins vénèrent Mahomet, « Apollin » et « Tervagant », trinité maudite qui en fait des idolâtres, des « païens » — catégorie qui englobe aussi les juifs.",
+        "Fondamentaux du racisme déjà présents : nier l'autre, projeter sur lui nos obsessions les plus sombres, en faire un monstre physique ou moral, le percevoir comme une masse indifférenciée (comme les premiers westerns regardaient les tribus amérindiennes).",
+        "Mais la porte reste ouverte : un Sarrasin converti devient « un chrétien comme les autres » (Renouard au Tinel devient chevalier et épouse une fille de roi), quand les racistes d'aujourd'hui enferment l'autre dans une « muraille » sans issue."
+      ],
+      "exemple": "Charlemagne au vaillant émir Baligant : « Reçois la foi que Dieu nous révèle, la foi chrétienne, et aussitôt je t'aimerai. »",
+      "notion": { "terme": "Antimonde", "definition": "Monde construit comme l'inverse du sien : les valeurs y sont opposées (parole fourbe de Blancandrin contre parole franche de Roland) ou symétriques (la bravoure des Maures met en valeur celle des chrétiens)." },
+      "aujourdhui": {
+        "magazine": "L'article se demande si ces terreurs « quasi millénaires » recoupent les clichés racistes modernes, et montre que l'idée d'un peuple parjure et doué pour la filouterie a survécu dans les préjugés racistes. Illustrations : la messe en hommage au père Jacques Hamel (Rouen, juillet 2016) et une affiche hostile aux migrants éditée par la municipalité de Béziers (octobre 2016).",
+        "piste": "Les représentations de l'« autre » en masse menaçante, dans certains discours sur les migrations, reprennent le schéma de la multitude indifférenciée."
+      },
+      "questionReflexion": "Qu'est-ce qui distingue l'hostilité religieuse de la Chanson du racisme contemporain ?",
+      "limites": "Comme l'écrit le médiéviste Jean Flori, cité par l'article, la Chanson vaut davantage comme témoignage sur sa propre époque que sur les événements qu'elle raconte. Brocas souligne lui-même qu'elle n'est « nullement raciste » au sens moderne.",
+      "approfondir": [
+        "Roland refuse longtemps de sonner du cor malgré Olivier (« Compainz Rollant, sunez vostre olifan ») ; la cause de la guerre, selon l'ambassadeur Blancandrin, serait sa « frénésie guerrière ».",
+        "Jean Dufournet, traducteur, évoque la projection inconsciente des tares de l'Occident chrétien sur des Sarrasins figurant « l'étrangeté absolue, le mal radical ».",
+        "Extraits p. 107-108 (conseil de la discorde, Ganelon, catalogue des armées de Baligant, combat des chefs)."
+      ],
+      "citations": [
+        { "texte": "Paien unt tort e chrestiens unt dreit.", "attribution": "Roland, cité par A. Brocas (« Les païens sont dans leur tort, les chrétiens dans leur droit »)", "page": 106 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 22 à 24 et 26 relues. La page PDF 25 (extrait, p. 107) est floue : non exploitée hors titres de laisses." }
+    },
+    {
+      "id": "tristes-tropiques",
+      "titre": "Tristes Tropiques",
+      "auteur": "Claude Lévi-Strauss",
+      "date": "1955",
+      "dateNature": "repere",
+      "statut": "principale",
+      "article": "islam",
+      "pages": { "magazine": "109-111", "pdf": 27 },
+      "themes": ["religion", "alterite"],
+      "contexte": "Écrit en 1954-1955 à l'invitation de Jean Malaurie pour la collection « Terre humaine » (Plon), après un séjour de quelques mois en 1950 en Inde du Nord et au Pakistan (mission de l'Unesco). Récit libre, pensé « comme une sorte de roman », devenu le livre le plus célèbre de l'ethnologue.",
+      "question": "Que vaut le regard d'un grand ethnologue quand il exprime sans fard une antipathie ?",
+      "ideeCentrale": "Dans quelques pages méconnues, Lévi-Strauss exprime son « antipathie » envers l'islam, qu'il voit en contradiction face à l'histoire — fonder une tradition sur la destruction de celles qui l'ont précédée — et incapable de penser la solitude et la pluralité. Pierre Assouline présente ce passage comme un mélange d'observations inattendues et de mauvaise foi.",
+      "idees": [
+        "Observations inattendues : au chapitre XV, il se dit impressionné par la manière dont un minuscule tapis de prière suffit aux musulmans pour s'isoler de la rumeur du monde, et par un vieillard priant seul sur une plage de l'océan Indien.",
+        "Jugement sévère : au chapitre XXXIX, il voit l'islam comme une religion si collective qu'elle éprouvera toujours des difficultés à penser la solitude ; il n'a jamais exprimé de regret (lettre à Raymond Aron, entretiens avec Didier Éribon en 1988 et 2002).",
+        "Réception partagée : Abdelwahab Meddeb juge ces pages marquées par la méconnaissance et l'aveuglement, mais reconnaît la pertinence de l'analyse du « blocage » de l'islam et de l'inertie historique qui s'ensuit."
+      ],
+      "exemple": "Dans l'extrait reproduit (chapitre XXXIX), Lévi-Strauss affirme : « l'islam, c'est l'Occident de l'Orient » — il dit retrouver en lui l'univers d'où il vient.",
+      "notion": { "terme": "Approche anthropologique et structurale du religieux", "definition": "Indifférent au sentiment religieux, Lévi-Strauss étudie le fait religieux comme un système de communication entre groupes et individus ; il s'intéresse, note l'article, moins aux hommes qu'aux croyances, coutumes, institutions et structures." },
+      "aujourdhui": {
+        "magazine": "Revenir à ces pages un demi-siècle après passe pour provocateur, à une époque « rongée par le principe de précaution » ; l'article note qu'on n'ose pas taxer Lévi-Strauss d'islamophobie. En 2002, il rapprochait lui-même ses propos de ceux pour lesquels on faisait un procès à Houellebecq et s'opposait à l'enseignement du fait religieux à l'école, au nom de la laïcité. Selon Meddeb, son analyse reste actuelle, « dussent-ils déranger bien des consciences ».",
+        "piste": "Le passage invite à distinguer, dans tout débat public sur une religion, l'observation, le jugement de valeur et la généralisation."
+      },
+      "questionReflexion": "Un savant est-il plus fiable qu'un autre lorsqu'il parle hors de son terrain d'étude ?",
+      "limites": "Le chapô parle de « mauvaise foi » : ces pages sont un témoignage personnel, rédigé « sans précaution », et non une étude de l'islam. Les reprendre comme vérité scientifique serait un contresens. La fiche rapporte les positions de Lévi-Strauss sans les reprendre à son compte.",
+      "approfondir": [
+        "Lévi-Strauss venait d'échouer deux fois au Collège de France ; l'Académie Goncourt regretta de ne pouvoir couronner un livre qui n'était pas une fiction.",
+        "Il fut accusé d'antihumanisme alors qu'il voulait fonder les droits de l'homme sans privilégier l'espèce humaine sur les autres espèces vivantes."
+      ],
+      "citations": [
+        { "texte": "Je hais les voyages et les explorateurs.", "attribution": "Incipit de Tristes Tropiques, cité par P. Assouline", "page": 109 },
+        { "texte": "Les brefs contacts que j'ai eus avec le monde arabe m'ont inspiré une indéracinable antipathie.", "attribution": "Lévi-Strauss, lettre à Raymond Aron, cité par P. Assouline", "page": 110 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 27 à 29 relues. Date de publication : repère général (l'article indique l'écriture en 1954-1955)." }
+    },
+    {
+      "id": "les-demons",
+      "titre": "Les Démons",
+      "auteur": "Fédor Dostoïevski",
+      "date": "1871-1872",
+      "dateNature": "repere",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "112, 115-116", "pdf": 30 },
+      "themes": ["violence", "liberte", "religion"],
+      "contexte": "Premier des « grands classiques » retenus par Marc Weitzmann pour éclairer le terrorisme. Dostoïevski avait lui-même fréquenté, à la fin des années 1840, des cercles fouriéristes tentés par la révolution, avant d'être arrêté.",
+      "question": "Que faire de la liberté individuelle dans un monde sans Dieu ?",
+      "ideeCentrale": "Le groupe terroriste du roman se dit nihiliste mais partage avec les islamistes contemporains de nombreux points communs. Son complot est mal ficelé, ses membres sont de « sombres crétins » : Dostoïevski transforme pourtant ce qui devrait faire rire en une dynamique infernale qui emporte terroristes et cibles dans la même catastrophe.",
+      "idees": [
+        "Le roman saisit les enjeux du terrorisme qui sont encore les nôtres, à commencer par la liberté individuelle dans un monde sans Dieu.",
+        "Un des comploteurs affirme se tuer « pour montrer [son] insoumission et [sa] nouvelle et terrifiante liberté » : la mort volontaire devient un manifeste.",
+        "La médiocrité des conspirateurs n'atténue pas l'effroi : c'est l'écriture enfiévrée qui fait sentir la mécanique de la catastrophe."
+      ],
+      "exemple": "L'extrait reproduit (p. 115-116) : Piotr Stépanovitch attend, revolver en main, que Kirillov se suicide après avoir signé une fausse confession destinée à couvrir le groupe.",
+      "notion": { "terme": "Nihilisme", "definition": "Revendication du groupe terroriste du roman : la négation de toute valeur établie, que Weitzmann rapproche de certaines logiques du terrorisme contemporain." },
+      "aujourdhui": {
+        "magazine": "L'article cite le cas de Philipp Budeikin, inventeur du jeu Blue Whale Challenge, qui a avoué en mars 2017 avoir conçu le jeu pour pousser des jeunes au suicide afin de « nettoyer la société » (il serait responsable d'au moins seize morts volontaires d'adolescentes).",
+        "piste": "La mise en scène de la mort comme affirmation de soi, dans certains attentats-suicides, peut se lire à la lumière de la « terrifiante liberté » revendiquée par le personnage."
+      },
+      "questionReflexion": "Pourquoi le ridicule des conspirateurs ne rend-il pas le complot moins dangereux ?",
+      "limites": "Le rapprochement entre nihilistes russes et islamistes est celui de l'auteur de l'article ; il porte sur des « points communs », non sur une identité de doctrines.",
+      "approfondir": ["Traduction citée : André Markowicz (Actes Sud, Babel)."],
+      "citations": [
+        { "texte": "Je me tue pour montrer mon insoumission et ma nouvelle et terrifiante liberté.", "attribution": "Un des comploteurs des Démons, cité par M. Weitzmann", "page": 112 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 30, 33 et 34 relues. Le nom de Kirillov apparaît dans l'extrait, non dans l'analyse. Date : repère général." }
+    },
+    {
+      "id": "agent-secret",
+      "titre": "L'Agent secret",
+      "auteur": "Joseph Conrad",
+      "date": "1907",
+      "dateNature": "magazine",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "112", "pdf": 30 },
+      "themes": ["violence", "manipulation"],
+      "contexte": "Roman situé à Londres, inspiré de la vague d'attentats anarchistes survenue à Paris une dizaine d'années plus tôt — dont les auteurs étaient manipulés par Pierre Ratchkovski, chef de la police secrète de l'ambassade russe à Paris — et d'un complot réel contre l'observatoire de Greenwich.",
+      "question": "Peut-on comprendre un attentat qui semble défier toute raison ?",
+      "ideeCentrale": "Pour Weitzmann, c'est « pour ainsi dire le premier roman à réfléchir philosophiquement sur l'attentat terroriste » : viser l'observatoire de Greenwich, qui donnait l'heure universelle, donne au livre sa profondeur métaphysique. Conrad décrit une « aberration sanglante » impossible à sonder, car « la raison perverse a elle-même ses processus logiques ».",
+      "idees": [
+        "La Russie joue déjà un rôle clé dans la dynamique de la terreur : les anarchistes parisiens étaient manipulés par un agent russe.",
+        "La cible symbolique (l'heure universelle) fait de l'attentat une attaque contre l'ordre même du monde, non contre des personnes.",
+        "La notion de « raison perverse » : la violence terroriste obéit à une logique propre, qui résiste à l'analyse raisonnable."
+      ],
+      "exemple": "Le projet de faire sauter l'observatoire de Greenwich, repris d'un complot authentique d'anarchistes britanniques.",
+      "notion": { "terme": "Raison perverse", "definition": "Expression de Conrad (préface) : une logique qui a ses propres « processus logiques », rendant l'attentat impossible à appréhender par le raisonnement ordinaire." },
+      "aujourdhui": {
+        "magazine": "Weitzmann reprend la « raison perverse » pour décrire notre propre réaction aux attentats : nous finissons par accepter ses « processus logiques » (voir Le Procès).",
+        "piste": "Les manipulations d'États derrière certains groupes violents ou campagnes de déstabilisation prolongent le cas Ratchkovski."
+      },
+      "questionReflexion": "Chercher à comprendre un attentat, est-ce déjà lui donner une logique ?",
+      "limites": "« Premier roman » à réfléchir philosophiquement sur l'attentat : la formule est nuancée par l'auteur lui-même (« pour ainsi dire »).",
+      "approfondir": ["Le même Ratchkovski est à l'origine des Protocoles des sages de Sion : voir la fiche Danilo Kiš.", "Traduction citée : Sylvère Monod (Folio)."],
+      "citations": [
+        { "texte": "Une aberration sanglante d'une espèce si stupide qu'il était impossible d'en sonder l'origine par n'importe quel processus intellectuel raisonnable ou même déraisonnable. Car la raison perverse a elle-même ses processus logiques.", "attribution": "Conrad, préface, cité par M. Weitzmann", "page": 112 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Page PDF 30 relue." }
+    },
+    {
+      "id": "le-proces",
+      "titre": "Le Procès",
+      "auteur": "Franz Kafka",
+      "date": "1925",
+      "dateNature": "magazine",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "112-113", "pdf": 30 },
+      "themes": ["violence", "pouvoir"],
+      "contexte": "Roman paru en 1925. Lectures multiples : George Steiner y voit une réflexion rabbinique sur le statut de la Loi, Sartre un reflet de la condition juive européenne au XXe siècle, beaucoup une préfiguration du totalitarisme.",
+      "question": "Pourquoi finissons-nous par chercher notre propre culpabilité quand la violence nous frappe arbitrairement ?",
+      "ideeCentrale": "Au XXIe siècle, Le Procès peut se lire comme une réflexion sur la condition de victime potentielle inhérente à chacun : comme Joseph K., nous protestons, puis cherchons les raisons du procès qui nous est intenté — et finissons par y croire.",
+      "idees": [
+        "Joseph K. est arrêté sans avoir rien fait de mal : l'arbitraire est le point de départ.",
+        "Face aux attentats, nous nous persuadons que des éléments (intervention en Syrie, conflit israélo-palestinien, sort des descendants d'immigrés, offense envers l'islam) les expliqueraient rationnellement : nous acceptons ainsi « les processus logiques de la raison perverse ».",
+        "Chez Kafka, l'intime et l'histoire se reflètent : il compare sa rupture avec Felice Bauer à un procès ; il voyait des plaisanteries dans ses cauchemars et riait en lisant ses textes."
+      ],
+      "exemple": "La première phrase : « On avait sûrement calomnié Joseph K., car, sans avoir rien fait de mal, il fut arrêté un matin. »",
+      "notion": { "terme": "Victime potentielle", "definition": "Lecture proposée par Weitzmann : la terreur moderne fait de chacun un accusé sans faute, tenté d'intérioriser la logique de son accusateur." },
+      "aujourdhui": {
+        "magazine": "L'article évoque l'attentat de Toulouse (une enfant juive tuée) et celui du Bataclan, et la tentation d'en chercher des explications « rationnelles ». Photo : hommage au policier tué lors de l'attaque terroriste d'avril 2017 (datée du 25 avril dans la légende).",
+        "piste": "Le réflexe de justification après une violence (« ils l'ont bien cherché ») peut être interrogé à partir de Joseph K."
+      },
+      "questionReflexion": "Comprendre les causes d'une violence et lui trouver des justifications : où passe la frontière ?",
+      "limites": "Il s'agit d'une actualisation proposée par l'article ; Kafka n'écrit pas sur le terrorisme, et ses textes ont été lus de manières très diverses.",
+      "approfondir": ["Traduction citée : Bernard Lortholary (GF)."],
+      "citations": [
+        { "texte": "On avait sûrement calomnié Joseph K., car, sans avoir rien fait de mal, il fut arrêté un matin.", "attribution": "Kafka, cité par M. Weitzmann", "page": 112 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 30-31 relues. La légende de la photo indique « 25 avril 2017 » (date imprimée, non corrigée ici)." }
+    },
+    {
+      "id": "vie-et-destin",
+      "titre": "Vie et destin",
+      "auteur": "Vassili Grossman",
+      "date": "achevé en 1962, publié en Occident en 1980",
+      "dateNature": "magazine",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "113-114", "pdf": 31 },
+      "themes": ["violence", "pouvoir"],
+      "contexte": "Roman de guerre centré sur le siège de Stalingrad, commencé en 1952 : le journaliste Grossman venait d'assister à un nouveau déchaînement antisémite en URSS et avait cessé d'être un communiste convaincu.",
+      "question": "Que devient la violence quand un État puissant la rend sans limite ?",
+      "ideeCentrale": "Considéré à juste titre comme « le Guerre et paix des totalitarismes du XXe siècle », le roman analyse les liens entre les deux systèmes européens les plus meurtriers de l'histoire. C'est une méditation sur l'effroi provoqué par une violence « si grande qu'elle cesse d'être un moyen pour devenir objet d'adoration quasi mystique et religieuse ».",
+      "idees": [
+        "Grossman met en regard les deux totalitarismes européens (le roman est centré sur Stalingrad).",
+        "La violence d'État change de nature : de moyen, elle devient objet d'adoration."
+      ],
+      "exemple": "Le siège de Stalingrad, cadre du roman, où se croisent les deux systèmes.",
+      "notion": { "terme": "Totalitarisme", "definition": "Dans la lecture de Weitzmann, régime d'un « État puissant » dont la violence sans limites devient objet d'adoration quasi religieuse." },
+      "aujourdhui": {
+        "magazine": "Le roman figure dans l'article sur le terrorisme comme méditation sur la violence de masse.",
+        "piste": "La sacralisation de la violence par des groupes ou des États qui la mettent en scène peut se penser avec cette formule."
+      },
+      "questionReflexion": "Pourquoi une violence extrême peut-elle devenir fascinante plutôt que repoussante ?",
+      "limites": "Le traitement est bref ; l'association au terrorisme est indirecte (violence d'État).",
+      "approfondir": ["Traduction citée : Alexis Berelowitch (Le Livre de poche)."],
+      "citations": [
+        { "texte": "[Une violence] si grande qu'elle cesse d'être un moyen pour devenir objet d'adoration quasi mystique et religieuse.", "attribution": "M. Weitzmann, à propos de Vie et destin", "page": 114 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 31-32 relues. La fin de la phrase sur les « deux systèmes » se poursuit p. 114 (« de l'histoire »)." }
+    },
+    {
+      "id": "livre-des-rois",
+      "titre": "« Le livre des rois et des sots » (dans Encyclopédie des morts)",
+      "auteur": "Danilo Kiš",
+      "date": "1983",
+      "dateNature": "magazine",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "114", "pdf": 32 },
+      "themes": ["manipulation", "violence", "savoir"],
+      "contexte": "Courte nouvelle, peu connue, du recueil Encyclopédie des morts, d'un des plus grands écrivains yougoslaves. Elle raconte l'histoire des Protocoles des sages de Sion.",
+      "question": "Comment un faux devient-il une arme de destruction massive ?",
+      "ideeCentrale": "Kiš suit chaque étape de la fabrication des Protocoles des sages de Sion — « première fake news d'envergure » — des monastères russes à l'ambassade parisienne puis à leur usage par les nazis : une « archéologie du mal » et une méditation sur les dangers de la lecture.",
+      "idees": [
+        "Selon les travaux de Pierre-André Taguieff et de l'historien Mikhaïl Lepekhine, le commanditaire en fut, à la fin des années 1890, Piotr Ratchkovski ; le texte fut écrit par son adjoint Mathieu Golovinski.",
+        "Objectifs : semer le trouble dans les sociétés occidentales, saper les valeurs libérales jugées menaçantes pour le pouvoir russe ; les Juifs, symboles du libéralisme depuis la Révolution française, furent pris pour cible.",
+        "Tout est vrai, mais raconté à la manière d'un conte fantastique — technique qui fit scandale à Belgrade dans les années 1960-1970."
+      ],
+      "exemple": "Une scène de la nouvelle : autour d'un feu, dans une vallée des Carpates, des soldats écoutent un officier lire l'histoire du complot fomenté contre la Russie : « Voilà, Messieurs, quelle morale ils prônent. »",
+      "notion": { "terme": "Fake news (au sens de l'article)", "definition": "Faux document fabriqué et diffusé pour produire des effets politiques ; Weitzmann qualifie les Protocoles de première fake news d'envergure, au succès mondial jamais égalé." },
+      "aujourdhui": {
+        "magazine": "Weitzmann parle de « fake news » à propos des Protocoles et insiste sur la permanence du rôle de la Russie dans les dynamiques de déstabilisation.",
+        "piste": "La circulation virale de faux documents et de théories du complot sur les réseaux sociaux reproduit, à une autre échelle, le mécanisme décrit par Kiš."
+      },
+      "questionReflexion": "Pourquoi un texte manifestement faux peut-il être cru et servir à tuer ?",
+      "limites": "L'attribution des Protocoles à Ratchkovski et Golovinski repose sur des travaux d'historiens cités par l'article ; la nouvelle elle-même est une œuvre littéraire qui condense les épisodes.",
+      "approfondir": ["Lien avec L'Agent secret : le même Ratchkovski manipulait à la même époque des réseaux anarchistes.", "Traduction citée : Pascale Delpech (Gallimard)."],
+      "citations": [],
+      "verification": { "statut": "verifie", "notes": "Page PDF 32 relue (orthographe du nom : Lepekhine, mal reconnue par l'OCR)." }
+    },
+    {
+      "id": "delillo",
+      "titre": "Libra et Outremonde",
+      "auteur": "Don DeLillo",
+      "date": "1988 et 1997",
+      "dateNature": "magazine",
+      "statut": "rubrique",
+      "article": "terrorisme",
+      "pages": { "magazine": "114", "pdf": 32 },
+      "themes": ["violence", "manipulation"],
+      "contexte": "Selon Weitzmann, il est presque impossible de réfléchir littérairement au terrorisme sans DeLillo (Mao II, Joueurs, Les Noms, écrit en 1979 après la prise d'otages de l'ambassade américaine en Iran). Il retient Libra (1988) et Outremonde (1997).",
+      "question": "Comment raconter des terreurs dont les causes se perdent dans des courants souterrains ?",
+      "ideeCentrale": "Libra croise l'histoire de Lee Harvey Oswald et celle d'anciens agents de la CIA qui complotent contre Castro : tout y est vrai et retravaillé par l'imagination ; méditation sur la technologie et les théories conspirationnistes, il préfigure notre monde. Outremonde, chronique intimiste de la terreur au temps de la guerre froide, montre combien notre siècle reste englué dans « la décharge des terreurs du précédent ».",
+      "idees": [
+        "Libra : deux trajectoires se rejoignent par des courants souterrains jusqu'à l'assassinat de Kennedy.",
+        "Outremonde (environ 900 pages) : entre le premier essai de bombe H soviétique et la chute du mur de Berlin ; le personnage central, Nick Shay, passe de la gestion des déchets de New York à celle des déchets nucléaires de l'ex-URSS.",
+        "Le prologue d'Outremonde, « Le triomphe de la mort », qui décrit un match de base-ball historique, est à lui seul un chef-d'œuvre selon l'article."
+      ],
+      "exemple": "Nick Shay, cadre dans la gestion des déchets : les déchets deviennent la métaphore des terreurs que la guerre froide lègue au siècle suivant.",
+      "notion": { "terme": "Théories conspirationnistes", "definition": "Explications du monde par des complots cachés ; Libra en fait une matière romanesque, en mêlant faits avérés et imagination." },
+      "aujourdhui": {
+        "magazine": "Libra « préfigure le monde dans lequel nous sommes entrés » ; Outremonde anticipe à quel point les premières années de notre siècle sont engluées dans les terreurs du précédent.",
+        "piste": "La prolifération actuelle des récits complotistes autour d'événements majeurs donne une résonance nouvelle à Libra."
+      },
+      "questionReflexion": "Pourquoi les grands événements violents suscitent-ils tant de récits de complot ?",
+      "limites": "L'article date le premier essai de bombe H soviétique de 1952 ; cette date, donnée telle quelle, est à vérifier.",
+      "approfondir": ["Traductions citées : Michel Courtois-Fourcy (Libra, Babel) ; Marianne Véron (Outremonde, Babel).", "Weitzmann compare Outremonde à ce qu'aurait pu être une chronique de la guerre froide « écrite par Samuel Beckett »."],
+      "citations": [],
+      "verification": { "statut": "partiel", "notes": "Page PDF 32 relue. Date de l'essai soviétique (1952) telle qu'imprimée : à vérifier." }
+    },
+    {
+      "id": "jules-cesar",
+      "titre": "Jules César",
+      "auteur": "William Shakespeare",
+      "date": "1599",
+      "dateNature": "repere",
+      "statut": "encadre",
+      "article": "populisme",
+      "pages": { "magazine": "117", "pdf": 35 },
+      "themes": ["pouvoir", "manipulation"],
+      "contexte": "Shakespeare, grand lecteur de Montaigne et de La Boétie, est convoqué par l'article sur le populisme avec Jules César et Richard III.",
+      "question": "Comment un orateur retourne-t-il une foule ?",
+      "ideeCentrale": "Shakespeare illustre, à défaut de l'expliquer, le phénomène par lequel les dirigeants ne se changent « en loup » que parce qu'ils voient dans leurs sujets « des moutons ». Dans Jules César, Marc-Antoine, isolé, retourne par la seule force de son discours une foule de plébéiens contre les « hommes honorables » du sénat.",
+      "idees": [
+        "La responsabilité des gouvernés : « La faute, cher Brutus, n'est pas dans nos étoiles / Mais en nous-mêmes, si nous sommes des sous-fifres » (acte I, scène 2).",
+        "La foule est « manipulable à merci » : le discours de Marc-Antoine (acte III, scène 2) montre le passage de la révolte à la manipulation, de la démagogie à la sincérité (le rôle tenu par Marlon Brando dans le film de Mankiewicz).",
+        "Richard III (acte III, scène 7) : l'homme providentiel feint de refuser le pouvoir pour que le peuple le supplie de monter sur le trône — « l'ironie shakespearienne est ici à son maximum »."
+      ],
+      "exemple": "Richard III se dit « pas fait pour la pompe et la majesté » et refuse le trône qu'il convoite depuis le début, forçant le peuple à se mettre à genoux.",
+      "notion": { "terme": "Servitude volontaire", "definition": "Question de La Boétie (Discours de la servitude volontaire), citée par l'article : comment tant d'hommes supportent-ils un tyran qui n'a de puissance que celle qu'ils lui donnent ?" },
+      "aujourdhui": {
+        "magazine": "Le populisme, « courant protéiforme et ambivalent », va de l'Empire romain à Eva Perón, de Trump à Le Pen et Jean-Luc Mélenchon ; personne ne sait le définir. Photo : Marine Le Pen en meeting (avril 2017), « Au nom du peuple ».",
+        "piste": "La posture du candidat qui se présente comme étranger au système et « appelé » malgré lui rappelle la mise en scène de Richard III."
+      },
+      "questionReflexion": "La manipulation des foules est-elle la faute du manipulateur ou de ceux qui se laissent faire ?",
+      "limites": "Shakespeare n'explique pas le phénomène, il l'illustre ; pour l'article, l'invention du populisme moderne revient à Rousseau.",
+      "approfondir": ["Traduction citée : François-Victor Hugo (GF Flammarion).", "Vers d'Odysseas Elytis en ouverture : « Elle cherche la révolte / Et s'offre des tyrans »."],
+      "citations": [
+        { "texte": "La faute, cher Brutus, n'est pas dans nos étoiles / Mais en nous-mêmes, si nous sommes des sous-fifres.", "attribution": "Jules César, I, 2, cité par M. Weitzmann", "page": 117 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Page PDF 35 relue. Date : repère général." }
+    },
+    {
+      "id": "education-sentimentale",
+      "titre": "L'Éducation sentimentale",
+      "auteur": "Gustave Flaubert",
+      "date": "1869",
+      "dateNature": "repere",
+      "statut": "encadre",
+      "article": "populisme",
+      "pages": { "magazine": "118", "pdf": 36 },
+      "themes": ["pouvoir", "manipulation"],
+      "contexte": "Roman dont la troisième partie se déroule pendant la révolution de 1848 ; cité dans l'article sur le populisme (encadré « À lire »).",
+      "question": "À quoi ressemble le populisme « en marche » ?",
+      "ideeCentrale": "Flaubert est sans doute celui qui, en France, a le mieux dépeint le populisme en marche : la troisième partie du roman montre les discussions enflammées des révolutionnaires de 1848, où l'on rejette jusqu'au savoir au nom du « Peuple, seul vrai juge ».",
+      "idees": [
+        "Les révolutionnaires veulent les uns abolir « la prostitution et la misère », d'autres « prendre le Rhin ».",
+        "Le refus de tout élitisme va jusqu'à proposer que les diplômes universitaires soient « conférés par le suffrage universel, par le Peuple, seul vrai juge ! »."
+      ],
+      "exemple": "La proposition de faire décerner les diplômes par le suffrage universel ; l'article ajoute qu'une mesure de ce type fut brièvement appliquée en Russie soviétique et aboutit notamment à des autodafés d'œuvres de Tolstoï et de Tchekhov.",
+      "notion": { "terme": "Anti-élitisme", "definition": "Rejet de toute hiérarchie de compétence au nom du peuple, que l'article place au cœur du populisme moderne inventé selon lui par Rousseau." },
+      "aujourdhui": {
+        "magazine": "L'article inscrit Flaubert dans une généalogie du populisme qui va de Rousseau à Maurras.",
+        "piste": "La défiance envers les experts et les diplômés, dans certains débats publics, peut se lire à partir de cette scène."
+      },
+      "questionReflexion": "Le refus des élites peut-il aller jusqu'au refus du savoir ?",
+      "limites": "L'article date de 1917 l'application soviétique de la mesure ; cette précision historique, rapide, n'est pas développée.",
+      "approfondir": ["Rousseau aurait, selon l'article, redéfini le mot « peuple » comme désignant les couches inférieures d'un pays, « la réalité » face aux élites parisiennes « cosmopolites ».", "Maurras reformule au XXe siècle l'opposition entre « pays légal » et « pays réel »."],
+      "citations": [
+        { "texte": "[Les diplômes doivent être] conférés par le suffrage universel, par le Peuple, seul vrai juge !", "attribution": "Flaubert, L'Éducation sentimentale, cité par M. Weitzmann", "page": 118 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Page PDF 36 relue. Date : repère général." }
+    },
+    {
+      "id": "fous-du-roi",
+      "titre": "Les Fous du roi",
+      "auteur": "Robert Penn Warren",
+      "date": "1946",
+      "dateNature": "magazine",
+      "statut": "encadre",
+      "article": "populisme",
+      "pages": { "magazine": "118-119", "pdf": 36 },
+      "themes": ["pouvoir", "manipulation"],
+      "contexte": "« Le classique en la matière » aux États-Unis selon l'article, où s'est développée une forme de populisme qui se confond avec la liberté individuelle. Titre original : All the King's Men.",
+      "question": "Comment un politicien sincèrement révolté devient-il un tyran corrompu ?",
+      "ideeCentrale": "Le journaliste Jack Burden tombe sous le charme de Willie Stark, politicien populiste doté d'un charisme réel et révolté par la misère sociale, qui se fait élire avant de bâtir peu à peu un empire fondé sur la corruption et la menace.",
+      "idees": [
+        "Le charisme et la révolte sont réels : le populisme n'est pas d'abord une imposture.",
+        "Le schéma (le libérateur qui devient despote) a été repris par de nombreux romanciers de la fin de l'ère coloniale : Le Recours de la méthode (Carpentier), L'Automne du patriarche (García Márquez), Le Dernier Roi d'Écosse (Giles Foden).",
+        "Certains livres prennent plus ou moins parti pour le populisme, ce qui serait le cas de Penn Warren et de Carpentier."
+      ],
+      "exemple": "Dans l'extrait (p. 119), Willie Stark assure à la foule qu'il n'est venu lui demander « même pas de voter pour [lui] », tout en se moquant des politiciens qui ne cessent de dire « Donnez-moi ! ».",
+      "notion": { "terme": "Un pied dans la cité, un autre au-dehors", "definition": "Formule de l'article : comme les populistes, les écrivains entretiennent un rapport ambivalent au civisme — « leur cœur saigne pour la fraternité, mais le talent va plutôt à la misanthropie »." },
+      "aujourdhui": {
+        "magazine": "L'article relie populisme et littérature : les écrivains, comme les leaders, bâtissent leur pouvoir sur une empathie avec un « vrai peuple » qu'ils ne rejoignent jamais (Céline en serait un exemple cardinal) ; cela expliquerait en partie le déclin de la littérature française après 1945 et son retour via des figures comme Houellebecq.",
+        "piste": "Le discours antisystème tenu par des responsables déjà au pouvoir rappelle la rhétorique de Willie Stark."
+      },
+      "questionReflexion": "Pourquoi la littérature est-elle si souvent fascinée par les figures populistes ?",
+      "limites": "L'article affirme que Willie Stark se fait élire sénateur ; dans le roman, il est connu comme gouverneur (point à vérifier). Les thèses sur le déclin de la littérature française sont celles de l'auteur de l'article.",
+      "approfondir": ["Steinbeck, Les Raisins de la colère : « Je serai partout dans l'ombre… », cité comme formulation exemplaire de l'empathie de l'écrivain avec les humbles."],
+      "citations": [
+        { "texte": "Le cœur des écrivains saigne pour la fraternité, mais le talent va plutôt à la misanthropie.", "attribution": "M. Weitzmann", "page": 118 }
+      ],
+      "verification": { "statut": "partiel", "notes": "Pages PDF 36-37 relues. Fonction de Willie Stark (« sénateur ») telle qu'écrite dans l'article : à vérifier ; non utilisée dans les questions." }
+    },
+    {
+      "id": "yourcenar",
+      "titre": "Le Labyrinthe du monde (Souvenirs pieux, Archives du Nord, Quoi ? L'Éternité)",
+      "auteur": "Marguerite Yourcenar",
+      "date": "1974, 1977, 1988",
+      "dateNature": "magazine",
+      "statut": "principale",
+      "article": "ecologie",
+      "pages": { "magazine": "120-124", "pdf": 38 },
+      "themes": ["ecologie", "identites"],
+      "contexte": "Longtemps vue comme une érudite marginale (Antiquité, Renaissance, philosophies orientales), retirée sur l'île des Monts-Déserts aux États-Unis, Yourcenar révèle à partir de 1979-1980 (Apostrophes, Les Yeux ouverts) une fervente écologiste. Les trois tomes du « Labyrinthe du monde », sortes de Mémoires, paraissent en 1974, 1977 et 1988.",
+      "question": "Et si l'écologie commençait par cesser de se penser à part du vivant ?",
+      "ideeCentrale": "Pour Yourcenar, les maux de la nature viennent de l'humanité : c'est dans sa manière d'envisager le monde que l'homme s'en est exclu. Son œuvre cherche à refonder une communauté incluant toutes les créatures ; ses Mémoires deviennent « écologiques », l'autobiographie, forteresse du moi souverain, devenant l'espace d'une dilution de l'individualité.",
+      "idees": [
+        "Un humanisme sans anthropocentrisme : elle aborde la crise écologique en anthropologue plus qu'en naturaliste, et n'évoque pratiquement jamais la nature sans y intégrer l'homme.",
+        "La pollution est aussi mentale : « Une civilisation à cloisons étanches » (1972) dénonce l'aveuglement sur les abattoirs ; manger, c'est aussi « dévorer symboliquement » les autres créatures. Contre ces cloisons, une écriture à « double vue » (« Bêtes à fourrure », 1976).",
+        "Elle réhabilite des figures oubliées (saint François, saint Blaise, saint Hubert) et préfigure la « triple écologie » de Félix Guattari (nature, société, esprit) : non une comptabilité des ressources, mais un « éco-logos » qui refonde notre rapport esthétique et émotionnel au monde."
+      ],
+      "exemple": "Dans Souvenirs pieux, la croix d'ivoire placée au-dessus de son berceau renvoie à un éléphant tué dans la forêt congolaise, dont les défenses ont été vendues à bas prix : « Cette grande masse de vie intelligente […] a abouti à cela. »",
+      "notion": { "terme": "Éco-logos", "definition": "Selon l'article, l'écologie de Yourcenar est un « discours sur tout ce qui nous entoure », qui dépasse l'acception politique du terme, « souvent boudinée dans un catéchisme vert »." },
+      "aujourdhui": {
+        "magazine": "Le changement de paradigme qu'elle porte est aujourd'hui défendu par des philosophes comme Corine Pelluchon, pour qui nos existences sont des coexistences (Les Nourritures, 2015). L'article est illustré par des potagers urbains de Detroit filmés dans Demain (Cyril Dion et Mélanie Laurent).",
+        "piste": "Les débats sur la condition animale, l'élevage industriel ou le tourisme de masse retrouvent les intuitions de Yourcenar, formulées dès les années 1970."
+      },
+      "questionReflexion": "L'écologie est-elle d'abord une affaire de ressources à gérer ou de regard à transformer ?",
+      "limites": "Le jugement dominant reste qu'elle est « une humaniste avant tout » ; l'article défend une lecture écologique de l'œuvre, portée par certains critiques, qui demeure une interprétation.",
+      "approfondir": [
+        "Dès les années 1950, elle lit la pensée environnementaliste américaine ; sa bibliothèque contient Printemps silencieux de Rachel Carson (1962).",
+        "Elle entretient dès 1968 une correspondance avec Brigitte Bardot.",
+        "Extraits : Souvenirs pieux (naissance) et « Qui sait si l'âme des bêtes va en bas ? » (Le Temps, ce grand sculpteur), où l'homme aurait pu être l'« intendant » et non le « tyran » de la création (p. 123-124)."
+      ],
+      "citations": [
+        { "texte": "Un autre temps du monde, où l'homme en présence des bêtes pressent encore l'existence des dieux.", "attribution": "Yourcenar, Quoi ? L'Éternité, cité par J. et P.-É. Peillon", "page": 122 },
+        { "texte": "[Nathanaël] ne se sentait pas, comme tant d'autres gens, homme par opposition aux bêtes et aux arbres ; plutôt frère des unes et lointain cousin des autres.", "attribution": "Yourcenar, Un homme obscur, cité par J. et P.-É. Peillon", "page": 122 }
+      ],
+      "verification": { "statut": "verifie", "notes": "Pages PDF 38 à 42 relues (p. 122 redressée)." }
+    }
+  ],
+  "annoncees": [
+    { "id": "1984", "titre": "1984", "auteur": "non nommé dans la page (George Orwell)", "mention": "« 1984 renverra toujours les dictatures à leurs fondamentaux. »", "page": 82, "statut": "Annoncée dans l'introduction ; aucun article dans les pages fournies." },
+    { "id": "etranger", "titre": "L'Étranger", "auteur": "non nommé dans la page (Albert Camus)", "mention": "« L'Étranger décillera à jamais les jeunes gens sur la fragilité des conventions déposées sur l'absurdité du monde. »", "page": 82, "statut": "Annoncée dans l'introduction ; aucun article dans les pages fournies." },
+    { "id": "quichotte", "titre": "Don Quichotte", "auteur": "non nommé dans la page (Cervantès)", "mention": "« Tant qu'il y aura des lecteurs, le Quichotte les vaccinera contre les illusions romanesques et les élans héroïques. »", "page": 82, "statut": "Annoncée dans l'introduction ; aucun article dans les pages fournies." },
+    { "id": "bacchantes", "titre": "Les Bacchantes", "auteur": "Euripide", "mention": "« L'ivresse dionysiaque des Bacchantes nous renvoie à des barbaries modernes – comme la folie mutilatrice de certaines guérillas africaines. »", "page": 82, "statut": "Annoncée dans l'introduction ; aucun article dans les pages fournies." }
+  ]
+}
