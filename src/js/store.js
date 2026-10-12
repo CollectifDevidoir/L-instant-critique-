@@ -14,7 +14,7 @@ export function emptyProgress(now = Date.now()) {
     days: {},           // 'AAAA-MM-JJ' → { items, reviews, fresh, again, minutes, acquired }
     recent: [],         // dernières œuvres étudiées (ids), la plus récente en tête
     reports: [],        // signalements de fiches à corriger
-    settings: { size: 15, theme: 'auto' },
+    settings: { size: 15, theme: 'auto', onboarded: false },
     opened: {},         // œuvres dont la fiche a été présentée en séance
     notes: {},          // carnet du mode réflexion : id de rapprochement → texte
   };

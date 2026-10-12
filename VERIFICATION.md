@@ -40,11 +40,14 @@ Phèdre, Le Misanthrope, Lettres persanes, L'Ingénu, Supplément au voyage de B
 - QCM relus pour l'unicité de la bonne réponse et la crédibilité des distracteurs ; tests automatiques sur la structure.
 - Dates absentes des articles signalées comme « repère » et jamais interrogées.
 
-## Points à vérifier
-- *Fictions* : l'article date « Le Jardin aux sentiers qui bifurquent » de 1928 (« rédigé en 1928 ») ; la publication usuelle est 1941.
-- *Libra / Outremonde* : l'article situe le premier essai de bombe H soviétique en 1952.
-- *Les Fous du roi* : l'article fait de Willie Stark un « sénateur » (gouverneur dans le roman).
-- *Le Procès* : légende photo « attaque terroriste du 25 avril 2017 » (date imprimée, conservée telle quelle).
-- PDF p. 25 (magazine p. 107, extrait de *La Chanson de Roland*) : photo floue, non exploitée.
-- Encadrés « À lire » de *La Chanson de Roland* (p. 107) et des *Fous du roi* (p. 119) : illisibles.
-Ces points ne sont utilisés dans aucune question.
+## Points tranchés (validés par le commanditaire)
+- *Fictions* : « Le Jardin aux sentiers qui bifurquent » daté de 1941 (l'article dit 1928).
+- *Outremonde* : premier essai de bombe H soviétique en 1953 (l'article dit 1952).
+- *Les Fous du roi* : formulation « sénateur » de l'article conservée.
+- *Le Procès* : légende « 25 avril 2017 » conservée.
+- Page 107 (extrait de *La Chanson de Roland*) : relue sur une photo nette ; édition de référence : Jean Dufournet, GF Flammarion.
+- Page 83 : photographie pleine page, sans texte utile.
+
+## Points encore ouverts
+- Encadré « À lire » des *Fous du roi* (p. 119) illisible.
+- Environ six classiques du dossier au-delà de la page 124.
