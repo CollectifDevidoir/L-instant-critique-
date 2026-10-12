@@ -44,7 +44,7 @@ async function answerCurrent(page, strategy = 'good') {
   if (await page.locator('[data-action="intro-done"]').count()) return page.click('[data-action="intro-done"]');
   if (await page.locator('[data-action="choose"]').count()) {
     await page.locator('[data-action="choose"]').first().click();
-    return page.locator('.after-qcm .btn').click();
+    return page.locator('.after .btn').click();
   }
   if (await page.locator('[data-action="match-l"]').count()) {
     const n = await page.locator('[data-action="match-l"]').count();
@@ -53,7 +53,7 @@ async function answerCurrent(page, strategy = 'good') {
       await page.locator(`[data-action="match-r"][data-i="${i}"]`).click();
     }
     await page.click('[data-action="match-check"]');
-    return page.locator('.after-qcm .btn').click();
+    return page.locator('.after .btn').click();
   }
   if (await page.locator('textarea.free').count()) {
     await page.fill('textarea.free', 'Ma restitution personnelle de l\'idée centrale.');
@@ -76,16 +76,22 @@ try {
 
   await check('accueil : accroche, bouton principal, compteurs', async () => {
     await page.goto(BASE);
-    await page.waitForSelector('.hero h1');
-    assert.match(await page.textContent('.hero h1'), /comprendre/);
-    assert.match(await page.textContent('.today'), /Commencer la première séance/);
+    await page.waitForSelector('.home-head h1');
+    assert.match(await page.textContent('.home-head h1'), /penser le monde/);
+    assert.match(await page.textContent('.today-card'), /Votre première séance/);
+    assert.ok(await page.locator('.onboarding').count(), 'explication de départ');
+    await page.screenshot({ path: `${OUT}accueil-onboarding.png`, fullPage: true });
+    await page.click('[data-action="onboarded"]');
+    assert.equal(await page.locator('.onboarding').count(), 0);
+    assert.equal(await page.locator('.spine').count(), 20);
     await page.screenshot({ path: `${OUT}accueil-desktop.png`, fullPage: true });
   });
 
   let answered = 0;
   await check('séance complète : tous les formats rencontrés se jouent jusqu\'au bilan', async () => {
     await page.click('a.btn.big');
-    await page.waitForSelector('.card-shell');
+    await page.waitForSelector('.card');
+    await page.waitForTimeout(400);
     await page.screenshot({ path: `${OUT}seance-intro.png` });
     for (let guard = 0; guard < 40 && !(await page.locator('.session-end').count()); guard++) {
       await answerCurrent(page, answered === 2 ? 'bad' : 'good');
@@ -135,26 +141,28 @@ try {
 
   await check('bibliothèque : recherche par auteur, notion et thème', async () => {
     await page.goto(BASE + '#/bibliotheque');
-    await page.waitForSelector('.entry');
-    const total = await page.locator('.entry').count();
+    await page.waitForSelector('.book');
+    const total = await page.locator('.book').count();
     assert.equal(total, 20);
     await page.fill('#lib-q', 'Ratchkovski');
-    assert.ok(await page.locator('.entry').count() >= 1);
+    assert.ok(await page.locator('.book').count() >= 1);
     await page.fill('#lib-q', 'peguy');
-    assert.equal(await page.locator('.entry').count(), 1);
+    assert.equal(await page.locator('.book').count(), 1);
     await page.fill('#lib-q', '');
-    await page.click('[data-action="lib-theme"][data-v="ecologie"]');
-    assert.ok(await page.locator('.entry').count() >= 1);
+    await page.selectOption('#lib-theme', 'ecologie');
+    assert.ok(await page.locator('.book').count() >= 1);
     await page.screenshot({ path: `${OUT}bibliotheque.png`, fullPage: true });
   });
 
   await check('fiche : quatre sections, source, signalement', async () => {
     await page.goto(BASE + '#/oeuvre/chanson-de-roland');
     await page.waitForSelector('.fiche');
-    const h2 = await page.locator('.fiche section > h2').allTextContents();
-    assert.deepEqual(h2.map((s) => s.trim()), ['En un regard', 'Ce qu\'il faut retenir', 'Pourquoi cela compte aujourd\'hui', 'Pour aller plus loin']);
-    assert.match(await page.textContent('.fiche-side'), /p\. 104-108 du magazine · PDF p\. 22/);
-    await page.click('.fiche-side [data-action="report"]');
+    const h2 = await page.locator('.fiche .block > h2').allTextContents();
+    for (const t of ['À retenir', 'Et aujourd\'hui ?']) assert.ok(h2.includes(t), t);
+    assert.ok(await page.locator('.fiche .essential .central').count());
+    await page.click('.fiche details.more:last-of-type summary');
+    assert.match(await page.textContent('.fiche'), /p\. 104-108 · PDF p\. 22/);
+    await page.click('.fiche [data-action="report"]');
     await page.fill('#report-text', 'Test de signalement');
     await page.click('#report-dialog button[value="save"]');
     const reports = JSON.parse(await page.evaluate(() => localStorage.getItem('instant-critique'))).reports;
@@ -166,10 +174,12 @@ try {
     await page.goto(BASE + '#/reflexion');
     await page.waitForSelector('.link-card');
     assert.ok(await page.locator('.link-card').count() >= 10);
+    await page.click('#lien-ratchkovski summary');
     await page.fill('#note-ratchkovski', 'Ma note de lecture');
     await page.waitForTimeout(600);
     await page.reload();
-    await page.waitForSelector('#note-ratchkovski');
+    await page.waitForSelector('#lien-ratchkovski');
+    await page.click('#lien-ratchkovski summary');
     assert.equal(await page.inputValue('#note-ratchkovski'), 'Ma note de lecture');
     await page.screenshot({ path: `${OUT}reflexion.png`, fullPage: true });
   });
@@ -178,8 +188,8 @@ try {
     await page.goto(BASE + '#/sources');
     await page.waitForSelector('.prose');
     await page.goto(BASE + '#/seance/oeuvre/fables');
-    await page.waitForSelector('.card-shell');
-    assert.match(await page.textContent('.card-shell'), /Fables|La Fontaine/);
+    await page.waitForSelector('.card');
+    assert.match(await page.textContent('.card'), /Fables|La Fontaine/);
     const hrefs = await page.$$eval('a[href^="#/"]', (as) => as.map((a) => a.getAttribute('href')));
     for (const h of new Set(hrefs)) {
       await page.goto(BASE + h);
@@ -188,11 +198,35 @@ try {
     }
   });
 
+  await check('défi éclair : 8 manches, score et record enregistrés', async () => {
+    await page.goto(BASE + '#/defi');
+    await page.click('[data-action="defi-start"]');
+    for (let i = 0; i < 8; i++) {
+      await page.waitForSelector('.defi-option');
+      await page.locator('.defi-option').first().click();
+      await page.click('[data-action="defi-next"]');
+    }
+    await page.waitForSelector('.defi-start h1');
+    assert.match(await page.textContent('.defi-start h1'), /\/8/);
+    assert.ok(JSON.parse(await page.evaluate(() => localStorage.getItem('instant-critique'))).defi.best >= 0);
+  });
+
+  await check('installable : manifeste, icônes et service worker', async () => {
+    const man = await (await page.request.get(BASE + 'manifest.webmanifest')).json();
+    assert.equal(man.display, 'standalone');
+    for (const i of man.icons) assert.equal((await page.request.get(BASE + i.src)).status(), 200, i.src);
+    assert.ok(man.icons.some((i) => i.purpose === 'maskable'));
+    assert.equal((await page.request.get(BASE + 'assets/icons/apple-touch-icon.png')).status(), 200);
+    await page.goto(BASE);
+    const ok = await page.evaluate(async () => { const r = await navigator.serviceWorker.ready; return !!r.active; });
+    assert.ok(ok, 'service worker actif');
+  });
+
   const mob = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: 'fr-FR' });
   const m = await mob.newPage();
   watch(m, 'mobile');
   await check('mobile : pas de défilement horizontal, barre d\'onglets visible', async () => {
-    for (const h of ['#/', '#/seance', '#/bibliotheque', '#/oeuvre/yourcenar', '#/reflexion', '#/progression', '#/reglages', '#/sources']) {
+    for (const h of ['#/', '#/seance', '#/defi', '#/bibliotheque', '#/oeuvre/yourcenar', '#/reflexion', '#/progression', '#/reglages', '#/sources']) {
       await m.goto(BASE + h);
       await m.waitForTimeout(150);
       const overflow = await m.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
@@ -202,7 +236,7 @@ try {
     await m.goto(BASE + '#/');
     await m.screenshot({ path: `${OUT}accueil-mobile.png`, fullPage: true });
     await m.goto(BASE + '#/seance');
-    await m.waitForSelector('.card-shell');
+    await m.waitForSelector('.card');
     await m.screenshot({ path: `${OUT}seance-mobile.png`, fullPage: true });
     await m.goto(BASE + '#/oeuvre/princesse-de-cleves');
     await m.screenshot({ path: `${OUT}fiche-mobile.png`, fullPage: true });

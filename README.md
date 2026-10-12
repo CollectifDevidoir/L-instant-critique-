@@ -2,6 +2,9 @@
 
 Application web d'apprentissage : quelques minutes par jour pour retenir les classiques du dossier **« 30 classiques pour penser le monde »** (*Le Magazine littéraire*, n° 581-582, juillet-août 2017, coord. Pierre Assouline et Alexis Brocas) et s'en servir pour penser le présent.
 
+- **Deux mises en page** : sur téléphone, une colonne, barre d'onglets en bas et boutons de réponse sous le pouce ; sur ordinateur, tableau de bord en deux colonnes, fiche avec couverture fixe à gauche, raccourcis clavier en séance.
+- **Installable sur l'écran d'accueil** avec le logo (manifeste + service worker), utilisable hors connexion. Android/Chrome/Edge : bouton « Installer » dans l'application ou menu du navigateur ; iPhone : Safari › Partager › « Sur l'écran d'accueil ».
+- **Défi éclair** : 8 manches pour retrouver le livre derrière une idée ou une citation (sans effet sur les révisions).
 - **Séance du jour** (10-20 min) : révisions dues d'abord, puis nouveautés dans un ordre pédagogique, fiche « En un regard » avant chaque nouvelle œuvre.
 - **5 formats** : flashcard, QCM de distinction, relier œuvre ↔ idée, question d'actualité (avec limites du rapprochement), restitution libre auto-évaluée.
 - **4 compétences suivies séparément** : connaître l'œuvre, comprendre ses idées, penser le présent, comparer.
@@ -19,6 +22,8 @@ Application web d'apprentissage : quelques minutes par jour pour retenir les cla
 | `src/data/liens.json` | rapprochements (lien établi par le dossier ou proposé par l'application) et questions ouvertes |
 
 Le rapport de vérification documentaire est dans [`VERIFICATION.md`](VERIFICATION.md).
+
+Les couvertures sont dans `assets/couvertures/`, les icônes dans `assets/icons/`.
 
 Le PDF du magazine **n'est pas** inclus (droits d'auteur). Dans *Réglages*, chacun peut associer son propre exemplaire : il est stocké localement (IndexedDB) et chaque fiche ouvre alors la bonne page.
 

@@ -1,834 +1,2048 @@
 {
   "schema": 1,
   "competences": [
-    { "id": 1, "label": "Connaître l'œuvre", "court": "Œuvre" },
-    { "id": 2, "label": "Comprendre ses idées", "court": "Idées" },
-    { "id": 3, "label": "Penser le présent", "court": "Présent" },
-    { "id": 4, "label": "Comparer et mobiliser", "court": "Liens" }
+    {
+      "id": 1,
+      "label": "Connaître l'œuvre",
+      "court": "Œuvre"
+    },
+    {
+      "id": 2,
+      "label": "Comprendre ses idées",
+      "court": "Idées"
+    },
+    {
+      "id": 3,
+      "label": "Penser le présent",
+      "court": "Présent"
+    },
+    {
+      "id": 4,
+      "label": "Comparer et mobiliser",
+      "court": "Liens"
+    }
   ],
   "cartes": [
     {
-      "id": "intro-1", "oeuvres": ["introduction"], "competence": 1, "format": "qcm",
+      "id": "intro-1",
+      "oeuvres": [
+        "introduction"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Selon l'introduction du dossier, quel attribut tous les classiques partagent-ils ?",
-      "choix": ["La persistance : on peut les interdire ou les expurger, on ne les fait pas taire.", "L'universalité : ils disent la même chose à toutes les époques.", "La difficulté : ils exigent une lecture savante.", "L'actualité : ils parlent directement de nos problèmes."],
+      "choix": [
+        "La persistance : on peut les interdire ou les expurger, on ne les fait pas taire.",
+        "L'universalité : ils disent la même chose à toutes les époques.",
+        "La difficulté : ils exigent une lecture savante.",
+        "L'actualité : ils parlent directement de nos problèmes."
+      ],
       "correct": 0,
-      "explication": "Le dossier écarte la boutade de Michel Tournier (« un livre étudié dans les classes ») et retient la persistance. Il précise que leur discours ne reste pas identique : il « s'augmente, à chaque époque, d'une couche de sens nouveau » — d'où le piège du deuxième choix.",
-      "source": { "pages": "82", "nature": "magazine" }
+      "explication": "Le dossier écarte la boutade de Michel Tournier (« un livre étudié dans les classes ») et retient la persistance. Il précise que leur discours ne reste pas identique : il « s'augmente, à chaque époque, d'une couche de sens nouveau » : c'est le piège de la réponse « universalité ».",
+      "source": {
+        "pages": "82",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "intro-2", "oeuvres": ["introduction"], "competence": 2, "format": "flashcard",
+      "id": "intro-2",
+      "oeuvres": [
+        "introduction"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle image l'introduction donne-t-elle de la littérature face au monde qui change ?",
       "reponse": "Un « miroir magique qui n'embellit rien mais éclaire ses sujets » — et dont aucun sujet n'est trop grand pour qu'elle puisse le refléter.",
       "explication": "C'est la justification de tout le dossier : chercher dans les œuvres d'autrefois ce qu'elles peuvent dire du « monde complexe et enchevêtré d'aujourd'hui ».",
-      "source": { "pages": "82", "nature": "magazine" }
+      "source": {
+        "pages": "82",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "pdc-1", "oeuvres": ["princesse-de-cleves"], "competence": 1, "format": "flashcard",
+      "id": "pdc-1",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "La Princesse de Clèves : qui, quand, et dans quel cadre ?",
       "reponse": "Madame de Lafayette, 1678, publié sans nom d'auteur chez Claude Barbin. L'action se déroule à la cour d'Henri II, au milieu du XVIe siècle.",
       "exemple": "Une femme de la haute noblesse ne signait pas une « nouvelle galante » : Mme de Lafayette nia toujours y avoir pris part.",
-      "source": { "pages": "84", "nature": "magazine" }
+      "source": {
+        "pages": "84",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-2", "oeuvres": ["princesse-de-cleves"], "competence": 2, "format": "qcm",
+      "id": "pdc-2",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Qu'est-ce qui fait, selon Robert Kopp, la nouveauté du roman en 1678 ?",
-      "choix": ["Il inaugure un roman d'analyse, une « science du cœur », plutôt qu'un roman d'aventures.", "Il est le premier roman à mettre en scène la cour de France.", "Il dénonce ouvertement le mariage arrangé et prône l'amour libre.", "Il invente le roman épistolaire, repris ensuite par Rousseau."],
+      "choix": [
+        "Il inaugure un roman d'analyse, une « science du cœur », plutôt qu'un roman d'aventures.",
+        "Il est le premier roman à mettre en scène la cour de France.",
+        "Il dénonce ouvertement le mariage arrangé et prône l'amour libre.",
+        "Il invente le roman épistolaire, repris ensuite par Rousseau."
+      ],
       "correct": 0,
       "explication": "Kopp oppose le roman d'aventures, dominé par l'action, au roman d'analyse et de réalisme psychologique. Le roman ne prône pas l'amour libre : l'héroïne renonce à Nemours. L'expression « science du cœur » vient de Fontenelle (1687).",
-      "source": { "pages": "84-85", "nature": "magazine" }
+      "source": {
+        "pages": "84-85",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-3", "oeuvres": ["princesse-de-cleves"], "competence": 2, "format": "flashcard",
+      "id": "pdc-3",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Pourquoi la cour d'Henri II est-elle, pour la princesse, un milieu dangereux ?",
       "reponse": "Parce que c'est un univers de la dissimulation, où « ce qui paraît n'est presque jamais la vérité ». Sa mère ne lui conseille pas de fuir le monde mais l'y installe « en lui ouvrant les yeux », par une série de mises en garde contre les faux-semblants.",
       "exemple": "Mme de Chartres lui peint l'amour avec ses agréments et ses dangers : peu de sincérité des hommes, tromperies, infidélité.",
       "explication": "Kopp élargit : « Tromper, être trompé, c'est l'essence de la vie de cour, si ce n'est de la vie tout court. »",
-      "source": { "pages": "85", "nature": "magazine" }
+      "source": {
+        "pages": "85",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-4", "oeuvres": ["princesse-de-cleves"], "competence": 2, "format": "qcm",
+      "id": "pdc-4",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Comment Kopp interprète-t-il le refus final de la princesse d'épouser Nemours, une fois veuve ?",
-      "choix": ["Elle préfère à l'impossible fidélité à autrui la fidélité à l'idée d'un amour plus élevé, pour préserver une forme de liberté.", "Elle obéit à une règle sociale interdisant aux veuves de se remarier.", "Elle cesse simplement d'aimer Nemours après la mort de son mari.", "Elle veut punir Nemours, qu'elle tient pour responsable de la mort de M. de Clèves."],
+      "choix": [
+        "Elle préfère à l'impossible fidélité à autrui la fidélité à l'idée d'un amour plus élevé, pour préserver une forme de liberté.",
+        "Elle obéit à une règle sociale interdisant aux veuves de se remarier.",
+        "Elle cesse simplement d'aimer Nemours après la mort de son mari.",
+        "Elle veut punir Nemours, qu'elle tient pour responsable de la mort de M. de Clèves."
+      ],
       "correct": 0,
       "explication": "Nemours lui dit : « vous êtes en liberté ». Elle invoque son repos et la crainte de la jalousie. Kopp lit ce renoncement dans une perspective augustinienne : une révolte contre la finitude et l'aliénation dans la passion. La culpabilité (« c'est à cause de moi ») existe, mais ce n'est pas une vengeance contre Nemours.",
-      "source": { "pages": "86", "nature": "magazine" }
+      "source": {
+        "pages": "86",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-5", "oeuvres": ["princesse-de-cleves"], "competence": 2, "format": "flashcard",
+      "id": "pdc-5",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Que provoque l'aveu de la princesse à son mari, et pourquoi Kopp le juge-t-il « extravagant » ?",
       "reponse": "Elle avoue à M. de Clèves sa passion pour un autre : remède « aussi extravagant qu'inefficace », qui fit scandale à la parution et devient la cause directe de la mort de son mari, désespéré.",
       "exemple": "Un lecteur du Mercure galant répondit qu'un homme est plus heureux d'être trahi sans le savoir que d'être le confident d'une femme qui le hait le plus vertueusement du monde.",
       "explication": "Kopp rapproche cet aveu de celui de Phèdre (Racine, 1677) : l'aveu révèle la dimension tragique de la passion.",
-      "source": { "pages": "86", "nature": "magazine" }
+      "source": {
+        "pages": "86",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-6", "oeuvres": ["princesse-de-cleves"], "competence": 3, "format": "flashcard",
+      "id": "pdc-6",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 3,
+      "format": "flashcard",
       "question": "Pourquoi, selon le dossier, ce roman parle-t-il encore à un lectorat jeune ?",
       "reponse": "Par sa révolte contre la finitude de la condition humaine, son refus de l'aliénation dans la passion et son aspiration vers un ailleurs, un idéal « qui nous dépasse ». Le chapô ajoute qu'à l'heure où le couple est « à dimension variable », la fidélité reste « aussi recherchée que mise à l'épreuve ».",
       "exemple": "Le documentaire Nous, princesses de Clèves (Régis Sauder, 2011) montre des lycéens des quartiers nord de Marseille s'appropriant le texte.",
-      "source": { "pages": "84-86", "nature": "magazine" }
+      "source": {
+        "pages": "84-86",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pdc-7", "oeuvres": ["princesse-de-cleves"], "competence": 3, "format": "actualite",
+      "id": "pdc-7",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Une série à succès suit une jeune femme qui, très attirée par un collègue, choisit de quitter son poste plutôt que de céder — non par morale imposée, mais « pour rester maîtresse d'elle-même ». Quel classique du dossier aide le mieux à analyser ce choix ?",
-      "choix": ["La Princesse de Clèves", "L'Éducation sentimentale", "Les Démons", "Tristes Tropiques"],
+      "choix": [
+        "La Princesse de Clèves",
+        "L'Éducation sentimentale",
+        "Les Démons",
+        "Tristes Tropiques"
+      ],
       "correct": 0,
       "explication": "Le renoncement comme moyen de préserver une forme de liberté face à une passion vécue comme aliénante, c'est la lecture que Kopp propose de la princesse.",
       "limites": "Prolongement proposé par l'application. Chez Mme de Lafayette, le renoncement s'inscrit dans une méfiance religieuse (augustinienne) envers l'amour et dans une société de cour : le transposer à un choix professionnel contemporain en efface ces dimensions.",
-      "source": { "pages": "86", "nature": "prolongement" }
+      "source": {
+        "pages": "86",
+        "nature": "prolongement"
+      }
     },
     {
-      "id": "pdc-8", "oeuvres": ["princesse-de-cleves"], "competence": 2, "format": "libre",
+      "id": "pdc-8",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 2,
+      "format": "libre",
       "question": "Expliquez avec vos mots ce que signifie la « science du cœur » et comment la princesse l'applique à elle-même.",
-      "points": ["Analyse des mouvements intérieurs plutôt qu'enchaînement d'aventures (Fontenelle, 1687).", "La cour, univers de dissimulation : apprendre à ne pas être dupe.", "La passion vue comme maladie sans remède (aveu inefficace).", "Le renoncement final : fidélité à un idéal, préservation d'une liberté."],
+      "points": [
+        "Analyse des mouvements intérieurs plutôt qu'enchaînement d'aventures (Fontenelle, 1687).",
+        "La cour, univers de dissimulation : apprendre à ne pas être dupe.",
+        "La passion vue comme maladie sans remède (aveu inefficace).",
+        "Le renoncement final : fidélité à un idéal, préservation d'une liberté."
+      ],
       "reponse": "La science du cœur, c'est la connaissance lucide des passions. La princesse, éduquée par sa mère à se défier des apparences, l'applique à ses propres sentiments : elle reconnaît la violence de sa passion, tente un remède (l'aveu), en mesure l'échec, puis choisit le renoncement pour ne pas s'aliéner.",
-      "source": { "pages": "84-86", "nature": "synthese" }
+      "source": {
+        "pages": "84-86",
+        "nature": "synthese"
+      }
     },
-
     {
-      "id": "rech-1", "oeuvres": ["recherche"], "competence": 1, "format": "qcm",
+      "id": "rech-1",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Dans quel cadre critique Pierre Zoberman relit-il À la recherche du temps perdu ?",
-      "choix": ["Les études de genre et la théorie queer.", "La psychanalyse freudienne du souvenir.", "La sociologie de l'aristocratie de Bourdieu.", "La critique biographique cherchant l'auteur derrière le narrateur."],
+      "choix": [
+        "Les études de genre et la théorie queer.",
+        "La psychanalyse freudienne du souvenir.",
+        "La sociologie de l'aristocratie de Bourdieu.",
+        "La critique biographique cherchant l'auteur derrière le narrateur."
+      ],
       "correct": 0,
       "explication": "Zoberman montre que le « jeu des identités » ouvre une lecture queer (Foucault, Sedgwick, Butler). Il rappelle que la critique a longtemps cherché à démasquer le narrateur comme double de l'auteur : c'est précisément ce qu'il dépasse.",
-      "source": { "pages": "88", "nature": "magazine" }
+      "source": {
+        "pages": "88",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rech-2", "oeuvres": ["recherche"], "competence": 2, "format": "flashcard",
+      "id": "rech-2",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quels « prototypes interdépendants » Proust construit-il, et par quels moyens ?",
       "reponse": "Le Juif et l'homosexuel — « les deux races maudites » de Sion et de Sodome. Il multiplie des signes identitaires : le nez de Swann, les manières de Saint-Loup, des couleurs significatives (le vert, le rouge).",
       "explication": "Ces signes se localisent sur le corps et dans les comportements : c'est au niveau des identités que se joue la question de l'essence.",
-      "source": { "pages": "88", "nature": "magazine" }
+      "source": {
+        "pages": "88",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rech-3", "oeuvres": ["recherche"], "competence": 2, "format": "qcm",
+      "id": "rech-3",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Que signifie, pour Proust selon Zoberman, « identifier » quelqu'un ?",
-      "choix": ["Le rattacher à son espèce, au point que le nom propre devient nom commun (« un Charlus »).", "Retrouver son souvenir grâce à une sensation involontaire.", "Révéler son secret pour le condamner moralement.", "Décrire sa psychologie individuelle dans ce qu'elle a d'unique."],
+      "choix": [
+        "Le rattacher à son espèce, au point que le nom propre devient nom commun (« un Charlus »).",
+        "Retrouver son souvenir grâce à une sensation involontaire.",
+        "Révéler son secret pour le condamner moralement.",
+        "Décrire sa psychologie individuelle dans ce qu'elle a d'unique."
+      ],
       "correct": 0,
       "explication": "C'est l'antonomase : on passe de Charlus à « un Charlus ». La mémoire involontaire existe chez Proust, mais ce n'est pas le sujet de l'article ; et l'identification ne vise pas la singularité mais l'espèce.",
-      "source": { "pages": "89", "nature": "magazine" }
+      "source": {
+        "pages": "89",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rech-4", "oeuvres": ["recherche"], "competence": 2, "format": "flashcard",
+      "id": "rech-4",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "En quoi Proust remet-il en question les identités qu'il nomme ?",
       "reponse": "La voix qui trahit « un Charlus » fait glisser la réflexion vers une définition du genre comme performance (Judith Butler) : l'homosexualité apparaît comme une performance ratée, la masculinité comme une performance réussie. Aucune identité n'est définie positivement ; elle est à la fois affirmée et mise en question.",
       "exemple": "« C'est un Charlus ! » : la voix fausse d'un homme qui copie pourtant le langage de son milieu.",
-      "source": { "pages": "89", "nature": "magazine" }
+      "source": {
+        "pages": "89",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rech-5", "oeuvres": ["recherche"], "competence": 3, "format": "libre",
+      "id": "rech-5",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "Pourquoi peut-on dire que Proust est « d'une frappante actualité » sur la question des identités ?",
-      "points": ["Il fait de la sexualité une composante de l'identité (contemporain du moment décrit par Foucault).", "Il nomme et repère des signes, au risque du stéréotype.", "Mais il défait ces identités : performativité, identité jamais définie positivement.", "La théorie queer y voit une résistance aux identités figées."],
+      "points": [
+        "Il fait de la sexualité une composante de l'identité (contemporain du moment décrit par Foucault).",
+        "Il nomme et repère des signes, au risque du stéréotype.",
+        "Mais il défait ces identités : performativité, identité jamais définie positivement.",
+        "La théorie queer y voit une résistance aux identités figées."
+      ],
       "reponse": "Proust nomme des identités et en dresse les signes, mais montre en même temps qu'elles relèvent de la performance et ne se laissent pas fixer : il anticipe la critique queer des identités figées, au cœur de débats actuels.",
-      "source": { "pages": "88-89", "nature": "magazine" }
+      "source": {
+        "pages": "88-89",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "tdm-1", "oeuvres": ["tour-du-monde"], "competence": 1, "format": "flashcard",
+      "id": "tdm-1",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Le Tour du monde en quatre-vingts jours : auteur, date, et contexte technique ?",
       "reponse": "Jules Verne, 1873. Un XIXe siècle fasciné par le progrès et la vitesse : canal de Suez inauguré en 1869, chemins de fer, paquebots, empire colonial britannique.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tdm-2", "oeuvres": ["tour-du-monde"], "competence": 2, "format": "qcm",
+      "id": "tdm-2",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Quel basculement le voyage de Phileas Fogg incarne-t-il selon l'article ?",
-      "choix": ["Il ne s'agit plus de découvrir ou de coloniser, « c'est chose faite », mais de traverser.", "Le voyageur occidental découvre enfin des civilisations inconnues.", "Le voyage devient une quête spirituelle plutôt qu'une aventure.", "L'Occident accepte d'être jugé par les peuples qu'il visite."],
+      "choix": [
+        "Il ne s'agit plus de découvrir ou de coloniser, « c'est chose faite », mais de traverser.",
+        "Le voyageur occidental découvre enfin des civilisations inconnues.",
+        "Le voyage devient une quête spirituelle plutôt qu'une aventure.",
+        "L'Occident accepte d'être jugé par les peuples qu'il visite."
+      ],
       "correct": 0,
       "explication": "Fogg saute « mathématiquement » des railways dans les paquebots. La découverte de mondes inconnus correspond à Marco Polo ; le regard des autres sur l'Occident, aux Lumières (Montesquieu, Voltaire, Diderot) — pas à Verne, qui valorise plutôt la colonisation.",
-      "source": { "pages": "91-92", "nature": "magazine" }
+      "source": {
+        "pages": "91-92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tdm-3", "oeuvres": ["tour-du-monde"], "competence": 2, "format": "flashcard",
+      "id": "tdm-3",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Pourquoi le trajet de Fogg en train à travers les États-Unis est-il un « concentré de mondialisation » ?",
       "reponse": "La voie transcontinentale a été construite par des ouvriers chinois, et elle ne réduit le trajet de six mois à une semaine qu'au prix d'un passage illégal par les terres indiennes. Vitesse et circulation reposent sur l'exploitation et la dépossession.",
       "exemple": "L'attaque du train par des Sioux : Verne ravive l'image du « brigand détrousseur de voyageurs ».",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tdm-4", "oeuvres": ["tour-du-monde"], "competence": 2, "format": "qcm",
+      "id": "tdm-4",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Que dit l'article de la sati, à laquelle Fogg arrache Mrs. Aouda ?",
-      "choix": ["Tombée en désuétude, elle avait repris un second souffle en réaction à l'occupation britannique.", "C'était une tradition immuable que la colonisation avait abolie.", "Verne l'invente pour donner une couleur exotique au récit.", "Elle était réservée aux veuves de l'aristocratie britannique en Inde."],
+      "choix": [
+        "Tombée en désuétude, elle avait repris un second souffle en réaction à l'occupation britannique.",
+        "C'était une tradition immuable que la colonisation avait abolie.",
+        "Verne l'invente pour donner une couleur exotique au récit.",
+        "Elle était réservée aux veuves de l'aristocratie britannique en Inde."
+      ],
       "correct": 0,
       "explication": "L'occupation était vue comme une menace pour l'identité des sociétés colonisées : la « peur de la disparition » ravive des traditions. L'article relève aussi que l'exotisme d'Aouda tient en partie aux stéréotypes associés aux personnages féminins.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tdm-5", "oeuvres": ["tour-du-monde"], "competence": 3, "format": "actualite",
+      "id": "tdm-5",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un reportage met en regard un cadre qui fait trois allers-retours intercontinentaux par mois et des exilés bloqués des années aux frontières de l'Europe. Quelle phrase du dossier l'article sur Jules Verne propose-t-il précisément de « faire mentir » ?",
-      "choix": ["« Les passeports ne servent jamais qu'à gêner les honnêtes gens et à favoriser la fuite des coquins. »", "« Après tout, la Terre est vaste ! »", "« J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac. »", "« Il ne s'agit plus de découvrir ou de coloniser, mais de traverser. »"],
+      "choix": [
+        "« Les passeports ne servent jamais qu'à gêner les honnêtes gens et à favoriser la fuite des coquins. »",
+        "« Après tout, la Terre est vaste ! »",
+        "« J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac. »",
+        "« Il ne s'agit plus de découvrir ou de coloniser, mais de traverser. »"
+      ],
       "correct": 0,
       "explication": "L'article conclut que la libre circulation des personnes est parfois leur seule chance de survivre, et qu'il est temps de faire mentir la phrase de l'inspecteur Fix.",
       "limites": "La situation est un prolongement de l'application. L'article dénonce une mondialisation dérégulée de l'économie mais défend la circulation des personnes : il ne faut pas réduire Verne à une critique de la mobilité.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tdm-6", "oeuvres": ["tour-du-monde"], "competence": 3, "format": "libre",
+      "id": "tdm-6",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "D'après le chapô, que devient le monde « à l'heure du Tour du monde » ? Développez l'image finale.",
-      "points": ["Traverser plutôt que découvrir.", "Fuite en avant perpétuelle, de plus en plus énergivore.", "Les hommes deviennent le « carburant » d'un immense moteur.", "Exemple : ouvriers chinois, migrants exploités (La Jungle)."],
+      "points": [
+        "Traverser plutôt que découvrir.",
+        "Fuite en avant perpétuelle, de plus en plus énergivore.",
+        "Les hommes deviennent le « carburant » d'un immense moteur.",
+        "Exemple : ouvriers chinois, migrants exploités (La Jungle)."
+      ],
       "reponse": "Le monde devient une surface à traverser toujours plus vite, au prix d'une dépense croissante d'énergie ; dans cette machine, les hommes eux-mêmes (ouvriers, migrants) sont consommés comme du carburant.",
-      "source": { "pages": "91", "nature": "magazine" }
+      "source": {
+        "pages": "91",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "gep-1", "oeuvres": ["guerre-et-paix"], "competence": 2, "format": "flashcard",
+      "id": "gep-1",
+      "oeuvres": [
+        "guerre-et-paix"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Pourquoi l'article sur la mondialisation convoque-t-il La Guerre et la Paix ?",
       "reponse": "Tolstoï montre une aristocratie russe tentant de se défaire d'une francophilie devenue dangereuse avec l'avancée de Napoléon, tout en ayant des ambitions plus mondiales que nationales : elle cherche une idéologie qui lui permette de faire corps avec les élites européennes.",
       "exemple": "On se donne des gages pour chaque mot français prononcé ; des émigrés français encouragent des conversions au catholicisme.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "gep-2", "oeuvres": ["guerre-et-paix", "tour-du-monde"], "competence": 2, "format": "qcm",
+      "id": "gep-2",
+      "oeuvres": [
+        "guerre-et-paix",
+        "tour-du-monde"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Hélène Kouraguine (Tolstoï) et Mrs. Aouda (Verne) s'opposent toutes deux aux normes de leur société. Quel sort leurs auteurs leur réservent-ils ?",
-      "choix": ["Tolstoï fait mourir Hélène d'un avortement raté ; Verne choisit l'exil pour Aouda, qui part avec Fogg.", "Tolstoï la convertit et la sauve ; Verne la renvoie en Inde.", "Les deux meurent, punies de leur transgression.", "Les deux épousent un Occidental et deviennent des modèles de vertu."],
+      "choix": [
+        "Tolstoï fait mourir Hélène d'un avortement raté ; Verne choisit l'exil pour Aouda, qui part avec Fogg.",
+        "Tolstoï la convertit et la sauve ; Verne la renvoie en Inde.",
+        "Les deux meurent, punies de leur transgression.",
+        "Les deux épousent un Occidental et deviennent des modèles de vertu."
+      ],
       "correct": 0,
       "explication": "L'article oppose les deux traitements : chez Tolstoï, la mort est le symbole d'une loi naturelle à laquelle Hélène a refusé de se soumettre ; Verne, qui valorise les apports de la colonisation, offre à Aouda l'exil.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "gep-3", "oeuvres": ["guerre-et-paix"], "competence": 1, "format": "qcm",
+      "id": "gep-3",
+      "oeuvres": [
+        "guerre-et-paix"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "À quel événement historique l'aristocratie russe de La Guerre et la Paix doit-elle faire face, selon l'article ?",
-      "choix": ["L'avancée des troupes napoléoniennes.", "La révolution bolchevique.", "La guerre de Crimée.", "L'abolition du servage."],
+      "choix": [
+        "L'avancée des troupes napoléoniennes.",
+        "La révolution bolchevique.",
+        "La guerre de Crimée.",
+        "L'abolition du servage."
+      ],
       "correct": 0,
       "explication": "Son adhésion aux Lumières est « inversement proportionnelle à l'avancée des troupes napoléoniennes ».",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "jun-1", "oeuvres": ["la-jungle"], "competence": 1, "format": "flashcard",
+      "id": "jun-1",
+      "oeuvres": [
+        "la-jungle"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "La Jungle : auteur, date, sujet ?",
       "reponse": "Upton Sinclair, 1906 : le combat désespéré des immigrés d'Europe de l'Est à Chicago.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "jun-2", "oeuvres": ["la-jungle"], "competence": 2, "format": "qcm",
+      "id": "jun-2",
+      "oeuvres": [
+        "la-jungle"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Que signifie la phrase de Sinclair : « J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac » ?",
-      "choix": ["Les lecteurs se sont indignés de l'horreur des abattoirs plus que du sort des immigrés.", "Son livre a été lu comme un livre de cuisine.", "Il voulait émouvoir, mais le public a ri de son style.", "Il regrettait d'avoir décrit la faim des ouvriers."],
+      "choix": [
+        "Les lecteurs se sont indignés de l'horreur des abattoirs plus que du sort des immigrés.",
+        "Son livre a été lu comme un livre de cuisine.",
+        "Il voulait émouvoir, mais le public a ri de son style.",
+        "Il regrettait d'avoir décrit la faim des ouvriers."
+      ],
       "correct": 0,
       "explication": "À son grand désarroi, il parvint surtout à attirer l'attention sur l'horreur des abattoirs : le scandale sanitaire a éclipsé la dénonciation sociale.",
-      "source": { "pages": "92", "nature": "magazine" }
+      "source": {
+        "pages": "92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "jun-3", "oeuvres": ["la-jungle"], "competence": 3, "format": "actualite",
+      "id": "jun-3",
+      "oeuvres": [
+        "la-jungle"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Après une enquête sur un abattoir, l'opinion s'émeut de la qualité de la viande, beaucoup moins des conditions de travail des ouvriers, souvent étrangers. Quelle œuvre du dossier a vécu exactement ce décalage ?",
-      "choix": ["La Jungle", "Le Tour du monde en quatre-vingts jours", "L'Argent", "Le Labyrinthe du monde"],
+      "choix": [
+        "La Jungle",
+        "Le Tour du monde en quatre-vingts jours",
+        "L'Argent",
+        "Le Labyrinthe du monde"
+      ],
       "correct": 0,
       "explication": "Sinclair voulait dénoncer l'exploitation des immigrés à Chicago ; le public retint l'horreur des abattoirs.",
       "limites": "Situation construite par l'application. Yourcenar s'intéresse aussi aux abattoirs, mais du point de vue des animaux et de l'aveuglement collectif (« cloisons étanches »), non de l'exploitation des travailleurs.",
-      "source": { "pages": "92", "nature": "prolongement" }
+      "source": {
+        "pages": "92",
+        "nature": "prolongement"
+      }
     },
-
     {
-      "id": "bor-1", "oeuvres": ["fictions"], "competence": 1, "format": "qcm",
+      "id": "bor-1",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Quelle nouvelle de Borges imagine un univers composé de galeries hexagonales, à l'infini ?",
-      "choix": ["La Bibliothèque de Babel", "Le Jardin aux sentiers qui bifurquent", "Funes ou la mémoire", "Pierre Ménard, auteur du Quichotte"],
+      "choix": [
+        "La Bibliothèque de Babel",
+        "Le Jardin aux sentiers qui bifurquent",
+        "Funes ou la mémoire",
+        "Pierre Ménard, auteur du Quichotte"
+      ],
       "correct": 0,
       "explication": "« L'univers (que d'autres appellent la Bibliothèque) se compose d'un nombre indéfini, et peut-être infini, de galeries hexagonales… » Le Jardin traite des bifurcations narratives, Funes de la mémoire totale, Ménard de la réécriture.",
-      "source": { "pages": "95", "nature": "magazine" }
+      "source": {
+        "pages": "95",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "bor-2", "oeuvres": ["fictions"], "competence": 2, "format": "flashcard",
+      "id": "bor-2",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "En quoi « Le Jardin aux sentiers qui bifurquent » préfigure-t-il les récits en réseau ?",
       "reponse": "Dans le roman du personnage Ts'ui Pên, au lieu d'adopter une possibilité et d'éliminer les autres, on les adopte toutes simultanément : divers avenirs, divers temps prolifèrent et bifurquent. C'est le modèle des narrations hypertextuelles, des romans en ligne, de la fanfiction, des jeux vidéo.",
       "explication": "L'article y voit aussi une anticipation de la physique du chaos et des fractales.",
-      "source": { "pages": "96", "nature": "magazine" }
+      "source": {
+        "pages": "96",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "bor-3", "oeuvres": ["fictions"], "competence": 2, "format": "qcm",
+      "id": "bor-3",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Pourquoi certains voient-ils en Borges un précurseur du transhumanisme ?",
-      "choix": ["Funes imagine une mémoire infinie et un monde où l'oubli ne serait plus possible.", "Borges a écrit des récits sur des robots et des ordinateurs.", "Il prônait l'amélioration du corps humain par la technique.", "La Bibliothèque de Babel décrit un cerveau artificiel."],
+      "choix": [
+        "Funes imagine une mémoire infinie et un monde où l'oubli ne serait plus possible.",
+        "Borges a écrit des récits sur des robots et des ordinateurs.",
+        "Il prônait l'amélioration du corps humain par la technique.",
+        "La Bibliothèque de Babel décrit un cerveau artificiel."
+      ],
       "correct": 0,
       "explication": "L'essai Cy-Borges le présente ainsi ; Katherine Hayles parle d'un « post-humaniste sans la technologie ». Mais Borges ne s'est jamais intéressé aux machines : c'est tout le paradoxe relevé par l'article.",
-      "source": { "pages": "96", "nature": "magazine" }
+      "source": {
+        "pages": "96",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "bor-4", "oeuvres": ["fictions"], "competence": 2, "format": "flashcard",
+      "id": "bor-4",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle limite l'article lui-même apporte-t-il à l'idée d'un Borges « oracle du big data » ?",
       "reponse": "Borges n'a jamais manifesté d'intérêt pour les machines ; et, à travers Pierre Ménard, il a lui-même promu la « technique de l'anachronisme délibéré et des attributions erronées ». Lire Internet dans Borges est peut-être une de ces attributions erronées — qu'il aurait savourée.",
-      "source": { "pages": "96", "nature": "magazine" }
+      "source": {
+        "pages": "96",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "bor-5", "oeuvres": ["fictions"], "competence": 3, "format": "actualite",
+      "id": "bor-5",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Une encyclopédie en ligne, rédigée par des milliers de contributeurs anonymes et sans cesse augmentée, devient la première source de savoir. Quelle image du dossier la décrit le mieux ?",
-      "choix": ["La « dynastie dispersée de solitaires » de Tlön, Uqbar, Orbis Tertius, encyclopédie d'un monde imaginaire.", "La croix d'ivoire du berceau de Yourcenar.", "Les Protocoles des sages de Sion analysés par Danilo Kiš.", "La « caisse d'épargne » de Péguy."],
+      "choix": [
+        "La « dynastie dispersée de solitaires » de Tlön, Uqbar, Orbis Tertius, encyclopédie d'un monde imaginaire.",
+        "La croix d'ivoire du berceau de Yourcenar.",
+        "Les Protocoles des sages de Sion analysés par Danilo Kiš.",
+        "La « caisse d'épargne » de Péguy."
+      ],
       "correct": 0,
       "explication": "L'article fait de Wikipédia l'anticipation borgésienne d'une encyclopédie toujours extensible, rédigée par des « légions de savants anonymes ».",
       "limites": "Chez Borges, l'encyclopédie de Tlön finit par imposer un monde imaginaire au monde réel : le rapprochement éclaire aussi le risque qu'un savoir collectif fabrique son propre monde. Les Protocoles (Kiš) seraient pertinents pour un faux document, pas pour une encyclopédie collaborative.",
-      "source": { "pages": "95", "nature": "magazine" }
+      "source": {
+        "pages": "95",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "bor-6", "oeuvres": ["fictions"], "competence": 3, "format": "libre",
+      "id": "bor-6",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "Le web serait « la Babel de Borges ». Expliquez cette formule, puis nuancez-la.",
-      "points": ["Bibliothèque infinie contenant tous les savoirs, englobant le monde.", "Textes en réseau, réécrits par des internautes tour à tour lecteurs et auteurs.", "Angoisse : « la certitude que tout est écrit nous annule ».", "Limite : Borges indifférent aux machines ; anachronisme délibéré."],
+      "points": [
+        "Bibliothèque infinie contenant tous les savoirs, englobant le monde.",
+        "Textes en réseau, réécrits par des internautes tour à tour lecteurs et auteurs.",
+        "Angoisse : « la certitude que tout est écrit nous annule ».",
+        "Limite : Borges indifférent aux machines ; anachronisme délibéré."
+      ],
       "reponse": "Comme la Bibliothèque de Babel, le web prétend tout contenir et se transforme sans fin sous l'action des lecteurs-auteurs. Mais Borges y voyait aussi une angoisse — si tout est écrit, nous devenons des fantômes — et il n'a jamais pensé l'informatique : la formule est une relecture, féconde mais anachronique.",
-      "source": { "pages": "95-96", "nature": "synthese" }
+      "source": {
+        "pages": "95-96",
+        "nature": "synthese"
+      }
     },
-
     {
-      "id": "peg-1", "oeuvres": ["argent-peguy"], "competence": 1, "format": "flashcard",
+      "id": "peg-1",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Péguy et L'Argent : qui est-il, d'où écrit-il, et quand ?",
       "reponse": "Charles Péguy (1873-1914), socialiste dreyfusard, écrivain inclassable. Il philosophe hors des lieux consacrés, depuis la boutique des Cahiers de la quinzaine, en face de la Sorbonne. L'Argent et L'Argent suite paraissent en 1913.",
-      "source": { "pages": "98", "nature": "magazine" }
+      "source": {
+        "pages": "98",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-2", "oeuvres": ["argent-peguy"], "competence": 2, "format": "qcm",
+      "id": "peg-2",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Pourquoi le pouvoir de l'argent est-il, pour Péguy, d'autant plus sûr ?",
-      "choix": ["Parce qu'il est invisible : nous y sommes si habitués que nous ne le voyons plus.", "Parce qu'il est garanti par l'État et la loi.", "Parce que les classes sociales le défendent consciemment.", "Parce qu'il récompense justement le travail bien fait."],
+      "choix": [
+        "Parce qu'il est invisible : nous y sommes si habitués que nous ne le voyons plus.",
+        "Parce qu'il est garanti par l'État et la loi.",
+        "Parce que les classes sociales le défendent consciemment.",
+        "Parce qu'il récompense justement le travail bien fait."
+      ],
       "correct": 0,
       "explication": "« Quand on ne nomme pas [l'argent], c'est lui que l'on nomme. » Péguy ajoute que l'argent ne forme pas de vraies classes : il dissout toute solidarité organique. Et il dévalue le travail bien fait au lieu de le récompenser.",
-      "source": { "pages": "98", "nature": "magazine" }
+      "source": {
+        "pages": "98",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-3", "oeuvres": ["argent-peguy"], "competence": 2, "format": "qcm",
+      "id": "peg-3",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Pourquoi l'article insiste-t-il sur le fait que « Péguy n'est pas marxiste » ?",
-      "choix": ["Pour lui, les idées ne sont pas de simples reflets de l'économie : une métaphysique moderne inavouée soutient le règne de l'argent.", "Parce qu'il défend le capitalisme contre les socialistes.", "Parce qu'il refuse toute critique de la bourgeoisie.", "Parce qu'il croit que la lutte des classes a déjà été gagnée."],
+      "choix": [
+        "Pour lui, les idées ne sont pas de simples reflets de l'économie : une métaphysique moderne inavouée soutient le règne de l'argent.",
+        "Parce qu'il défend le capitalisme contre les socialistes.",
+        "Parce qu'il refuse toute critique de la bourgeoisie.",
+        "Parce qu'il croit que la lutte des classes a déjà été gagnée."
+      ],
       "correct": 0,
       "explication": "Péguy, socialiste, critique durement la bourgeoisie ; mais il cherche, derrière l'économique (simple « verre grossissant »), une métaphysique : la croyance au progrès comme accumulation, le temps homogène critiqué par Bergson.",
-      "source": { "pages": "99", "nature": "magazine" }
+      "source": {
+        "pages": "99",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-4", "oeuvres": ["argent-peguy"], "competence": 2, "format": "flashcard",
+      "id": "peg-4",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Qu'est-ce que le « temps de la caisse d'épargne » ?",
       "reponse": "La métaphysique moderne que Péguy dénonce : croire que rien ne se perd et que tout s'accumule (le progrès), penser un temps homogène et linéaire (celui que critiquait Bergson), pratiquer une morale de prudence qui met de l'argent de côté pour demain au lieu de travailler pour aujourd'hui.",
-      "source": { "pages": "99", "nature": "magazine" }
+      "source": {
+        "pages": "99",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-5", "oeuvres": ["argent-peguy"], "competence": 2, "format": "flashcard",
+      "id": "peg-5",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quel paradoxe Péguy relève-t-il entre travail et argent ?",
       "reponse": "Ceux qui travaillent n'ont pas le temps de gagner de l'argent ; ceux qui ne travaillent pas ont tout loisir de penser à la manière d'en gagner. Laissé à lui-même, l'argent crée un désordre croissant et un abîme d'incommunication entre riches et pauvres.",
       "exemple": "Le monde capitaliste se règle sur le « caprice du consommateur », stupidement nommé « loi du marché », au lieu de la santé du travailleur.",
-      "source": { "pages": "98-99", "nature": "magazine" }
+      "source": {
+        "pages": "98-99",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-6", "oeuvres": ["argent-peguy"], "competence": 3, "format": "actualite",
+      "id": "peg-6",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un hôpital, un club sportif, une université : tout semble désormais se discuter en termes de rentabilité, et chacun se demande « combien ? ». Quelle analyse du dossier formule ce phénomène ?",
-      "choix": ["Péguy : la puissance d'argent a absorbé toutes les autres puissances, tout s'achète, se vend, se négocie.", "La Fontaine : l'écrivain doit être « sponsorisé » par le pouvoir.", "Conrad : la raison perverse a ses propres processus logiques.", "Lévi-Strauss : l'islam fonde une tradition sur la destruction des précédentes."],
+      "choix": [
+        "Péguy : la puissance d'argent a absorbé toutes les autres puissances, tout s'achète, se vend, se négocie.",
+        "La Fontaine : l'écrivain doit être « sponsorisé » par le pouvoir.",
+        "Conrad : la raison perverse a ses propres processus logiques.",
+        "Lévi-Strauss : l'islam fonde une tradition sur la destruction des précédentes."
+      ],
       "correct": 0,
       "explication": "Riquier décrit la « décréation » provoquée par l'argent : il n'y a plus de corps de métier dont on ne puisse demander « combien ? ».",
       "limites": "Péguy vise une métaphysique et une morale autant qu'une économie ; sa critique peut sembler nostalgique d'un monde du travail idéalisé.",
-      "source": { "pages": "99", "nature": "magazine" }
+      "source": {
+        "pages": "99",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "peg-7", "oeuvres": ["argent-peguy"], "competence": 3, "format": "libre",
+      "id": "peg-7",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "Pourquoi, selon Péguy, le règne de l'argent dissout-il la solidarité sociale ?",
-      "points": ["L'argent classe les individus par la seule quantité possédée.", "Il ne forme pas de vraies classes ni de consciences de classe.", "Il dissout la « solidarité organique ».", "Il creuse l'abîme entre riches et pauvres, dévalue le travail bien fait."],
+      "points": [
+        "L'argent classe les individus par la seule quantité possédée.",
+        "Il ne forme pas de vraies classes ni de consciences de classe.",
+        "Il dissout la « solidarité organique ».",
+        "Il creuse l'abîme entre riches et pauvres, dévalue le travail bien fait."
+      ],
       "reponse": "Parce qu'il sépare chacun selon ce qu'il possède sans créer de liens : ni corps de métier, ni classe consciente. Chacun aspire à quitter sa place et à « faire le malin », et le travail bien fait, qui unissait, perd sa valeur.",
-      "source": { "pages": "98-99", "nature": "magazine" }
+      "source": {
+        "pages": "98-99",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "laf-1", "oeuvres": ["fables"], "competence": 1, "format": "qcm",
+      "id": "laf-1",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Qui fut le principal mécène de La Fontaine, et à qui il resta fidèle après sa chute ?",
-      "choix": ["Fouquet", "Colbert", "Mazarin", "Louis XIV"],
+      "choix": [
+        "Fouquet",
+        "Colbert",
+        "Mazarin",
+        "Louis XIV"
+      ],
       "correct": 0,
       "explication": "La Fontaine dédie à Fouquet son Songe de Vaux et prend sa défense après sa chute brutale en 1661. Colbert, qui haïssait Fouquet, et Louis XIV lui furent hostiles. Mme de La Sablière fut, plus tard, son autre soutien.",
-      "source": { "pages": "102", "nature": "magazine" }
+      "source": {
+        "pages": "102",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "laf-2", "oeuvres": ["fables"], "competence": 2, "format": "flashcard",
+      "id": "laf-2",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Pourquoi Érik Orsenna qualifie-t-il La Fontaine de « paria absolu » ?",
       "reponse": "Sans revenus après avoir quitté sa charge de maître des eaux et forêts, il dépendait des pensions qu'on voulait bien lui accorder (pas de droits d'auteur à l'époque). Fidèle à Fouquet, il fut exilé en 1663, jamais pensionné par le roi, qui refusa même d'abord son élection à l'Académie française (1683).",
       "exemple": "Revanche : élu au fauteuil de Colbert, il dut prononcer son éloge.",
-      "source": { "pages": "102", "nature": "magazine" }
+      "source": {
+        "pages": "102",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "laf-3", "oeuvres": ["fables"], "competence": 2, "format": "qcm",
+      "id": "laf-3",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Selon Orsenna, où réside le génie de La Fontaine, qui n'invente presque jamais la trame de ses fables ?",
-      "choix": ["Dans son écriture, son « incroyable concision ».", "Dans l'originalité absolue de ses intrigues.", "Dans sa critique explicite et nominative du roi.", "Dans ses morales religieuses inspirées de la Bible."],
+      "choix": [
+        "Dans son écriture, son « incroyable concision ».",
+        "Dans l'originalité absolue de ses intrigues.",
+        "Dans sa critique explicite et nominative du roi.",
+        "Dans ses morales religieuses inspirées de la Bible."
+      ],
       "correct": 0,
       "explication": "Il reprend des sources antiques (Ésope, Horace) et italiennes, s'empare de thèmes du patrimoine commun, les met en langue moderne et en tire des morales : tout son génie est dans l'écriture.",
-      "source": { "pages": "102-103", "nature": "magazine" }
+      "source": {
+        "pages": "102-103",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "laf-4", "oeuvres": ["fables"], "competence": 3, "format": "flashcard",
+      "id": "laf-4",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 3,
+      "format": "flashcard",
       "question": "Qu'y a-t-il de « très actuel » chez La Fontaine, selon Orsenna ?",
       "reponse": "Son rapport au pouvoir et à l'argent, qui n'a que partiellement évolué : même « professionnalisé », quel poète vit aujourd'hui de sa plume ? Orsenna observe aussi, depuis une vingtaine d'années, un rétrécissement de la liberté d'expression en matière de mœurs, de société ou de religion — pas dans le domaine politique.",
-      "source": { "pages": "103", "nature": "magazine" }
+      "source": {
+        "pages": "103",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "laf-5", "oeuvres": ["fables"], "competence": 2, "format": "flashcard",
+      "id": "laf-5",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle différence de destin entre les Contes et les Fables de La Fontaine ?",
       "reponse": "Les Contes, plus sulfureux, furent attaqués, censurés, diffusés sous le manteau — il risqua même la prison ; les Fables, elles, étaient célèbres et encensées. À la fin de sa vie, gravement malade, il promit de ne plus rien écrire de licencieux.",
-      "source": { "pages": "103", "nature": "magazine" }
+      "source": {
+        "pages": "103",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "laf-6", "oeuvres": ["fables"], "competence": 3, "format": "actualite",
+      "id": "laf-6",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un artiste reconnu explique qu'il ne vit que grâce à des commandes publiques et à un mécène industriel, et se demande jusqu'où il peut les critiquer. Quelle figure du dossier éclaire ce dilemme ?",
-      "choix": ["La Fontaine, protégé de Fouquet et tenu à l'écart par Louis XIV.", "Péguy, boutiquier des Cahiers de la quinzaine.", "Willie Stark, le populiste des Fous du roi.", "Phileas Fogg, gentleman parieur."],
+      "choix": [
+        "La Fontaine, protégé de Fouquet et tenu à l'écart par Louis XIV.",
+        "Péguy, boutiquier des Cahiers de la quinzaine.",
+        "Willie Stark, le populiste des Fous du roi.",
+        "Phileas Fogg, gentleman parieur."
+      ],
       "correct": 0,
       "explication": "Orsenna souligne la nécessité pour l'écrivain d'être « sponsorisé » par le pouvoir et le prix de l'indépendance : La Fontaine, fidèle à un mécène déchu, fut un « homme libre, donc pauvre ».",
       "limites": "Prolongement de l'application. Le portrait d'un La Fontaine rebelle est celui d'Orsenna ; il rappelle aussi que l'art officiel de Louis XIV « n'a pas tué les chefs-d'œuvre ».",
-      "source": { "pages": "102-103", "nature": "prolongement" }
+      "source": {
+        "pages": "102-103",
+        "nature": "prolongement"
+      }
     },
-
     {
-      "id": "rol-1", "oeuvres": ["chanson-de-roland"], "competence": 1, "format": "flashcard",
+      "id": "rol-1",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "La Chanson de Roland : auteur probable, date, manuscrit, événement d'origine ?",
       "reponse": "Attribuée au clerc normand Turold, écrite entre le XIe et le XIIe siècle ; 4 002 vers dans le manuscrit d'Oxford. Elle s'inspire du désastre subi par l'arrière-garde carolingienne dans les Pyrénées, le 15 août 778.",
       "exemple": "Sa popularité se mesure aux prénoms Roland et Olivier, qui abondent dès le Xe siècle.",
-      "source": { "pages": "104", "nature": "magazine" }
+      "source": {
+        "pages": "104",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-2", "oeuvres": ["chanson-de-roland"], "competence": 2, "format": "qcm",
+      "id": "rol-2",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Comment la Chanson représente-t-elle la religion des Sarrasins ?",
-      "choix": ["Elle nie son monothéisme : ils adoreraient Mahomet, Apollin et Tervagant, comme des idolâtres.", "Elle la décrit avec précision, en s'appuyant sur des sources musulmanes.", "Elle la présente comme une hérésie chrétienne proche du catholicisme.", "Elle n'en dit rien : les Sarrasins n'y ont aucune religion."],
+      "choix": [
+        "Elle nie son monothéisme : ils adoreraient Mahomet, Apollin et Tervagant, comme des idolâtres.",
+        "Elle la décrit avec précision, en s'appuyant sur des sources musulmanes.",
+        "Elle la présente comme une hérésie chrétienne proche du catholicisme.",
+        "Elle n'en dit rien : les Sarrasins n'y ont aucune religion."
+      ],
       "correct": 0,
       "explication": "Cette « trinité maudite », pendant de la Trinité chrétienne, en fait des païens archétypaux. La Chanson « ne dit rien de l'islam médiéval » ; elle fournit une peinture que ses auditeurs étaient prêts à accepter.",
-      "source": { "pages": "105", "nature": "magazine" }
+      "source": {
+        "pages": "105",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-3", "oeuvres": ["chanson-de-roland"], "competence": 2, "format": "qcm",
+      "id": "rol-3",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Pourquoi Alexis Brocas affirme-t-il que La Chanson de Roland n'est « nullement raciste », malgré ses stéréotypes ?",
-      "choix": ["La religion et les liens de vassalité y priment sur l'origine : le Sarrasin converti devient un chrétien comme les autres.", "Elle montre les Sarrasins aussi courageux et honnêtes que les Francs.", "Elle a été écrite par un auteur musulman converti.", "Ses descriptions monstrueuses sont des métaphores que personne ne prenait au sérieux."],
+      "choix": [
+        "La religion et les liens de vassalité y priment sur l'origine : le Sarrasin converti devient un chrétien comme les autres.",
+        "Elle montre les Sarrasins aussi courageux et honnêtes que les Francs.",
+        "Elle a été écrite par un auteur musulman converti.",
+        "Ses descriptions monstrueuses sont des métaphores que personne ne prenait au sérieux."
+      ],
       "correct": 0,
       "explication": "Charlemagne à Baligant : « Reçois la foi […] et aussitôt je t'aimerai. » La société chrétienne d'autrefois, intolérante, offrait par son prosélytisme une porte vers sa norme. Les Sarrasins y restent pourtant fourbes et monstrueux : la bravoure des Maures sert surtout à valoriser celle des chrétiens.",
-      "source": { "pages": "106", "nature": "magazine" }
+      "source": {
+        "pages": "106",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-4", "oeuvres": ["chanson-de-roland"], "competence": 2, "format": "flashcard",
+      "id": "rol-4",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quels « fondamentaux du racisme » l'article repère-t-il déjà dans la Chanson ?",
       "reponse": "Nier l'autre et lui refuser toute place ; projeter sur lui nos obsessions les plus sombres ; le transformer en monstre, physique ou moral ; le percevoir comme une masse indifférenciée d'abominations ; lui prêter la duplicité (un peuple parjure, doué pour la filouterie).",
       "exemple": "Le catalogue des compagnies de Baligant : peuples réels et imaginaires, comme les tribus amérindiennes des premiers westerns — « dans le fond, ce sont tous des sauvages ».",
-      "source": { "pages": "106", "nature": "magazine" }
+      "source": {
+        "pages": "106",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-5", "oeuvres": ["chanson-de-roland"], "competence": 3, "format": "flashcard",
+      "id": "rol-5",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 3,
+      "format": "flashcard",
       "question": "Quelle différence décisive l'article établit-il entre la société de la Chanson et les racistes d'aujourd'hui ?",
       "reponse": "La société chrétienne d'autrefois, intolérante et effrayée par l'autre, lui offrait par la conversion une porte vers sa norme (le géant Renouard au Tinel devient chevalier et épouse une fille de roi). Les racistes d'aujourd'hui, eux, cernent l'autre « d'une muraille de haine, d'ignorance et de peur sans issue ».",
-      "source": { "pages": "106", "nature": "magazine" }
+      "source": {
+        "pages": "106",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-6", "oeuvres": ["chanson-de-roland"], "competence": 3, "format": "actualite",
+      "id": "rol-6",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Une affiche municipale montre une foule anonyme sous le titre « Les migrants dans notre centre-ville ». Quel mécanisme décrit dans l'article sur La Chanson de Roland est à l'œuvre ?",
-      "choix": ["La perception de l'autre comme une multitude indifférenciée et menaçante.", "La conversion comme porte d'entrée dans la communauté.", "La « science du cœur » appliquée à la politique.", "La performativité des identités."],
+      "choix": [
+        "La perception de l'autre comme une multitude indifférenciée et menaçante.",
+        "La conversion comme porte d'entrée dans la communauté.",
+        "La « science du cœur » appliquée à la politique.",
+        "La performativité des identités."
+      ],
       "correct": 0,
       "explication": "L'article est illustré par une affiche de ce type (Béziers, 2016). Il montre que la Chanson présente déjà les Sarrasins comme une multitude innombrable, venue de pays inquiétants.",
       "limites": "La Chanson oppose des religions, non des « races » ; et elle laisse une porte ouverte par la conversion, ce que l'affiche ne fait pas. Le rapprochement éclaire une permanence des formes de la peur, pas une identité des contextes.",
-      "source": { "pages": "106", "nature": "magazine" }
+      "source": {
+        "pages": "106",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "rol-7", "oeuvres": ["chanson-de-roland"], "competence": 2, "format": "libre",
+      "id": "rol-7",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 2,
+      "format": "libre",
       "question": "Résumez l'intrigue de la Chanson en montrant le rôle de Ganelon et de Roland.",
-      "points": ["Après sept ans de guerre, Charlemagne reçoit une ambassade de Marsile.", "Ganelon, beau-père et ennemi de Roland, désigné par lui pour l'ambassade, se laisse pousser à la trahison par Blancandrin.", "L'arrière-garde, où est Roland, est attaquée dans les Pyrénées ; Roland refuse longtemps de sonner du cor.", "Mort christique de Roland, vengeance de Charlemagne, Ganelon écartelé après une ordalie."],
+      "points": [
+        "Après sept ans de guerre, Charlemagne reçoit une ambassade de Marsile.",
+        "Ganelon, beau-père et ennemi de Roland, désigné par lui pour l'ambassade, se laisse pousser à la trahison par Blancandrin.",
+        "L'arrière-garde, où est Roland, est attaquée dans les Pyrénées ; Roland refuse longtemps de sonner du cor.",
+        "Mort christique de Roland, vengeance de Charlemagne, Ganelon écartelé après une ordalie."
+      ],
       "reponse": "Ganelon, envoyé chez Marsile, accepte de livrer l'arrière-garde commandée par Roland. Roland, par orgueil et « frénésie guerrière », refuse d'appeler l'armée ; il meurt en héros, vengé par Charlemagne. Ganelon est jugé par ordalie et écartelé.",
-      "source": { "pages": "104-105", "nature": "magazine" }
+      "source": {
+        "pages": "104-105",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "tt-1", "oeuvres": ["tristes-tropiques"], "competence": 1, "format": "qcm",
+      "id": "tt-1",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Tristes Tropiques : dans quel contexte Lévi-Strauss a-t-il observé le monde musulman ?",
-      "choix": ["Un séjour de quelques mois en 1950, en Inde du Nord et au Pakistan, pour une mission de l'Unesco.", "Une longue enquête de terrain en Afrique du Nord dans les années 1930.", "Ses années d'enseignement au Collège de France consacrées à l'islam.", "Un voyage en Arabie au cours de son expédition brésilienne."],
+      "choix": [
+        "Un séjour de quelques mois en 1950, en Inde du Nord et au Pakistan, pour une mission de l'Unesco.",
+        "Une longue enquête de terrain en Afrique du Nord dans les années 1930.",
+        "Ses années d'enseignement au Collège de France consacrées à l'islam.",
+        "Un voyage en Arabie au cours de son expédition brésilienne."
+      ],
       "correct": 0,
       "explication": "Ce séjour bref (et non une étude de terrain sur l'islam) nourrit les pages du livre, écrit en 1954-1955 pour la collection « Terre humaine ».",
-      "source": { "pages": "109", "nature": "magazine" }
+      "source": {
+        "pages": "109",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tt-2", "oeuvres": ["tristes-tropiques"], "competence": 2, "format": "flashcard",
+      "id": "tt-2",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Qu'est-ce qui « tourmente et déconcerte » Lévi-Strauss dans l'islam, selon l'article ?",
       "reponse": "Ses contradictions face à l'histoire : la volonté de fonder une tradition qui s'appuie sur la destruction de celles qui l'ont précédée.",
       "explication": "Lévi-Strauss, indifférent au sentiment religieux, aborde le religieux de façon anthropologique et structurale. Pierre Assouline rapporte ce jugement sans l'endosser : le chapô parle d'« observations inattendues et [de] mauvaise foi ».",
-      "source": { "pages": "109", "nature": "magazine" }
+      "source": {
+        "pages": "109",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tt-3", "oeuvres": ["tristes-tropiques"], "competence": 2, "format": "qcm",
+      "id": "tt-3",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Quelle observation « inattendue » de Lévi-Strauss l'article relève-t-il, à côté de ses jugements sévères ?",
-      "choix": ["Il est impressionné par la ferveur de la prière : un minuscule tapis suffit au croyant pour s'isoler de la rumeur du monde.", "Il admire l'architecture des mosquées du Pakistan.", "Il loue la tolérance de l'islam envers les autres religions.", "Il dit avoir été tenté par la conversion."],
+      "choix": [
+        "Il est impressionné par la ferveur de la prière : un minuscule tapis suffit au croyant pour s'isoler de la rumeur du monde.",
+        "Il admire l'architecture des mosquées du Pakistan.",
+        "Il loue la tolérance de l'islam envers les autres religions.",
+        "Il dit avoir été tenté par la conversion."
+      ],
       "correct": 0,
       "explication": "Au chapitre XV, il rapporte son émotion devant un vieillard priant seul sur une plage de l'océan Indien. Mais au chapitre XXXIX, il juge l'islam si collectif qu'il aurait du mal à penser la solitude : c'est cette tension que l'article met en lumière.",
-      "source": { "pages": "109-110", "nature": "magazine" }
+      "source": {
+        "pages": "109-110",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tt-4", "oeuvres": ["tristes-tropiques"], "competence": 3, "format": "flashcard",
+      "id": "tt-4",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 3,
+      "format": "flashcard",
       "question": "Comment Abdelwahab Meddeb a-t-il jugé ces pages de Tristes Tropiques ?",
       "reponse": "Sévèrement : méconnaissance et aveuglement. Il reconnaissait pourtant que l'analyse du « blocage » de l'islam et de l'inertie historique qui s'ensuit, sans concessions, n'en était pas moins pertinente (« Divagations et lucidité », Esprit, 2011).",
       "explication": "Exemple d'une lecture qui distingue ce qui relève du préjugé et ce qui peut nourrir la réflexion.",
-      "source": { "pages": "110", "nature": "magazine" }
+      "source": {
+        "pages": "110",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "tt-5", "oeuvres": ["tristes-tropiques"], "competence": 3, "format": "libre",
+      "id": "tt-5",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "Pourquoi relire aujourd'hui ces pages est-il, selon Pierre Assouline, à la fois provocateur et instructif ? Quelles précautions faut-il prendre ?",
-      "points": ["Passages méconnus, gêne des admirateurs (« totem » mais pas « tabou »).", "Mélange d'observations inattendues et de mauvaise foi.", "Lévi-Strauss n'a jamais exprimé de regret ; il opposait la laïcité à l'enseignement du fait religieux.", "Précaution : témoignage personnel bref, non étude de l'islam ; distinguer observation et généralisation."],
+      "points": [
+        "Passages méconnus, gêne des admirateurs (« totem » mais pas « tabou »).",
+        "Mélange d'observations inattendues et de mauvaise foi.",
+        "Lévi-Strauss n'a jamais exprimé de regret ; il opposait la laïcité à l'enseignement du fait religieux.",
+        "Précaution : témoignage personnel bref, non étude de l'islam ; distinguer observation et généralisation."
+      ],
       "reponse": "C'est provocateur parce que ces pages heurtent la sensibilité contemporaine et qu'on n'ose pas taxer leur auteur d'islamophobie ; instructif parce qu'elles mêlent intuitions (la prière, la solitude) et préjugés. Il faut les lire comme le témoignage subjectif d'un voyageur, non comme un savoir établi.",
-      "source": { "pages": "109-110", "nature": "synthese" }
+      "source": {
+        "pages": "109-110",
+        "nature": "synthese"
+      }
     },
-
     {
-      "id": "dem-1", "oeuvres": ["les-demons"], "competence": 1, "format": "flashcard",
+      "id": "dem-1",
+      "oeuvres": [
+        "les-demons"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Pourquoi Marc Weitzmann place-t-il Les Démons en tête des classiques sur le terrorisme ?",
       "reponse": "Parce que le groupe terroriste du roman, qui se dit nihiliste, partage de nombreux points communs avec les islamistes contemporains, et que Dostoïevski saisit des enjeux qui sont encore les nôtres — d'abord : que faire de la liberté individuelle dans un monde sans Dieu ?",
       "exemple": "Dostoïevski avait fréquenté des cercles fouriéristes à la fin des années 1840, avant d'être arrêté.",
-      "source": { "pages": "112", "nature": "magazine" }
+      "source": {
+        "pages": "112",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "dem-2", "oeuvres": ["les-demons"], "competence": 2, "format": "qcm",
+      "id": "dem-2",
+      "oeuvres": [
+        "les-demons"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Comment Dostoïevski représente-t-il les conspirateurs des Démons, selon l'article ?",
-      "choix": ["Comme de « sombres crétins » au complot mal fichu — dont il fait pourtant une dynamique infernale effrayante.", "Comme des héros romantiques qu'il admire en secret.", "Comme des stratèges brillants, d'autant plus dangereux.", "Comme des victimes innocentes de la police tsariste."],
+      "choix": [
+        "Comme de « sombres crétins » au complot mal fichu — dont il fait pourtant une dynamique infernale effrayante.",
+        "Comme des héros romantiques qu'il admire en secret.",
+        "Comme des stratèges brillants, d'autant plus dangereux.",
+        "Comme des victimes innocentes de la police tsariste."
+      ],
       "correct": 0,
       "explication": "Ce qui devrait faire rire devient effrayant : l'écriture enfiévrée emporte terroristes et cibles dans la même catastrophe. La médiocrité n'atténue pas le danger.",
-      "source": { "pages": "112", "nature": "magazine" }
+      "source": {
+        "pages": "112",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "dem-3", "oeuvres": ["les-demons"], "competence": 3, "format": "actualite",
+      "id": "dem-3",
+      "oeuvres": [
+        "les-demons"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un jeune homme publie, avant de commettre un acte violent puis de se donner la mort, un texte où il présente ce geste comme la preuve de sa liberté absolue. Quel passage du dossier éclaire cette logique ?",
-      "choix": ["Le comploteur des Démons qui se tue « pour montrer [son] insoumission et [sa] nouvelle et terrifiante liberté ».", "Joseph K., arrêté sans avoir rien fait de mal.", "Richard III, qui feint de refuser le pouvoir.", "La princesse de Clèves, qui renonce à Nemours."],
+      "choix": [
+        "Le comploteur des Démons qui se tue « pour montrer [son] insoumission et [sa] nouvelle et terrifiante liberté ».",
+        "Joseph K., arrêté sans avoir rien fait de mal.",
+        "Richard III, qui feint de refuser le pouvoir.",
+        "La princesse de Clèves, qui renonce à Nemours."
+      ],
       "correct": 0,
       "explication": "Weitzmann cite ce personnage pour illustrer la question de la liberté dans un monde sans Dieu, et évoque le jeu Blue Whale Challenge (2017), conçu pour pousser des adolescents au suicide.",
       "limites": "Situation fictive proposée par l'application. Le roman ne fournit pas d'explication universelle des violences : les motivations réelles sont toujours plus diverses que le modèle littéraire.",
-      "source": { "pages": "112", "nature": "prolongement" }
+      "source": {
+        "pages": "112",
+        "nature": "prolongement"
+      }
     },
-
     {
-      "id": "agt-1", "oeuvres": ["agent-secret"], "competence": 1, "format": "qcm",
+      "id": "agt-1",
+      "oeuvres": [
+        "agent-secret"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Quelle cible symbolique le complot de L'Agent secret (Conrad, 1907) vise-t-il ?",
-      "choix": ["L'observatoire de Greenwich, qui donnait l'heure universelle.", "Le Parlement de Westminster.", "La Banque d'Angleterre.", "L'ambassade de Russie à Londres."],
+      "choix": [
+        "L'observatoire de Greenwich, qui donnait l'heure universelle.",
+        "Le Parlement de Westminster.",
+        "La Banque d'Angleterre.",
+        "L'ambassade de Russie à Londres."
+      ],
       "correct": 0,
       "explication": "Repris d'un complot authentique d'anarchistes britanniques, ce projet donne au livre sa profondeur métaphysique : on s'attaque à l'ordre même du temps.",
-      "source": { "pages": "112", "nature": "magazine" }
+      "source": {
+        "pages": "112",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "agt-2", "oeuvres": ["agent-secret"], "competence": 2, "format": "flashcard",
+      "id": "agt-2",
+      "oeuvres": [
+        "agent-secret"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Que désigne la « raison perverse » chez Conrad ?",
       "reponse": "Une logique qui a ses propres processus : l'attentat est une « aberration sanglante » si stupide qu'aucun processus intellectuel, raisonnable ou non, ne permet d'en sonder l'origine. D'où, selon Weitzmann, « pour ainsi dire le premier roman à réfléchir philosophiquement sur l'attentat terroriste ».",
-      "source": { "pages": "112", "nature": "magazine" }
+      "source": {
+        "pages": "112",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "agt-3", "oeuvres": ["agent-secret"], "competence": 2, "format": "qcm",
+      "id": "agt-3",
+      "oeuvres": [
+        "agent-secret"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Qui manipulait, selon l'article, les anarchistes des attentats parisiens qui ont inspiré Conrad ?",
-      "choix": ["Pierre Ratchkovski, chef de la police secrète de l'ambassade russe à Paris.", "La police britannique, pour discréditer les socialistes.", "Les services secrets allemands.", "Un mouvement nihiliste dirigé depuis Genève."],
+      "choix": [
+        "Pierre Ratchkovski, chef de la police secrète de l'ambassade russe à Paris.",
+        "La police britannique, pour discréditer les socialistes.",
+        "Les services secrets allemands.",
+        "Un mouvement nihiliste dirigé depuis Genève."
+      ],
       "correct": 0,
       "explication": "« Hier comme aujourd'hui, la Russie semble bien jouer un rôle clé dans la dynamique de la terreur. » Le même Ratchkovski apparaît dans l'histoire des Protocoles des sages de Sion (Kiš).",
-      "source": { "pages": "112", "nature": "magazine" }
+      "source": {
+        "pages": "112",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "pro-1", "oeuvres": ["le-proces"], "competence": 1, "format": "flashcard",
+      "id": "pro-1",
+      "oeuvres": [
+        "le-proces"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Citez trois lectures classiques du Procès évoquées par l'article.",
       "reponse": "George Steiner : une réflexion rabbinique sur le statut de la Loi. Sartre : un reflet de la condition juive européenne au XXe siècle. Beaucoup d'autres : une préfiguration du totalitarisme.",
       "explication": "Weitzmann en ajoute une, propre au XXIe siècle : la condition de victime potentielle de chacun face à la terreur.",
-      "source": { "pages": "112-113", "nature": "magazine" }
+      "source": {
+        "pages": "112-113",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pro-2", "oeuvres": ["le-proces", "agent-secret"], "competence": 2, "format": "qcm",
+      "id": "pro-2",
+      "oeuvres": [
+        "le-proces",
+        "agent-secret"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Selon Weitzmann, que faisons-nous, « comme Joseph K. », après un attentat ?",
-      "choix": ["Nous protestons, puis cherchons les raisons du procès qui nous est intenté, et finissons par y croire.", "Nous oublions rapidement et reprenons le cours ordinaire de la vie.", "Nous réclamons un procès public des coupables.", "Nous nous réfugions dans la religion."],
+      "choix": [
+        "Nous protestons, puis cherchons les raisons du procès qui nous est intenté, et finissons par y croire.",
+        "Nous oublions rapidement et reprenons le cours ordinaire de la vie.",
+        "Nous réclamons un procès public des coupables.",
+        "Nous nous réfugions dans la religion."
+      ],
       "correct": 0,
       "explication": "Nous nous persuadons que tel ou tel facteur expliquerait « rationnellement » l'attentat : nous acceptons ainsi ce que Conrad appelait « les processus logiques de la raison perverse ».",
-      "source": { "pages": "113", "nature": "magazine" }
+      "source": {
+        "pages": "113",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "pro-3", "oeuvres": ["le-proces"], "competence": 3, "format": "libre",
+      "id": "pro-3",
+      "oeuvres": [
+        "le-proces"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "Expliquez la lecture « au XXIe siècle » que Weitzmann propose du Procès. Quelle en est la limite ?",
-      "points": ["La terreur a changé de forme ; chacun est une victime potentielle.", "Comme Joseph K., on finit par chercher sa propre faute.", "Risque : accepter les « processus logiques de la raison perverse ».", "Limite : Kafka n'écrit pas sur le terrorisme ; son œuvre a des lectures multiples."],
+      "points": [
+        "La terreur a changé de forme ; chacun est une victime potentielle.",
+        "Comme Joseph K., on finit par chercher sa propre faute.",
+        "Risque : accepter les « processus logiques de la raison perverse ».",
+        "Limite : Kafka n'écrit pas sur le terrorisme ; son œuvre a des lectures multiples."
+      ],
       "reponse": "Le Procès décrit un homme accusé sans faute qui finit par intérioriser l'accusation ; Weitzmann y voit notre réaction aux attentats, quand nous cherchons dans nos propres actes la cause de la violence. C'est une actualisation : le roman ne parle pas de terrorisme et reste ouvert à d'autres lectures.",
-      "source": { "pages": "113", "nature": "synthese" }
+      "source": {
+        "pages": "113",
+        "nature": "synthese"
+      }
     },
-
     {
-      "id": "ved-1", "oeuvres": ["vie-et-destin"], "competence": 1, "format": "qcm",
+      "id": "ved-1",
+      "oeuvres": [
+        "vie-et-destin"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Comment l'article qualifie-t-il Vie et destin de Vassili Grossman ?",
-      "choix": ["Le « Guerre et paix des totalitarismes du XXe siècle ».", "Le « Procès » de l'ère soviétique.", "Le premier roman sur le terrorisme moderne.", "Une chronique de la guerre froide écrite par Beckett."],
+      "choix": [
+        "Le « Guerre et paix des totalitarismes du XXe siècle ».",
+        "Le « Procès » de l'ère soviétique.",
+        "Le premier roman sur le terrorisme moderne.",
+        "Une chronique de la guerre froide écrite par Beckett."
+      ],
       "correct": 0,
       "explication": "Roman de guerre centré sur Stalingrad, achevé en 1962 et publié en Occident en 1980. La « chronique de la guerre froide » à la Beckett désigne Outremonde de DeLillo.",
-      "source": { "pages": "113", "nature": "magazine" }
+      "source": {
+        "pages": "113",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "ved-2", "oeuvres": ["vie-et-destin"], "competence": 2, "format": "flashcard",
+      "id": "ved-2",
+      "oeuvres": [
+        "vie-et-destin"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle méditation l'article attribue-t-il à Vie et destin ?",
       "reponse": "Une méditation sur l'effroi provoqué par la violence sans limites d'un « État puissant » — une violence « si grande qu'elle cesse d'être un moyen pour devenir objet d'adoration quasi mystique et religieuse ». Grossman y analyse les liens entre les deux systèmes européens les plus meurtriers.",
       "exemple": "Il commence le roman en 1952, après un nouveau déchaînement antisémite en URSS, ayant cessé d'être un communiste convaincu.",
-      "source": { "pages": "113-114", "nature": "magazine" }
+      "source": {
+        "pages": "113-114",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "kis-1", "oeuvres": ["livre-des-rois"], "competence": 1, "format": "flashcard",
+      "id": "kis-1",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "De quoi parle « Le livre des rois et des sots » de Danilo Kiš (1983) ?",
       "reponse": "De la fabrication et de la diffusion des Protocoles des sages de Sion — que Weitzmann appelle la « première fake news d'envergure » : des monastères russes à l'ambassade parisienne, jusqu'à leur usage par les nazis comme instrument de propagande de masse.",
       "exemple": "La nouvelle figure dans le recueil Encyclopédie des morts.",
-      "source": { "pages": "114", "nature": "magazine" }
+      "source": {
+        "pages": "114",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "kis-2", "oeuvres": ["livre-des-rois"], "competence": 2, "format": "qcm",
+      "id": "kis-2",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Selon l'article, quels étaient les objectifs des commanditaires des Protocoles ?",
-      "choix": ["Semer le trouble dans les sociétés occidentales et saper les valeurs libérales jugées menaçantes pour le pouvoir russe.", "Défendre les Juifs de Russie en dénonçant un faux complot.", "Financer la révolution bolchevique.", "Préparer une alliance militaire entre la Russie et l'Allemagne."],
+      "choix": [
+        "Semer le trouble dans les sociétés occidentales et saper les valeurs libérales jugées menaçantes pour le pouvoir russe.",
+        "Défendre les Juifs de Russie en dénonçant un faux complot.",
+        "Financer la révolution bolchevique.",
+        "Préparer une alliance militaire entre la Russie et l'Allemagne."
+      ],
       "correct": 0,
       "explication": "Ratchkovski voulait aussi organiser un rapprochement avec Moscou ; les Juifs, symboles du libéralisme depuis la Révolution française, furent pris pour cible. Le texte fut écrit par son adjoint Mathieu Golovinski.",
-      "source": { "pages": "114", "nature": "magazine" }
+      "source": {
+        "pages": "114",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "kis-3", "oeuvres": ["livre-des-rois"], "competence": 2, "format": "flashcard",
+      "id": "kis-3",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle technique littéraire Kiš emploie-t-il, et quel en est l'effet ?",
       "reponse": "Tout est vrai, mais raconté à la manière d'un conte fantastique, en condensant les épisodes. La nouvelle devient une « archéologie du mal » et une méditation sur les dangers de la lecture.",
-      "source": { "pages": "114", "nature": "magazine" }
+      "source": {
+        "pages": "114",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "kis-4", "oeuvres": ["livre-des-rois"], "competence": 3, "format": "actualite",
+      "id": "kis-4",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un faux document attribué à un groupe minoritaire, « prouvant » qu'il prépare la domination du monde, circule massivement sur les réseaux, malgré les démentis. Quelle œuvre du dossier retrace la généalogie d'un tel mécanisme ?",
-      "choix": ["« Le livre des rois et des sots » de Danilo Kiš", "Fictions de Borges", "L'Éducation sentimentale de Flaubert", "Libra de Don DeLillo"],
+      "choix": [
+        "« Le livre des rois et des sots » de Danilo Kiš",
+        "Fictions de Borges",
+        "L'Éducation sentimentale de Flaubert",
+        "Libra de Don DeLillo"
+      ],
       "correct": 0,
       "explication": "Kiš raconte comment les Protocoles, faux fabriqué par la police secrète russe, sont devenus un instrument de propagande antisémite au succès mondial.",
       "limites": "Libra (DeLillo) traite aussi des théories conspirationnistes, mais autour d'un événement réel (l'assassinat de Kennedy) ; Borges joue avec les fausses attributions, sans fabriquer de propagande. Kiš est le plus précis ici, mais chaque faux a son contexte propre.",
-      "source": { "pages": "114", "nature": "prolongement" }
+      "source": {
+        "pages": "114",
+        "nature": "prolongement"
+      }
     },
-
     {
-      "id": "del-1", "oeuvres": ["delillo"], "competence": 1, "format": "qcm",
+      "id": "del-1",
+      "oeuvres": [
+        "delillo"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Quels deux récits Libra (DeLillo, 1988) fait-il converger ?",
-      "choix": ["L'histoire de Lee Harvey Oswald et celle d'anciens agents de la CIA complotant contre Castro.", "La vie de Kennedy et celle de Fidel Castro.", "Un match de base-ball historique et l'essai de la bombe H.", "La prise d'otages de Téhéran et la chute du mur de Berlin."],
+      "choix": [
+        "L'histoire de Lee Harvey Oswald et celle d'anciens agents de la CIA complotant contre Castro.",
+        "La vie de Kennedy et celle de Fidel Castro.",
+        "Un match de base-ball historique et l'essai de la bombe H.",
+        "La prise d'otages de Téhéran et la chute du mur de Berlin."
+      ],
       "correct": 0,
       "explication": "Par des « courants souterrains », les deux trajectoires aboutissent à l'assassinat du président Kennedy. Le match de base-ball ouvre Outremonde ; la prise d'otages de Téhéran est à l'origine des Noms.",
-      "source": { "pages": "114", "nature": "magazine" }
+      "source": {
+        "pages": "114",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "del-2", "oeuvres": ["delillo"], "competence": 2, "format": "flashcard",
+      "id": "del-2",
+      "oeuvres": [
+        "delillo"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Que montre Outremonde (1997), selon l'article ?",
       "reponse": "Une chronique intimiste de la terreur au temps de la guerre froide. Son personnage central, Nick Shay, passe de la gestion des déchets de New York à celle des déchets nucléaires de l'ex-URSS : aucun roman n'anticipe mieux à quel point notre siècle reste « englué dans la décharge des terreurs du précédent ».",
-      "source": { "pages": "114", "nature": "magazine" }
+      "source": {
+        "pages": "114",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "jc-1", "oeuvres": ["jules-cesar"], "competence": 2, "format": "qcm",
+      "id": "jc-1",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Que montre le discours de Marc-Antoine dans Jules César (acte III, scène 2), selon l'article sur le populisme ?",
-      "choix": ["Un orateur isolé retourne à son profit une foule de plébéiens, contre les « hommes honorables » du sénat.", "Le peuple romain résiste aux manipulations des puissants.", "Brutus convainc la foule de la nécessité du meurtre de César.", "César refuse la couronne pour mieux s'en emparer."],
+      "choix": [
+        "Un orateur isolé retourne à son profit une foule de plébéiens, contre les « hommes honorables » du sénat.",
+        "Le peuple romain résiste aux manipulations des puissants.",
+        "Brutus convainc la foule de la nécessité du meurtre de César.",
+        "César refuse la couronne pour mieux s'en emparer."
+      ],
       "correct": 0,
       "explication": "La foule est « manipulable à merci ». Feindre de refuser le pouvoir pour mieux le prendre, c'est Richard III (acte III, scène 7), autre exemple de l'article.",
-      "source": { "pages": "117", "nature": "magazine" }
+      "source": {
+        "pages": "117",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "jc-2", "oeuvres": ["jules-cesar"], "competence": 2, "format": "flashcard",
+      "id": "jc-2",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Quelle stratégie Richard III emploie-t-il pour monter sur le trône, et pourquoi l'article la juge-t-il « plus actuelle » ?",
       "reponse": "En pleine crise, l'homme providentiel fait mine de se retirer dans un monastère et refuse le trône (« Je ne suis pas fait pour la pompe et la majesté ») : il force ainsi le peuple à le supplier à genoux de régner. C'est la posture du sauveur qui se fait désirer — « l'ironie shakespearienne est ici à son maximum ».",
-      "source": { "pages": "117", "nature": "magazine" }
+      "source": {
+        "pages": "117",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "jc-3", "oeuvres": ["jules-cesar"], "competence": 3, "format": "actualite",
+      "id": "jc-3",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Un responsable politique annonce qu'il « ne souhaite pas » être candidat, puis, face aux pétitions de soutien, déclare se résoudre à répondre à « l'appel du peuple ». Quelle scène citée dans le dossier éclaire cette mise en scène ?",
-      "choix": ["Richard III qui feint de refuser le trône pour mieux y monter.", "Marc-Antoine retournant la foule contre Brutus.", "Willie Stark affirmant ne pas demander de voix.", "Les révolutionnaires de 1848 dans L'Éducation sentimentale."],
+      "choix": [
+        "Richard III qui feint de refuser le trône pour mieux y monter.",
+        "Marc-Antoine retournant la foule contre Brutus.",
+        "Willie Stark affirmant ne pas demander de voix.",
+        "Les révolutionnaires de 1848 dans L'Éducation sentimentale."
+      ],
       "correct": 0,
       "explication": "Le refus feint qui oblige les autres à supplier est le ressort précis de Richard III, acte III, scène 7. Willie Stark joue aussi la modestie (« même pas de voter pour moi »), mais pour séduire une foule, non pour se faire supplier de prendre le pouvoir.",
       "limites": "Situation construite par l'application ; un refus initial peut aussi être sincère. La scène shakespearienne aide à repérer une stratégie, elle ne prouve pas une intention.",
-      "source": { "pages": "117", "nature": "prolongement" }
+      "source": {
+        "pages": "117",
+        "nature": "prolongement"
+      }
     },
     {
-      "id": "jc-4", "oeuvres": ["jules-cesar"], "competence": 1, "format": "flashcard",
+      "id": "jc-4",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Quelle question de La Boétie ouvre la réflexion de l'article sur le populisme ?",
       "reponse": "Comment se peut-il que tant d'hommes, de bourgs, de villes et de nations supportent un tyran seul « qui n'a de puissance que celle qu'ils lui donnent » ? (Discours de la servitude volontaire)",
       "explication": "Shakespeare, lecteur de Montaigne et de La Boétie, illustre ce phénomène : les dirigeants se changent « en loup » parce qu'ils voient dans leurs sujets « des moutons ».",
-      "source": { "pages": "117", "nature": "magazine" }
+      "source": {
+        "pages": "117",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "es-1", "oeuvres": ["education-sentimentale"], "competence": 2, "format": "flashcard",
+      "id": "es-1",
+      "oeuvres": [
+        "education-sentimentale"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Pourquoi l'article juge-t-il que Flaubert a le mieux dépeint « le populisme en marche » ?",
       "reponse": "La troisième partie de L'Éducation sentimentale montre les débats enflammés des révolutionnaires de 1848 : certains veulent abolir « la prostitution et la misère », d'autres « prendre le Rhin », d'autres encore, refusant tout élitisme, veulent que les diplômes soient « conférés par le suffrage universel, par le Peuple, seul vrai juge ! ».",
-      "source": { "pages": "118", "nature": "magazine" }
+      "source": {
+        "pages": "118",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "es-2", "oeuvres": ["education-sentimentale", "jules-cesar"], "competence": 2, "format": "qcm",
+      "id": "es-2",
+      "oeuvres": [
+        "education-sentimentale",
+        "jules-cesar"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "À qui l'article attribue-t-il « probablement » l'invention du populisme moderne ?",
-      "choix": ["Rousseau, qui redéfinit le « peuple » comme les couches inférieures du pays, face aux élites « cosmopolites ».", "Shakespeare, qui montre la manipulation des foules.", "Flaubert, qui décrit les révolutionnaires de 1848.", "Maurras, qui invente l'opposition entre « pays légal » et « pays réel »."],
+      "choix": [
+        "Rousseau, qui redéfinit le « peuple » comme les couches inférieures du pays, face aux élites « cosmopolites ».",
+        "Shakespeare, qui montre la manipulation des foules.",
+        "Flaubert, qui décrit les révolutionnaires de 1848.",
+        "Maurras, qui invente l'opposition entre « pays légal » et « pays réel »."
+      ],
       "correct": 0,
       "explication": "Shakespeare est « instructif » mais n'explique pas le phénomène ; Maurras reformule plus tard le conflit posé par Rousseau en le liant à l'antisémitisme ; Flaubert le dépeint.",
-      "source": { "pages": "117-118", "nature": "magazine" }
+      "source": {
+        "pages": "117-118",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "fdr-1", "oeuvres": ["fous-du-roi"], "competence": 1, "format": "flashcard",
+      "id": "fdr-1",
+      "oeuvres": [
+        "fous-du-roi"
+      ],
+      "competence": 1,
+      "format": "flashcard",
       "question": "Les Fous du roi (Robert Penn Warren, 1946) : de quoi s'agit-il ?",
       "reponse": "Le journaliste politique Jack Burden tombe peu à peu sous le charme de Willie Stark, politicien populiste doté d'un charisme réel et révolté par la misère sociale, qui bâtit un empire fondé sur la corruption et la menace.",
       "explication": "Pour l'article, c'est « le classique en la matière » aux États-Unis.",
-      "source": { "pages": "118", "nature": "magazine" }
+      "source": {
+        "pages": "118",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "fdr-2", "oeuvres": ["fous-du-roi"], "competence": 2, "format": "qcm",
+      "id": "fdr-2",
+      "oeuvres": [
+        "fous-du-roi"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Quel schéma, illustré par Les Fous du roi, a été repris par des romanciers de la fin de l'ère coloniale ?",
-      "choix": ["Le libérateur qui se change en dictateur.", "Le journaliste qui démasque un complot d'État.", "Le peuple qui renverse pacifiquement un tyran.", "L'exilé qui revient sauver sa patrie."],
+      "choix": [
+        "Le libérateur qui se change en dictateur.",
+        "Le journaliste qui démasque un complot d'État.",
+        "Le peuple qui renverse pacifiquement un tyran.",
+        "L'exilé qui revient sauver sa patrie."
+      ],
       "correct": 0,
       "explication": "L'article cite Le Recours de la méthode (Carpentier), L'Automne du patriarche (García Márquez) et Le Dernier Roi d'Écosse (Giles Foden).",
-      "source": { "pages": "118", "nature": "magazine" }
+      "source": {
+        "pages": "118",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "fdr-3", "oeuvres": ["fous-du-roi"], "competence": 3, "format": "flashcard",
+      "id": "fdr-3",
+      "oeuvres": [
+        "fous-du-roi"
+      ],
+      "competence": 3,
+      "format": "flashcard",
       "question": "Quel lien l'article établit-il entre les écrivains et les populistes ?",
       "reponse": "Comme les leaders, les écrivains bâtissent leur pouvoir sur une empathie avec « le vrai peuple » qu'ils ne rejoignent jamais vraiment, et entretiennent un rapport ambivalent au civisme : « un pied dans la cité, un autre au-dehors ». « Leur cœur saigne pour la fraternité, mais le talent va plutôt à la misanthropie. »",
       "exemple": "Céline (Voyage au bout de la nuit, Mort à crédit) serait en France un « exemple cardinal ».",
-      "source": { "pages": "118", "nature": "magazine" }
+      "source": {
+        "pages": "118",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "you-1", "oeuvres": ["yourcenar"], "competence": 1, "format": "qcm",
+      "id": "you-1",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 1,
+      "format": "qcm",
       "question": "Quelle image publique de Yourcenar l'article cherche-t-il à corriger ?",
-      "choix": ["Celle d'une ermite inactuelle, érudite, recluse dans un humanisme passéiste.", "Celle d'une militante politique engagée dans tous les combats de son siècle.", "Celle d'une romancière populaire peu soucieuse de style.", "Celle d'une philosophe hostile à l'humanisme."],
+      "choix": [
+        "Celle d'une ermite inactuelle, érudite, recluse dans un humanisme passéiste.",
+        "Celle d'une militante politique engagée dans tous les combats de son siècle.",
+        "Celle d'une romancière populaire peu soucieuse de style.",
+        "Celle d'une philosophe hostile à l'humanisme."
+      ],
       "correct": 0,
       "explication": "Sujets doctes (Antiquité, Renaissance), prose classique, exil sur l'île des Monts-Déserts : tout semblait la détourner du monde. À partir de 1979-1980 (Apostrophes, Les Yeux ouverts), on découvre une fervente écologiste.",
-      "source": { "pages": "120", "nature": "magazine" }
+      "source": {
+        "pages": "120",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "you-2", "oeuvres": ["yourcenar"], "competence": 2, "format": "flashcard",
+      "id": "you-2",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "Où Yourcenar situe-t-elle l'origine des maux de la nature ?",
       "reponse": "Du côté de l'humanité : c'est dans sa manière d'envisager le monde qu'il habite que l'homme s'est exclu de celui-ci. Elle aborde la crise écologique davantage en anthropologue qu'en naturaliste, et n'évoque pratiquement jamais la nature sans y intégrer l'homme.",
       "exemple": "Le grand-oncle Octave, pourtant ami des bêtes et des forêts, refuse d'admettre le darwinisme (Souvenirs pieux).",
-      "source": { "pages": "121", "nature": "magazine" }
+      "source": {
+        "pages": "121",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "you-3", "oeuvres": ["yourcenar"], "competence": 2, "format": "qcm",
+      "id": "you-3",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Que dénonce Yourcenar dans « Une civilisation à cloisons étanches » (1972) ?",
-      "choix": ["L'aveuglement qui sépare notre alimentation de la souffrance des abattoirs.", "Le cloisonnement des disciplines universitaires.", "Les frontières qui empêchent les migrations.", "La séparation de l'Église et de l'État."],
+      "choix": [
+        "L'aveuglement qui sépare notre alimentation de la souffrance des abattoirs.",
+        "Le cloisonnement des disciplines universitaires.",
+        "Les frontières qui empêchent les migrations.",
+        "La séparation de l'Église et de l'État."
+      ],
       "correct": 0,
       "explication": "Sa conclusion : « Les effets de la conscience publique sur la digestion ne sont pas à craindre. » Manger, c'est aussi « ingérer et dévorer symboliquement » les autres créatures. L'antidote : une écriture à « double vue ».",
-      "source": { "pages": "121-122", "nature": "magazine" }
+      "source": {
+        "pages": "121-122",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "you-4", "oeuvres": ["yourcenar"], "competence": 2, "format": "flashcard",
+      "id": "you-4",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 2,
+      "format": "flashcard",
       "question": "En quoi les Mémoires de Yourcenar (« Le Labyrinthe du monde ») sont-ils « écologiques » ?",
       "reponse": "L'autobiographie, habituellement « forteresse du moi souverain », devient l'espace d'une dilution de l'individualité dans tout ce qui l'a précédée et l'entoure. Racontant sa naissance, elle se place dans un continuum générationnel, spatial, historique et biologique.",
       "exemple": "La croix d'ivoire du berceau convoque un éléphant tué dans la forêt congolaise : « Cette grande masse de vie intelligente […] a abouti à cela. »",
-      "source": { "pages": "122", "nature": "magazine" }
+      "source": {
+        "pages": "122",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "you-5", "oeuvres": ["yourcenar"], "competence": 2, "format": "qcm",
+      "id": "you-5",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 2,
+      "format": "qcm",
       "question": "Quel penseur l'écologie de Yourcenar semble-t-elle préfigurer, selon l'article ?",
-      "choix": ["Félix Guattari et sa triple écologie (nature, société, esprit).", "Rachel Carson et la dénonciation des pesticides.", "Descartes et la théorie de l'animal-machine.", "Lévi-Strauss et l'approche structurale."],
+      "choix": [
+        "Félix Guattari et sa triple écologie (nature, société, esprit).",
+        "Rachel Carson et la dénonciation des pesticides.",
+        "Descartes et la théorie de l'animal-machine.",
+        "Lévi-Strauss et l'approche structurale."
+      ],
       "correct": 0,
       "explication": "Rachel Carson (Printemps silencieux, 1962) figurait dans sa bibliothèque : c'est une influence, non une préfiguration. Descartes est au contraire critiqué : l'animal-machine a favorisé « l'exploitation et l'indifférence ».",
-      "source": { "pages": "122", "nature": "magazine" }
+      "source": {
+        "pages": "122",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "you-6", "oeuvres": ["yourcenar"], "competence": 3, "format": "actualite",
+      "id": "you-6",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 3,
+      "format": "actualite",
       "question": "Une campagne publicitaire montre des produits en fourrure dans un décor immaculé, sans aucune trace d'animal. Quelle réponse littéraire du dossier s'oppose à cet effacement ?",
-      "choix": ["L'écriture à « double vue » de Yourcenar, qui montre les manteaux « dégoûtants de sang ».", "Le pari de Phileas Fogg.", "La « science du cœur » de Mme de Lafayette.", "Le catalogue des armées de Baligant."],
+      "choix": [
+        "L'écriture à « double vue » de Yourcenar, qui montre les manteaux « dégoûtants de sang ».",
+        "Le pari de Phileas Fogg.",
+        "La « science du cœur » de Mme de Lafayette.",
+        "Le catalogue des armées de Baligant."
+      ],
       "correct": 0,
       "explication": "Dans « Bêtes à fourrure » (1976), les jeunes femmes en « somptueux manteaux de fourrure » apparaissent « dégoûtantes de sang » : rendre visible ce que les « cloisons étanches » cachent.",
       "limites": "Situation construite par l'application. L'écologie de Yourcenar dépasse la question animale : l'article insiste sur un « éco-logos » qui refonde notre rapport esthétique et émotionnel au monde, pas sur une campagne militante.",
-      "source": { "pages": "122", "nature": "prolongement" }
+      "source": {
+        "pages": "122",
+        "nature": "prolongement"
+      }
     },
     {
-      "id": "you-7", "oeuvres": ["yourcenar"], "competence": 3, "format": "libre",
+      "id": "you-7",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 3,
+      "format": "libre",
       "question": "En quoi l'écologie de Yourcenar se distingue-t-elle d'un « catéchisme vert » ?",
-      "points": ["Pas une comptabilité des ressources ni un inventaire des espèces.", "Triple écologie (Guattari) : nature, société, esprit — « la pollution est aussi mentale ».", "Refonder une communauté de toutes les créatures (Nathanaël, « frère des unes »).", "Un « éco-logos » : changer notre rapport esthétique et émotionnel au monde."],
+      "points": [
+        "Pas une comptabilité des ressources ni un inventaire des espèces.",
+        "Triple écologie (Guattari) : nature, société, esprit — « la pollution est aussi mentale ».",
+        "Refonder une communauté de toutes les créatures (Nathanaël, « frère des unes »).",
+        "Un « éco-logos » : changer notre rapport esthétique et émotionnel au monde."
+      ],
       "reponse": "Elle ne se contente pas de gérer des stocks ou d'ajuster la société industrielle à un environnement atrophié : elle cherche à transformer le regard, à réintégrer l'homme dans la communauté du vivant et à refonder notre sensibilité au monde.",
-      "source": { "pages": "122", "nature": "magazine" }
+      "source": {
+        "pages": "122",
+        "nature": "magazine"
+      }
     },
-
     {
-      "id": "cmp-1", "oeuvres": ["agent-secret", "livre-des-rois"], "competence": 4, "format": "flashcard",
+      "id": "cmp-1",
+      "oeuvres": [
+        "agent-secret",
+        "livre-des-rois"
+      ],
+      "competence": 4,
+      "format": "flashcard",
       "question": "Quel personnage historique relie L'Agent secret de Conrad et « Le livre des rois et des sots » de Kiš, et que révèle ce lien ?",
       "reponse": "Pierre (Piotr) Ratchkovski, chef de la police secrète de l'ambassade russe à Paris : il manipulait les anarchistes dont les attentats ont inspiré Conrad et fut le commanditaire des Protocoles des sages de Sion. Le lien révèle une même stratégie de déstabilisation : la terreur et le faux au service d'un pouvoir.",
       "explication": "Convergence : manipulation d'État. Nuance : Conrad travaille la métaphysique de l'attentat (la « raison perverse »), Kiš la puissance d'un texte faux et les dangers de la lecture.",
-      "source": { "pages": "112, 114", "nature": "magazine" }
+      "source": {
+        "pages": "112, 114",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "cmp-2", "oeuvres": ["chanson-de-roland", "tristes-tropiques"], "competence": 4, "format": "libre",
+      "id": "cmp-2",
+      "oeuvres": [
+        "chanson-de-roland",
+        "tristes-tropiques"
+      ],
+      "competence": 4,
+      "format": "libre",
       "question": "La Chanson de Roland et Tristes Tropiques portent deux regards occidentaux sur l'islam, à neuf siècles d'écart. Comparez-les.",
-      "points": ["Roland : ignorance totale de l'islam réel ; antimonde, idolâtres, horde indifférenciée.", "Lévi-Strauss : observation directe mais brève ; antipathie assumée, mêlée d'intuitions (la prière).", "Convergence : l'autre comme repoussoir de soi (« l'islam, c'est l'Occident de l'Orient »).", "Différence : la Chanson ouvre la porte par la conversion ; Lévi-Strauss reproche à l'islam de ne pas supporter la pluralité."],
+      "points": [
+        "Roland : ignorance totale de l'islam réel ; antimonde, idolâtres, horde indifférenciée.",
+        "Lévi-Strauss : observation directe mais brève ; antipathie assumée, mêlée d'intuitions (la prière).",
+        "Convergence : l'autre comme repoussoir de soi (« l'islam, c'est l'Occident de l'Orient »).",
+        "Différence : la Chanson ouvre la porte par la conversion ; Lévi-Strauss reproche à l'islam de ne pas supporter la pluralité."
+      ],
       "reponse": "Les deux textes parlent autant de l'Occident que de l'islam : la Chanson projette sur les Sarrasins les tares de l'Occident chrétien (Dufournet), Lévi-Strauss dit retrouver dans l'islam « l'univers d'où [il vient] ». Mais l'un ignore tout de son objet et l'intègre par la conversion, l'autre observe et juge — avec, selon l'article, de la mauvaise foi.",
       "explication": "Rapprochement proposé par l'application à partir de deux articles distincts du dossier (rubriques « Relations Orient-Occident » et « Islam »).",
-      "source": { "pages": "104-111", "nature": "synthese" }
+      "source": {
+        "pages": "104-111",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-3", "oeuvres": ["princesse-de-cleves", "recherche"], "competence": 4, "format": "qcm",
+      "id": "cmp-3",
+      "oeuvres": [
+        "princesse-de-cleves",
+        "recherche"
+      ],
+      "competence": 4,
+      "format": "qcm",
       "question": "Quel lien Robert Kopp établit-il lui-même entre La Princesse de Clèves et Proust ?",
-      "choix": ["La « science du cœur » inaugurée par Mme de Lafayette marque un courant majeur du roman français qui va jusqu'à Proust.", "Proust a réécrit La Princesse de Clèves dans Sodome et Gomorrhe.", "Les deux œuvres sont des romans à clés sur la cour.", "Les deux auteurs ont publié anonymement."],
+      "choix": [
+        "La « science du cœur » inaugurée par Mme de Lafayette marque un courant majeur du roman français qui va jusqu'à Proust.",
+        "Proust a réécrit La Princesse de Clèves dans Sodome et Gomorrhe.",
+        "Les deux œuvres sont des romans à clés sur la cour.",
+        "Les deux auteurs ont publié anonymement."
+      ],
       "correct": 0,
       "explication": "Kopp cite la lignée : de Prévost à Rousseau, de Constant à Stendhal, de Sainte-Beuve à Bourget, de Gide à Radiguet et à Proust. Les deux œuvres analysent la vie intérieure dans un monde de faux-semblants (la cour, le faubourg Saint-Germain).",
-      "source": { "pages": "85", "nature": "magazine" }
+      "source": {
+        "pages": "85",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "cmp-4", "oeuvres": ["fables", "fictions"], "competence": 4, "format": "flashcard",
+      "id": "cmp-4",
+      "oeuvres": [
+        "fables",
+        "fictions"
+      ],
+      "competence": 4,
+      "format": "flashcard",
       "question": "Quel rapprochement Érik Orsenna fait-il entre La Fontaine et Borges ?",
       "reponse": "Selon lui, le genre de La Fontaine s'est éteint avec lui, comme celui des contes philosophiques — « à l'exception, peut-être, de ceux de Borges ». Deux écrivains de la forme brève, qui reprennent des matériaux existants (Ésope, Horace ; la bibliothèque universelle) pour en faire des fables à portée générale.",
       "explication": "La seconde partie (reprise de matériaux) est une synthèse de l'application ; le lien lui-même est formulé par Orsenna.",
-      "source": { "pages": "102-103, 95-96", "nature": "synthese" }
+      "source": {
+        "pages": "102-103, 95-96",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-5", "oeuvres": ["les-demons", "agent-secret", "le-proces"], "competence": 4, "format": "relier",
+      "id": "cmp-5",
+      "oeuvres": [
+        "les-demons",
+        "agent-secret",
+        "le-proces"
+      ],
+      "competence": 4,
+      "format": "relier",
       "question": "Associez chaque œuvre à l'idée que l'article sur le terrorisme en retient.",
       "paires": [
-        { "gauche": "Les Démons", "droite": "La liberté individuelle dans un monde sans Dieu, jusqu'au suicide comme affirmation." },
-        { "gauche": "L'Agent secret", "droite": "La « raison perverse » et ses processus logiques, impossibles à sonder." },
-        { "gauche": "Le Procès", "droite": "La victime potentielle qui finit par chercher sa propre faute." }
+        {
+          "gauche": "Les Démons",
+          "droite": "La liberté individuelle dans un monde sans Dieu, jusqu'au suicide comme affirmation."
+        },
+        {
+          "gauche": "L'Agent secret",
+          "droite": "La « raison perverse » et ses processus logiques, impossibles à sonder."
+        },
+        {
+          "gauche": "Le Procès",
+          "droite": "La victime potentielle qui finit par chercher sa propre faute."
+        }
       ],
       "explication": "Les trois idées s'enchaînent dans l'article : Weitzmann reprend la « raison perverse » de Conrad pour conclure sa lecture du Procès.",
-      "source": { "pages": "112-113", "nature": "magazine" }
+      "source": {
+        "pages": "112-113",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "cmp-6", "oeuvres": ["jules-cesar", "education-sentimentale", "fous-du-roi"], "competence": 4, "format": "relier",
+      "id": "cmp-6",
+      "oeuvres": [
+        "jules-cesar",
+        "education-sentimentale",
+        "fous-du-roi"
+      ],
+      "competence": 4,
+      "format": "relier",
       "question": "Associez chaque œuvre à la facette du populisme qu'elle illustre selon l'article.",
       "paires": [
-        { "gauche": "Jules César", "droite": "Un orateur retourne à son profit une foule manipulable." },
-        { "gauche": "L'Éducation sentimentale", "droite": "Le refus de tout élitisme, jusqu'aux diplômes élus par le Peuple." },
-        { "gauche": "Les Fous du roi", "droite": "Un charisme sincère qui dérive vers la corruption et la menace." }
+        {
+          "gauche": "Jules César",
+          "droite": "Un orateur retourne à son profit une foule manipulable."
+        },
+        {
+          "gauche": "L'Éducation sentimentale",
+          "droite": "Le refus de tout élitisme, jusqu'aux diplômes élus par le Peuple."
+        },
+        {
+          "gauche": "Les Fous du roi",
+          "droite": "Un charisme sincère qui dérive vers la corruption et la menace."
+        }
       ],
       "explication": "Manipulation, anti-élitisme, dérive autoritaire : trois visages d'un phénomène que l'article juge impossible à définir d'un mot.",
-      "source": { "pages": "117-118", "nature": "magazine" }
+      "source": {
+        "pages": "117-118",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "cmp-7", "oeuvres": ["tour-du-monde", "la-jungle", "guerre-et-paix"], "competence": 4, "format": "relier",
+      "id": "cmp-7",
+      "oeuvres": [
+        "tour-du-monde",
+        "la-jungle",
+        "guerre-et-paix"
+      ],
+      "competence": 4,
+      "format": "relier",
       "question": "Article « Mondialisation » : associez chaque œuvre à ce qu'elle montre.",
       "paires": [
-        { "gauche": "Le Tour du monde en quatre-vingts jours", "droite": "La vitesse et la traversée, adossées aux progrès techniques et aux empires." },
-        { "gauche": "La Jungle", "droite": "L'exploitation des immigrés d'Europe de l'Est à Chicago." },
-        { "gauche": "La Guerre et la Paix", "droite": "Une aristocratie tiraillée entre élites européennes et appartenance nationale." }
+        {
+          "gauche": "Le Tour du monde en quatre-vingts jours",
+          "droite": "La vitesse et la traversée, adossées aux progrès techniques et aux empires."
+        },
+        {
+          "gauche": "La Jungle",
+          "droite": "L'exploitation des immigrés d'Europe de l'Est à Chicago."
+        },
+        {
+          "gauche": "La Guerre et la Paix",
+          "droite": "Une aristocratie tiraillée entre élites européennes et appartenance nationale."
+        }
       ],
       "explication": "Trois faces de la mondialisation selon l'article : circulation, exploitation, peur de la disparition des identités.",
-      "source": { "pages": "91-92", "nature": "magazine" }
+      "source": {
+        "pages": "91-92",
+        "nature": "magazine"
+      }
     },
     {
-      "id": "cmp-8", "oeuvres": ["argent-peguy", "fables"], "competence": 4, "format": "libre",
+      "id": "cmp-8",
+      "oeuvres": [
+        "argent-peguy",
+        "fables"
+      ],
+      "competence": 4,
+      "format": "libre",
       "question": "Péguy et La Fontaine, deux écrivains face à l'argent. Que partagent-ils, et en quoi diffèrent-ils ?",
-      "points": ["Convergence : indépendance payée par la précarité (La Fontaine « libre, donc pauvre » ; Péguy préférant une vie risquée à celle de fonctionnaire).", "Péguy : critique systématique du règne de l'argent, maître de tout.", "La Fontaine (selon Orsenna) : dépendance concrète envers les mécènes et le pouvoir.", "Nuance : l'un théorise une métaphysique de l'argent, l'autre vit le mécénat d'Ancien Régime."],
+      "points": [
+        "Convergence : indépendance payée par la précarité (La Fontaine « libre, donc pauvre » ; Péguy préférant une vie risquée à celle de fonctionnaire).",
+        "Péguy : critique systématique du règne de l'argent, maître de tout.",
+        "La Fontaine (selon Orsenna) : dépendance concrète envers les mécènes et le pouvoir.",
+        "Nuance : l'un théorise une métaphysique de l'argent, l'autre vit le mécénat d'Ancien Régime."
+      ],
       "reponse": "Tous deux paient leur liberté d'écrivain par une forme de pauvreté. Mais La Fontaine, selon Orsenna, affronte un pouvoir qui distribue les pensions, tandis que Péguy dénonce un monde où l'argent, devenu impersonnel, a absorbé toutes les autres puissances.",
       "explication": "Rapprochement proposé par l'application, à partir des articles « Argent » et « Liberté ».",
-      "source": { "pages": "98-103", "nature": "synthese" }
+      "source": {
+        "pages": "98-103",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-9", "oeuvres": ["fictions", "livre-des-rois"], "competence": 4, "format": "libre",
+      "id": "cmp-9",
+      "oeuvres": [
+        "fictions",
+        "livre-des-rois"
+      ],
+      "competence": 4,
+      "format": "libre",
       "question": "Borges et Kiš : deux écrivains de la bibliothèque et du document. Que nous apprennent-ils, ensemble, sur le pouvoir des textes ?",
-      "points": ["Borges : un monde où tout est écrit ; le monde comme texte possible parmi d'autres (Tlön).", "Kiš : un texte faux (les Protocoles) qui produit des effets réels, jusqu'à la propagande nazie.", "Convergence : la frontière entre fiction et réalité est poreuse ; dangers de la lecture.", "Divergence : jeu intellectuel et ironie chez Borges ; « archéologie du mal » chez Kiš."],
+      "points": [
+        "Borges : un monde où tout est écrit ; le monde comme texte possible parmi d'autres (Tlön).",
+        "Kiš : un texte faux (les Protocoles) qui produit des effets réels, jusqu'à la propagande nazie.",
+        "Convergence : la frontière entre fiction et réalité est poreuse ; dangers de la lecture.",
+        "Divergence : jeu intellectuel et ironie chez Borges ; « archéologie du mal » chez Kiš."
+      ],
       "reponse": "Borges montre que les textes peuvent fabriquer des mondes et que les attributions sont incertaines ; Kiš montre ce que cela coûte quand un faux devient croyance de masse. Ensemble, ils invitent à lire en vérifiant l'origine des textes.",
       "explication": "Rapprochement proposé par l'application, non formulé par le dossier.",
-      "source": { "pages": "95-96, 114", "nature": "prolongement" }
+      "source": {
+        "pages": "95-96, 114",
+        "nature": "prolongement"
+      }
     },
     {
-      "id": "cmp-10", "oeuvres": ["recherche", "chanson-de-roland"], "competence": 4, "format": "qcm",
+      "id": "cmp-10",
+      "oeuvres": [
+        "recherche",
+        "chanson-de-roland"
+      ],
+      "competence": 4,
+      "format": "qcm",
       "question": "Proust et la Chanson de Roland repèrent tous deux des « signes » qui désigneraient un groupe. Quelle différence essentielle le dossier permet-il d'établir ?",
-      "choix": ["La Chanson fige l'autre en stéréotype ; Proust nomme des identités pour mieux les remettre en question.", "Proust invente des stéréotypes que la Chanson ignorait.", "La Chanson décrit les groupes avec exactitude, Proust de façon caricaturale.", "Aucune : les deux textes cherchent à exclure le groupe désigné."],
+      "choix": [
+        "La Chanson fige l'autre en stéréotype ; Proust nomme des identités pour mieux les remettre en question.",
+        "Proust invente des stéréotypes que la Chanson ignorait.",
+        "La Chanson décrit les groupes avec exactitude, Proust de façon caricaturale.",
+        "Aucune : les deux textes cherchent à exclure le groupe désigné."
+      ],
       "correct": 0,
       "explication": "Zoberman : Proust isole des signes « au risque des stéréotypes ? Bien plutôt pour les remettre en question ». Brocas : la Chanson cultive des stéréotypes « toujours agissants », même si la conversion y efface la différence.",
-      "source": { "pages": "88-89, 104-106", "nature": "synthese" }
+      "source": {
+        "pages": "88-89, 104-106",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-11", "oeuvres": ["vie-et-destin", "guerre-et-paix"], "competence": 4, "format": "flashcard",
+      "id": "cmp-11",
+      "oeuvres": [
+        "vie-et-destin",
+        "guerre-et-paix"
+      ],
+      "competence": 4,
+      "format": "flashcard",
       "question": "Pourquoi l'article sur le terrorisme compare-t-il Vie et destin à La Guerre et la Paix ?",
       "reponse": "Il le qualifie de « Guerre et paix des totalitarismes du XXe siècle » : un roman de guerre total (Stalingrad) qui, comme celui de Tolstoï face à Napoléon, embrasse une époque entière — mais pour analyser les deux systèmes européens les plus meurtriers.",
       "explication": "La comparaison est formulée par Weitzmann ; son développement (l'ampleur, la guerre comme révélateur) est une synthèse de l'application.",
-      "source": { "pages": "113, 92", "nature": "synthese" }
+      "source": {
+        "pages": "113, 92",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-12", "oeuvres": ["yourcenar", "tour-du-monde"], "competence": 4, "format": "libre",
+      "id": "cmp-12",
+      "oeuvres": [
+        "yourcenar",
+        "tour-du-monde"
+      ],
+      "competence": 4,
+      "format": "libre",
       "question": "Fogg traverse le monde à toute vitesse ; Yourcenar blâme les « transhumances modernes » du tourisme de masse. Que dit ce face-à-face de notre rapport au monde ?",
-      "points": ["Verne/Berasategui : traverser plutôt que découvrir ; fuite en avant énergivore.", "Yourcenar : tourisme de masse qui déforme les paysages (plages d'enfance, villa Adriana).", "Convergence : un monde réduit à un espace à parcourir ou consommer.", "Nuance : l'article sur Verne défend aussi la circulation des personnes, question de survie pour certains."],
+      "points": [
+        "Verne/Berasategui : traverser plutôt que découvrir ; fuite en avant énergivore.",
+        "Yourcenar : tourisme de masse qui déforme les paysages (plages d'enfance, villa Adriana).",
+        "Convergence : un monde réduit à un espace à parcourir ou consommer.",
+        "Nuance : l'article sur Verne défend aussi la circulation des personnes, question de survie pour certains."
+      ],
       "reponse": "Les deux textes montrent un monde parcouru plutôt qu'habité. Mais il faut distinguer le voyage de loisir, que Yourcenar critique, des migrations de survie, que l'article sur la mondialisation défend.",
       "explication": "Rapprochement proposé par l'application à partir des articles « Mondialisation » et « Écologie ».",
-      "source": { "pages": "91, 120", "nature": "prolongement" }
+      "source": {
+        "pages": "91, 120",
+        "nature": "prolongement"
+      }
     },
     {
-      "id": "cmp-13", "oeuvres": ["argent-peguy", "fables", "fous-du-roi"], "competence": 4, "format": "relier",
+      "id": "cmp-13",
+      "oeuvres": [
+        "argent-peguy",
+        "fables",
+        "fous-du-roi"
+      ],
+      "competence": 4,
+      "format": "relier",
       "question": "Pouvoir et argent : associez chaque œuvre à son diagnostic.",
       "paires": [
-        { "gauche": "L'Argent (Péguy)", "droite": "L'argent, pouvoir invisible, a absorbé toutes les autres puissances." },
-        { "gauche": "Fables (selon Orsenna)", "droite": "L'écrivain doit être « sponsorisé » par le pouvoir, au risque de sa liberté." },
-        { "gauche": "Les Fous du roi", "droite": "Le pouvoir conquis au nom du peuple devient empire de corruption." }
+        {
+          "gauche": "L'Argent (Péguy)",
+          "droite": "L'argent, pouvoir invisible, a absorbé toutes les autres puissances."
+        },
+        {
+          "gauche": "Fables (selon Orsenna)",
+          "droite": "L'écrivain doit être « sponsorisé » par le pouvoir, au risque de sa liberté."
+        },
+        {
+          "gauche": "Les Fous du roi",
+          "droite": "Le pouvoir conquis au nom du peuple devient empire de corruption."
+        }
       ],
       "explication": "Trois manières d'articuler pouvoir et argent ; le regroupement est proposé par l'application.",
-      "source": { "pages": "98, 103, 118", "nature": "synthese" }
+      "source": {
+        "pages": "98, 103, 118",
+        "nature": "synthese"
+      }
     },
     {
-      "id": "cmp-14", "oeuvres": ["les-demons", "vie-et-destin", "delillo"], "competence": 4, "format": "qcm",
+      "id": "cmp-14",
+      "oeuvres": [
+        "les-demons",
+        "vie-et-destin",
+        "delillo"
+      ],
+      "competence": 4,
+      "format": "qcm",
       "question": "Dans l'article de Marc Weitzmann, quel fil relie Les Démons, Vie et destin et Outremonde ?",
-      "choix": ["La terreur comme dynamique qui déborde ses acteurs, du complot nihiliste à la violence d'État et aux héritages de la guerre froide.", "Le même pays d'origine de leurs auteurs.", "La dénonciation exclusive de l'islamisme.", "Une fin heureuse où l'ordre est rétabli."],
+      "choix": [
+        "La terreur comme dynamique qui déborde ses acteurs, du complot nihiliste à la violence d'État et aux héritages de la guerre froide.",
+        "Le même pays d'origine de leurs auteurs.",
+        "La dénonciation exclusive de l'islamisme.",
+        "Une fin heureuse où l'ordre est rétabli."
+      ],
       "correct": 0,
       "explication": "Chacun montre une violence qui échappe au contrôle et à la raison : dynamique infernale (Dostoïevski), violence devenue objet d'adoration (Grossman), siècle englué dans les terreurs du précédent (DeLillo).",
-      "source": { "pages": "112-114", "nature": "synthese" }
+      "source": {
+        "pages": "112-114",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "rol-8",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 2,
+      "format": "qcm",
+      "question": "Dans l'extrait de la Chanson (laisse XXIX), quel argument Ganelon donne-t-il à Blancandrin pour se débarrasser de Roland ?",
+      "choix": [
+        "Son orgueil l'expose chaque jour à la mort : qu'on le tue, et la paix sera totale.",
+        "Roland a trahi Charlemagne en secret.",
+        "Roland veut convertir les Sarrasins par la force.",
+        "Roland est le seul obstacle à son mariage avec une princesse sarrasine."
+      ],
+      "correct": 0,
+      "explication": "« Son orgueil devrait bien le perdre, / car, chaque jour, à la mort il s'expose. / Qu'on le tue, et nous aurions une paix totale. » C'est la « frénésie guerrière » de Roland que l'article désigne comme cause de la guerre.",
+      "source": {
+        "pages": "107",
+        "nature": "magazine"
+      }
     }
   ]
 }

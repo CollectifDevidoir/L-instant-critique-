@@ -9,7 +9,7 @@
     "coordination": "Pierre Assouline et Alexis Brocas",
     "pagesMagazine": "82-124",
     "pagesPdf": 42,
-    "correspondance": "Page PDF 1 = page 82 du magazine ; page PDF n (n ≥ 2) = page 82 + n du magazine. La page 83 du magazine ne figure pas dans le PDF.",
+    "correspondance": "Page PDF 1 = page 82 du magazine ; page PDF n (n ≥ 2) = page 82 + n du magazine. La page 83 du magazine ne figure pas dans le PDF. La page 83 est une photographie pleine page, sans texte utile.",
     "perimetre": "Le PDF s'arrête à la page 124 du magazine. L'introduction annonce des œuvres (1984, L'Étranger, Don Quichotte, Les Bacchantes) qui ne sont traitées dans aucune des pages fournies : le dossier se poursuit vraisemblablement au-delà. Les fiches ci-dessous ne couvrent que ce que le PDF permet d'établir."
   },
   "legende": {
@@ -563,7 +563,7 @@
       "questionReflexion": "Si tout est écrit quelque part, comment distinguer le vrai du possible ?",
       "limites": "L'article lui-même invite à la prudence : Borges n'a-t-il pas promu de telles interprétations « folles » à travers Pierre Ménard et sa « technique de l'anachronisme délibéré et des attributions erronées » ? Faire de lui un prophète d'Internet relève en partie de cet anachronisme.",
       "approfondir": [
-        "L'article indique que « Le Jardin aux sentiers qui bifurquent » fut « rédigé en 1928 » ; la date usuelle de publication de la nouvelle est 1941 (à vérifier).",
+        "« Le Jardin aux sentiers qui bifurquent » date de 1941 (l'article indique par erreur « rédigé en 1928 »).",
         "Le manuscrit autographe de la nouvelle a été vendu en 2010 à New York à un prix faramineux.",
         "Érik Orsenna voit en Borges une exception : le genre du conte philosophique se serait éteint avec La Fontaine, « à l'exception, peut-être, de ceux de Borges » (p. 103)."
       ],
@@ -580,8 +580,8 @@
         }
       ],
       "verification": {
-        "statut": "partiel",
-        "notes": "Pages PDF 13 à 15 relues (p. 96 photographiée à l'envers, redressée). Date de 1928 donnée par l'article pour « Le Jardin… » à vérifier."
+        "statut": "verifie",
+        "notes": "Pages PDF 13 à 15 relues (p. 96 photographiée à l'envers, redressée). Date du « Jardin… » corrigée : 1941."
       },
       "couvertures": [
         {
@@ -756,7 +756,8 @@
       "approfondir": [
         "Roland refuse longtemps de sonner du cor malgré Olivier (« Compainz Rollant, sunez vostre olifan ») ; la cause de la guerre, selon l'ambassadeur Blancandrin, serait sa « frénésie guerrière ».",
         "Jean Dufournet, traducteur, évoque la projection inconsciente des tares de l'Occident chrétien sur des Sarrasins figurant « l'étrangeté absolue, le mal radical ».",
-        "Extraits p. 107-108 (conseil de la discorde, Ganelon, catalogue des armées de Baligant, combat des chefs)."
+        "L'extrait (p. 107-108) suit la Chanson pas à pas : les forces en présence, le « conseil de la discorde » où Roland désigne son « parâtre » Ganelon comme ambassadeur, Blancandrin poussant Ganelon à trahir (« Qu'on le tue, et nous aurions une paix totale »), Chernuble « voisin de Satan », la multitude des païens vue par Olivier, le début de la bataille.",
+        "Édition conseillée par le dossier : La Chanson de Roland, édition bilingue traduite de l'ancien français et dirigée par Jean Dufournet (GF Flammarion)."
       ],
       "citations": [
         {
@@ -767,7 +768,7 @@
       ],
       "verification": {
         "statut": "verifie",
-        "notes": "Pages PDF 22 à 24 et 26 relues. La page PDF 25 (extrait, p. 107) est floue : non exploitée hors titres de laisses."
+        "notes": "Pages PDF 22 à 26 relues ; extrait p. 107 relu sur une photo nette fournie ultérieurement."
       },
       "couvertures": [
         {
@@ -1007,7 +1008,7 @@
       ],
       "verification": {
         "statut": "verifie",
-        "notes": "Pages PDF 30-31 relues. La légende de la photo indique « 25 avril 2017 » (date imprimée, non corrigée ici)."
+        "notes": "Pages PDF 30-31 relues. Légende de la photo : attaque du 25 avril 2017, telle qu'imprimée."
       },
       "couvertures": [
         {
@@ -1150,7 +1151,7 @@
       "ideeCentrale": "Libra croise l'histoire de Lee Harvey Oswald et celle d'anciens agents de la CIA qui complotent contre Castro : tout y est vrai et retravaillé par l'imagination ; méditation sur la technologie et les théories conspirationnistes, il préfigure notre monde. Outremonde, chronique intimiste de la terreur au temps de la guerre froide, montre combien notre siècle reste englué dans « la décharge des terreurs du précédent ».",
       "idees": [
         "Libra : deux trajectoires se rejoignent par des courants souterrains jusqu'à l'assassinat de Kennedy.",
-        "Outremonde (environ 900 pages) : entre le premier essai de bombe H soviétique et la chute du mur de Berlin ; le personnage central, Nick Shay, passe de la gestion des déchets de New York à celle des déchets nucléaires de l'ex-URSS.",
+        "Outremonde (environ 900 pages) : entre le premier essai de bombe H soviétique (1953) et la chute du mur de Berlin ; le personnage central, Nick Shay, passe de la gestion des déchets de New York à celle des déchets nucléaires de l'ex-URSS.",
         "Le prologue d'Outremonde, « Le triomphe de la mort », qui décrit un match de base-ball historique, est à lui seul un chef-d'œuvre selon l'article."
       ],
       "exemple": "Nick Shay, cadre dans la gestion des déchets : les déchets deviennent la métaphore des terreurs que la guerre froide lègue au siècle suivant.",
@@ -1163,15 +1164,15 @@
         "piste": "La prolifération actuelle des récits complotistes autour d'événements majeurs donne une résonance nouvelle à Libra."
       },
       "questionReflexion": "Pourquoi les grands événements violents suscitent-ils tant de récits de complot ?",
-      "limites": "L'article date le premier essai de bombe H soviétique de 1952 ; cette date, donnée telle quelle, est à vérifier.",
+      "limites": "Libra mêle faits avérés et imagination : le roman n'est pas une enquête historique. L'article date de 1952 le premier essai de bombe H soviétique ; la date correcte, retenue ici, est 1953.",
       "approfondir": [
         "Traductions citées : Michel Courtois-Fourcy (Libra, Babel) ; Marianne Véron (Outremonde, Babel).",
         "Weitzmann compare Outremonde à ce qu'aurait pu être une chronique de la guerre froide « écrite par Samuel Beckett »."
       ],
       "citations": [],
       "verification": {
-        "statut": "partiel",
-        "notes": "Page PDF 32 relue. Date de l'essai soviétique (1952) telle qu'imprimée : à vérifier."
+        "statut": "verifie",
+        "notes": "Page PDF 32 relue. Date de l'essai soviétique corrigée en 1953 (l'article imprime 1952)."
       },
       "couvertures": [
         {
@@ -1339,7 +1340,7 @@
         "piste": "Le discours antisystème tenu par des responsables déjà au pouvoir rappelle la rhétorique de Willie Stark."
       },
       "questionReflexion": "Pourquoi la littérature est-elle si souvent fascinée par les figures populistes ?",
-      "limites": "L'article affirme que Willie Stark se fait élire sénateur ; dans le roman, il est connu comme gouverneur (point à vérifier). Les thèses sur le déclin de la littérature française sont celles de l'auteur de l'article.",
+      "limites": "L'article présente Willie Stark comme élu « sénateur » ; nous gardons sa formulation. Les thèses sur le déclin de la littérature française sont celles de l'auteur de l'article.",
       "approfondir": [
         "Steinbeck, Les Raisins de la colère : « Je serai partout dans l'ombre… », cité comme formulation exemplaire de l'empathie de l'écrivain avec les humbles."
       ],
@@ -1351,8 +1352,8 @@
         }
       ],
       "verification": {
-        "statut": "partiel",
-        "notes": "Pages PDF 36-37 relues. Fonction de Willie Stark (« sénateur ») telle qu'écrite dans l'article : à vérifier ; non utilisée dans les questions."
+        "statut": "verifie",
+        "notes": "Pages PDF 36-37 relues."
       },
       "couvertures": [
         {
