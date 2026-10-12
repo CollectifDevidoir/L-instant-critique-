@@ -1,0 +1,12 @@
+{
+  "name": "L'instant critique",
+  "short_name": "Instant critique",
+  "description": "Trente classiques pour penser le monde, quelques minutes par jour.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3eee4",
+  "theme_color": "#f3eee4",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

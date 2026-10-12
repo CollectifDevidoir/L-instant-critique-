@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "rapprochements": [
+    {
+      "id": "ratchkovski",
+      "titre": "Un même agent derrière la terreur et le faux",
+      "oeuvres": ["agent-secret", "livre-des-rois"],
+      "theme": "manipulation",
+      "fondement": "explicite",
+      "fondementTexte": "Marc Weitzmann nomme Ratchkovski dans les deux rubriques (p. 112 et 114).",
+      "convergences": ["Une police secrète manipule des anarchistes (Conrad) et commande un faux (Kiš) : la déstabilisation des sociétés libérales est un instrument de pouvoir.", "Dans les deux cas, la Russie joue « un rôle clé dans la dynamique de la terreur » selon l'article."],
+      "oppositions": ["Conrad interroge la métaphysique de l'attentat (viser l'heure universelle) ; Kiš suit la fabrication matérielle d'un document et sa diffusion."],
+      "nuances": "Le rôle de Ratchkovski dans les Protocoles repose sur des travaux d'historiens cités par l'article (Taguieff, Lepekhine) ; les deux œuvres restent des fictions.",
+      "question": "Qu'est-ce qui est le plus durable : la violence d'un attentat ou celle d'un faux document ?"
+    },
+    {
+      "id": "raison-perverse",
+      "titre": "La raison perverse, de Conrad à Kafka",
+      "oeuvres": ["agent-secret", "le-proces", "les-demons"],
+      "theme": "violence",
+      "fondement": "explicite",
+      "fondementTexte": "Weitzmann applique au Procès l'expression de Conrad (« les processus logiques de la raison perverse », p. 113).",
+      "convergences": ["La violence terroriste obéit à une logique propre, que ses victimes finissent par intérioriser.", "Le ridicule ou l'absurde (conspirateurs « crétins », arrestation sans faute) n'empêche pas la catastrophe."],
+      "oppositions": ["Dostoïevski et Conrad regardent les auteurs de la violence ; Kafka, celui qui la subit."],
+      "nuances": "Kafka n'écrit pas sur le terrorisme : la lecture « au XXIe siècle » est celle de l'article.",
+      "question": "Expliquer une violence, est-ce forcément l'excuser ? Où passe la frontière ?"
+    },
+    {
+      "id": "regards-islam",
+      "titre": "Deux regards occidentaux sur l'islam",
+      "oeuvres": ["chanson-de-roland", "tristes-tropiques"],
+      "theme": "alterite",
+      "fondement": "propose",
+      "fondementTexte": "Rapprochement proposé par l'application : le dossier consacre deux articles successifs à ces représentations (p. 104-111).",
+      "convergences": ["L'autre sert de miroir : projection des « tares de l'Occident chrétien » (Dufournet) ; « l'islam, c'est l'Occident de l'Orient » (Lévi-Strauss).", "Les deux textes en disent autant sur leur auteur et leur époque que sur l'islam."],
+      "oppositions": ["La Chanson ignore l'islam réel et nie son monothéisme ; Lévi-Strauss l'a observé, brièvement, et en retient aussi des intuitions (la prière solitaire).", "La Chanson intègre l'autre par la conversion ; Lévi-Strauss reproche à l'islam de mal supporter la pluralité."],
+      "nuances": "L'article sur Lévi-Strauss parle de « mauvaise foi » ; celui sur Roland juge la Chanson « nullement raciste » au sens moderne. Ni l'un ni l'autre ne vaut comme connaissance de l'islam.",
+      "question": "Comment distinguer, dans un discours sur une religion, ce qui relève de l'observation, du préjugé et du miroir tendu à soi-même ?"
+    },
+    {
+      "id": "populisme-trois-visages",
+      "titre": "Trois visages du populisme",
+      "oeuvres": ["jules-cesar", "education-sentimentale", "fous-du-roi"],
+      "theme": "pouvoir",
+      "fondement": "explicite",
+      "fondementTexte": "Les trois œuvres sont réunies dans l'article « Populisme. Une farce ancienne » (p. 117-119).",
+      "convergences": ["Le « peuple » est invoqué comme seule source de vérité, contre des élites.", "La parole (discours, harangue) est l'arme principale."],
+      "oppositions": ["Shakespeare montre un manipulateur cynique ; Penn Warren un leader d'abord sincère ; Flaubert un mouvement collectif sans chef."],
+      "nuances": "L'article rappelle que personne ne sait définir le populisme ; il en attribue l'invention moderne à Rousseau, et souligne que certains livres « prennent parti » pour lui.",
+      "question": "Le populisme est-il une manipulation du peuple ou une revendication du peuple ? Peut-il être les deux ?"
+    },
+    {
+      "id": "mondialisation-trois-faces",
+      "titre": "Circuler, exploiter, se perdre",
+      "oeuvres": ["tour-du-monde", "la-jungle", "guerre-et-paix"],
+      "theme": "mondialisation",
+      "fondement": "explicite",
+      "fondementTexte": "Les trois œuvres sont mobilisées dans l'article « Mondialisation » (p. 91-92).",
+      "convergences": ["La circulation des hommes, des biens et des idées transforme les identités.", "Elle profite à certains (Fogg, les élites russes) et en écrase d'autres (ouvriers chinois, immigrés de Chicago)."],
+      "oppositions": ["Verne valorise la colonisation ; Sinclair dénonce l'exploitation ; Tolstoï montre une élite qui doit renier son cosmopolitisme."],
+      "nuances": "L'article défend la libre circulation des personnes, « parfois leur seule chance de survivre », tout en critiquant la mondialisation dérégulée de l'économie.",
+      "question": "Peut-on défendre la libre circulation des personnes et critiquer celle des capitaux ?"
+    },
+    {
+      "id": "science-du-coeur",
+      "titre": "De la « science du cœur » aux identités",
+      "oeuvres": ["princesse-de-cleves", "recherche"],
+      "theme": "amour",
+      "fondement": "explicite",
+      "fondementTexte": "Robert Kopp place Proust dans la lignée du roman d'analyse inauguré par Mme de Lafayette (p. 85).",
+      "convergences": ["Deux mondes de faux-semblants (la cour d'Henri II, le faubourg Saint-Germain) où il faut déchiffrer les signes.", "L'analyse intérieure plutôt que l'aventure."],
+      "oppositions": ["La princesse cherche à se protéger de la passion ; le narrateur proustien observe et nomme les désirs des autres."],
+      "nuances": "Les deux articles adoptent des grilles très différentes : lecture morale et augustinienne (Kopp), lecture queer (Zoberman).",
+      "question": "Se connaître soi-même et déchiffrer les autres : est-ce la même science ?"
+    },
+    {
+      "id": "conte-bref",
+      "titre": "La fable et la fiction brève",
+      "oeuvres": ["fables", "fictions"],
+      "theme": "savoir",
+      "fondement": "explicite",
+      "fondementTexte": "Érik Orsenna : le genre s'est éteint avec La Fontaine, « à l'exception, peut-être, de ceux de Borges » (p. 103).",
+      "convergences": ["Deux maîtres de la forme brève, qui reprennent des matériaux existants pour en tirer une portée générale.", "Le génie est dans l'écriture et la construction, non dans l'invention de la trame."],
+      "oppositions": ["La Fontaine tire des morales ; Borges ouvre des vertiges métaphysiques sans conclusion."],
+      "nuances": "Le développement du parallèle est une synthèse de l'application ; seul le rapprochement est formulé par Orsenna.",
+      "question": "Une histoire courte peut-elle dire plus qu'un long traité ?"
+    },
+    {
+      "id": "ecrivain-argent",
+      "titre": "L'écrivain, l'argent et la liberté",
+      "oeuvres": ["fables", "argent-peguy"],
+      "theme": "argent",
+      "fondement": "propose",
+      "fondementTexte": "Rapprochement proposé par l'application à partir des articles « Liberté » et « Argent ».",
+      "convergences": ["Une indépendance payée par la précarité.", "Une lucidité sur le rôle de l'argent dans la vie de l'esprit."],
+      "oppositions": ["La Fontaine dépend d'un pouvoir personnel (le roi, le mécène) ; Péguy affronte un pouvoir impersonnel et invisible."],
+      "nuances": "Le portrait d'un La Fontaine « paria » est celui d'Orsenna ; Péguy peut être jugé nostalgique d'un monde du travail idéalisé.",
+      "question": "Qui menace le plus la liberté de créer : un prince qui paie ou un marché qui juge ?"
+    },
+    {
+      "id": "fake-et-bibliotheque",
+      "titre": "Le pouvoir des textes",
+      "oeuvres": ["fictions", "livre-des-rois", "delillo"],
+      "theme": "manipulation",
+      "fondement": "propose",
+      "fondementTexte": "Rapprochement proposé par l'application : Borges (p. 95-96), Kiš et DeLillo (p. 114).",
+      "convergences": ["Des textes et des récits fabriquent des mondes : Tlön, les Protocoles, les théories du complot de Libra.", "La frontière entre fiction et réalité devient poreuse."],
+      "oppositions": ["Chez Borges, un jeu ironique sur les attributions ; chez Kiš, une « archéologie du mal » ; chez DeLillo, l'histoire réelle retravaillée par l'imagination."],
+      "nuances": "Aucun article ne relie explicitement ces trois auteurs.",
+      "question": "Face à un texte qui circule, quelles questions faut-il se poser avant d'y croire ?"
+    },
+    {
+      "id": "stereotypes",
+      "titre": "Nommer l'autre : figer ou défaire ?",
+      "oeuvres": ["recherche", "chanson-de-roland"],
+      "theme": "identites",
+      "fondement": "propose",
+      "fondementTexte": "Rapprochement proposé par l'application à partir des articles « Identités sexuelles » et « Relations Orient-Occident ».",
+      "convergences": ["Repérage de signes censés désigner un groupe (corps, voix, noms, apparence)."],
+      "oppositions": ["La Chanson fixe l'autre dans une altérité absolue (sauf conversion) ; Proust nomme des identités pour mieux les mettre en question."],
+      "nuances": "Zoberman pose lui-même la question : « Au risque des stéréotypes ? Bien plutôt pour les remettre en question. »",
+      "question": "Décrire des différences, est-ce forcément les figer ?"
+    },
+    {
+      "id": "violence-totale",
+      "titre": "Quand la violence devient objet d'adoration",
+      "oeuvres": ["vie-et-destin", "les-demons", "delillo"],
+      "theme": "violence",
+      "fondement": "explicite",
+      "fondementTexte": "Les trois œuvres figurent dans l'article « Terrorisme. Les scansions du chaos » (p. 112-114).",
+      "convergences": ["Une violence qui excède ses fins et fascine.", "Des héritages : le XXIe siècle englué dans les terreurs du XXe."],
+      "oppositions": ["Complot de quelques-uns (Dostoïevski), violence d'un État puissant (Grossman), terreur diffuse de la guerre froide (DeLillo)."],
+      "nuances": "L'article rassemble ces œuvres sous le terrorisme au sens large ; Vie et destin traite d'abord du totalitarisme.",
+      "question": "Pourquoi certaines violences fascinent-elles au lieu de repousser ?"
+    },
+    {
+      "id": "habiter-le-monde",
+      "titre": "Traverser ou habiter le monde",
+      "oeuvres": ["tour-du-monde", "yourcenar"],
+      "theme": "ecologie",
+      "fondement": "propose",
+      "fondementTexte": "Rapprochement proposé par l'application à partir des articles « Mondialisation » et « Écologie ».",
+      "convergences": ["Une même inquiétude devant un monde parcouru, consommé, plutôt qu'habité : fuite en avant « énergivore », tourisme de masse qui déforme les paysages."],
+      "oppositions": ["L'article sur Verne défend la circulation des personnes ; Yourcenar critique les « transhumances modernes » du loisir."],
+      "nuances": "Ne pas confondre tourisme et migrations de survie.",
+      "question": "Voyager moins, est-ce forcément mieux voir le monde ?"
+    }
+  ],
+  "questionsOuvertes": [
+    { "theme": "pouvoir", "question": "De La Boétie à Richard III : pourquoi des peuples se donnent-ils des maîtres ?", "oeuvres": ["jules-cesar", "fous-du-roi"] },
+    { "theme": "liberte", "question": "La princesse de Clèves et La Fontaine paient tous deux leur liberté. De quel prix ?", "oeuvres": ["princesse-de-cleves", "fables"] },
+    { "theme": "ecologie", "question": "Yourcenar voit l'origine des maux de la nature dans notre manière de penser le monde : quelle habitude de pensée changeriez-vous en premier ?", "oeuvres": ["yourcenar"] },
+    { "theme": "argent", "question": "Citez une chose qui, selon vous, ne devrait jamais avoir de prix. Que dirait Péguy de votre exemple ?", "oeuvres": ["argent-peguy"] },
+    { "theme": "savoir", "question": "Internet a-t-il réalisé la Bibliothèque de Babel, ou son cauchemar ?", "oeuvres": ["fictions"] },
+    { "theme": "alterite", "question": "La peur de l'autre « s'habille-t-elle toujours des mêmes formes » ?", "oeuvres": ["chanson-de-roland", "tristes-tropiques"] },
+    { "theme": "violence", "question": "Après un attentat, pourquoi cherchons-nous des raisons ? Que nous apprend Joseph K. ?", "oeuvres": ["le-proces"] },
+    { "theme": "identites", "question": "Être nommé, est-ce être reconnu ou être assigné ?", "oeuvres": ["recherche"] }
+  ]
+}

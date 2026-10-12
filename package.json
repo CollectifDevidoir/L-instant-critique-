@@ -1,0 +1,13 @@
+{
+  "name": "instant-critique",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Application d'apprentissage : 30 classiques pour penser le monde (d'après Le Magazine littéraire, 2017).",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "license": "MIT"
+}
