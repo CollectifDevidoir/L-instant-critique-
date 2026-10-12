@@ -63,6 +63,10 @@ function pageLink(magPages, label) {
   return `<span>${txt}</span>`;
 }
 
+function coverImg(c, cls = 'cover') {
+  return `<img class="${cls}" src="${esc(c.fichier)}" alt="Couverture : ${esc(c.legende)}" width="${c.largeur}" height="${c.hauteur}" loading="lazy" decoding="async">`;
+}
+
 function intervalLabel(state, now = Date.now()) {
   if (!state?.due) return '';
   const ms = state.due - now;
@@ -340,7 +344,7 @@ function renderIntro(oeuvreId) {
   const o = C.byId.get(oeuvreId);
   const art = C.articles.get(o.article);
   return `<article class="card-shell intro-card">
-    <aside class="margin"><span class="label">Nouvelle œuvre</span><span class="oeuvre-ref">${esc(art.rubrique)}<small>${esc(art.auteurs)}</small></span></aside>
+    <aside class="margin"><span class="label">Nouvelle œuvre</span>${o.couvertures?.[0] ? coverImg(o.couvertures[0], 'margin-cover') : ''}<span class="oeuvre-ref">${esc(art.rubrique)}<small>${esc(art.auteurs)}</small></span></aside>
     <div class="card-body">
       <p class="kicker">En un regard</p>
       <h1 class="question"><em>${esc(o.titre)}</em></h1>
@@ -570,8 +574,9 @@ function dotsFor(oeuvreId) {
 }
 
 function entryHtml(o) {
-  return `<a class="entry" href="#/oeuvre/${o.id}">
-    <span class="entry-title">${esc(o.titre)}</span>${dotsFor(o.id)}
+  const c = o.couvertures?.[0];
+  return `<a class="entry${c ? ' has-cover' : ''}" href="#/oeuvre/${o.id}">
+    ${c ? coverImg(c, 'entry-cover') : ''}<span class="entry-title">${esc(o.titre)}</span>${dotsFor(o.id)}
     <span class="entry-meta">${esc(shortAuthor(o.auteur))} · ${esc(o.date)}</span>
     <span class="entry-q">${esc(o.question)}</span></a>`;
 }
@@ -633,10 +638,13 @@ function viewOeuvre(id) {
   render(`
   <div class="fiche">
     <article>
-      <header class="fiche-head">
-        <p class="kicker">${esc(a.rubrique)} · « ${esc(a.titre)} »</p>
-        <h1>${esc(o.titre)}</h1>
-        <p class="by">${esc(o.auteur)} <span>· ${esc(o.date)}</span> ${o.dateNature === 'repere' ? natureTag('repere') : ''}</p>
+      <header class="fiche-head${o.couvertures?.length ? ' has-cover' : ''}">
+        ${o.couvertures?.length ? `<div class="covers">${o.couvertures.map((c) => `<figure>${coverImg(c)}${o.couvertures.length > 1 ? `<figcaption>${esc(c.legende)}</figcaption>` : ''}</figure>`).join('')}</div>` : ''}
+        <div>
+          <p class="kicker">${esc(a.rubrique)} · « ${esc(a.titre)} »</p>
+          <h1>${esc(o.titre)}</h1>
+          <p class="by">${esc(o.auteur)} <span>· ${esc(o.date)}</span> ${o.dateNature === 'repere' ? natureTag('repere') : ''}</p>
+        </div>
       </header>
 
       <section>

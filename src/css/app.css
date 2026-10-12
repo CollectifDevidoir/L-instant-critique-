@@ -456,3 +456,20 @@ dialog::backdrop { background: rgba(20, 15, 10, .45); }
 
 .footer-note { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .85rem; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ——— Couvertures ——— */
+.cover, .entry-cover, .margin-cover { display: block; height: auto; border-radius: 2px; box-shadow: 0 1px 2px rgba(40,25,10,.25), 0 8px 18px -10px rgba(40,25,10,.5); background: var(--paper-2); }
+.fiche-head.has-cover { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem 1.6rem; align-items: end; }
+.covers { display: flex; gap: .6rem; align-items: flex-end; }
+.covers figure { margin: 0; }
+.covers .cover { width: 92px; }
+.covers figcaption { font-family: var(--label); font-size: .65rem; color: var(--ink-3); margin-top: .3rem; max-width: 92px; line-height: 1.2; }
+@media (min-width: 760px) { .covers .cover { width: 120px; } .covers figcaption { max-width: 120px; } }
+@media (max-width: 560px) { .fiche-head.has-cover { grid-template-columns: 1fr; } .covers { overflow-x: auto; } }
+.entry.has-cover { grid-template-columns: 46px 1fr auto; column-gap: 1rem; }
+.entry-cover { width: 46px; grid-row: 1 / span 3; align-self: start; }
+.entry.has-cover .entry-meta { grid-column: 2; }
+.entry.has-cover .entry-q { grid-column: 2 / -1; }
+.entry.has-cover .dots { grid-column: 3; }
+.margin-cover { width: 64px; }
+@media (min-width: 760px) { .margin-cover { width: 96px; } }

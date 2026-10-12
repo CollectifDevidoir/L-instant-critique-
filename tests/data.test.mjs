@@ -1,7 +1,7 @@
 // Contrôles d'intégrité du contenu pédagogique.
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { indexContent, search, pdfPageFor } from '../src/js/data.js';
 
 const load = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}.json`, import.meta.url), 'utf8'));
@@ -26,6 +26,8 @@ test('fiches complètes et cohérentes', () => {
     assert.ok(['magazine', 'repere'].includes(o.dateNature));
     assert.ok(['verifie', 'partiel'].includes(o.verification.statut));
     assert.ok(o.themes.every((t) => C.themes.has(t)), `${o.id} : thèmes`);
+    assert.ok(o.couvertures?.length, `${o.id} : couverture`);
+    for (const c of o.couvertures) assert.ok(existsSync(new URL(`../${c.fichier}`, import.meta.url)), c.fichier);
     for (const c of o.citations) assert.ok(inRange(c.page) && c.texte.length < 320, `${o.id} : citation courte et paginée`);
   }
 });

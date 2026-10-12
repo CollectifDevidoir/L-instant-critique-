@@ -35,7 +35,7 @@ jobs:
       - name: Préparer le site statique
         run: |
           mkdir _site
-          cp -r index.html favicon.svg manifest.webmanifest .nojekyll src _site/
+          cp -r index.html favicon.svg manifest.webmanifest .nojekyll src assets _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
