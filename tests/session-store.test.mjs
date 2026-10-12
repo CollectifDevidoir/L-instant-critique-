@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { buildSession, requeue, eligibleNew } from '../src/js/session.js';
+import { buildSession, requeue, eligibleNew, levelOf, unlockedLevel } from '../src/js/session.js';
 import { review, newState, DAY } from '../src/js/srs.js';
 import { createStore, migrate, validateImport, exportText, emptyProgress, SCHEMA, STORAGE_KEY } from '../src/js/store.js';
 import { indexContent } from '../src/js/data.js';
@@ -16,8 +16,10 @@ test('première séance : introduction, nouveautés limitées, fiche avant la pr
   assert.ok(cards.length >= 2 && cards.length <= 8, `${cards.length} cartes`);
   assert.equal(items[0].type, 'intro');
   assert.equal(items[0].oeuvre, 'introduction');
-  const opened = new Set(cards.map((i) => C.cardById.get(i.id).oeuvres[0]));
+  const opened = new Set(cards.map((i) => C.cardById.get(i.id).oeuvres[0]).filter((o) => o !== 'introduction'));
   assert.ok(opened.size <= 2);
+  assert.ok(cards.every((i) => levelOf(C.cardById.get(i.id)) === 1), 'première séance : uniquement le palier « découvrir »');
+  assert.deepEqual([...opened], ['tour-du-monde', 'fables'], 'parcours : les livres les plus accessibles d’abord');
   for (const o of opened) {
     const firstCard = items.findIndex((i) => i.type === 'card' && C.cardById.get(i.id).oeuvres[0] === o);
     const intro = items.findIndex((i) => i.type === 'intro' && i.oeuvre === o);
@@ -49,10 +51,27 @@ test('les comparaisons attendent que les œuvres concernées soient réussies', 
   assert.equal(eligibleNew(C.cards, {}).includes(cmp), false);
   const states = {};
   for (const o of cmp.oeuvres) {
-    const c = C.cards.find((x) => x.oeuvres[0] === o && x.competence === 1);
-    states[c.id] = review(newState(), 3, T0);
+    for (const c of C.cards.filter((x) => x.oeuvres[0] === o && levelOf(x) === 1)) states[c.id] = review(newState(), 3, T0);
   }
   assert.equal(eligibleNew(C.cards, states).includes(cmp), true);
+});
+
+test('paliers : on ne passe à « comprendre » qu’après avoir réussi « découvrir »', () => {
+  const own = C.cards.filter((c) => c.oeuvres[0] === 'tour-du-monde');
+  const lvl1 = own.filter((c) => levelOf(c) === 1);
+  const lvl2 = own.filter((c) => levelOf(c) === 2);
+  const lvl3 = own.filter((c) => levelOf(c) === 3);
+  assert.ok(lvl1.length && lvl2.length && lvl3.length);
+  const states = {};
+  assert.equal(unlockedLevel('tour-du-monde', C.cards, states), 1);
+  assert.ok(!eligibleNew(C.cards, states).some((c) => lvl2.includes(c)));
+  states[lvl1[0].id] = review(newState(), 1, T0); // raté : pas encore
+  for (const c of lvl1.slice(1)) states[c.id] = review(newState(), 3, T0);
+  assert.equal(unlockedLevel('tour-du-monde', C.cards, states), 1);
+  states[lvl1[0].id] = review(states[lvl1[0].id], 3, T0 + 600000);
+  assert.equal(unlockedLevel('tour-du-monde', C.cards, states), 2);
+  assert.ok(eligibleNew(C.cards, states).some((c) => lvl2.includes(c)));
+  assert.ok(!eligibleNew(C.cards, states).some((c) => lvl3.includes(c)));
 });
 
 test('une carte oubliée revient plus loin dans la séance, une seule fois', () => {

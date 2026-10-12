@@ -24,6 +24,786 @@
   ],
   "cartes": [
     {
+      "id": "dec-tour-du-monde-1",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Le Tour du monde en quatre-vingts jours » (Jules Verne) ?",
+      "choix": [
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "La Russie face à Napoléon, à travers quelques familles",
+        "Un homme arrêté sans savoir de quoi on l'accuse",
+        "Les voyages d'un ethnologue, des Indiens du Brésil à l'Asie"
+      ],
+      "correct": 0,
+      "explication": "En 1872, le gentleman anglais Phileas Fogg parie avec ses amis de son club qu'il fera le tour de la Terre en 80 jours. Avec son domestique Passepartout, poursuivi par l'inspecteur Fix qui le prend pour un voleur, il enchaîne trains et paquebots, sauve en Inde une jeune veuve, Aouda, et gagne son pari de justesse.",
+      "source": {
+        "pages": "91",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-tour-du-monde-2",
+      "oeuvres": [
+        "tour-du-monde"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Le Tour du monde en quatre-vingts jours » figure-t-il dans le dossier ?",
+      "reponse": "On ne découvre plus le monde, on le traverse le plus vite possible — grâce aux machines, aux empires… et au travail de gens qu'on ne voit pas.",
+      "exemple": "Mrs. Aouda, que Fogg sauve de la sati en Inde : l'article précise que cette tradition, tombée en désuétude, avait repris un second souffle en réaction à l'occupation britannique, vécue comme une menace pour l'identité des sociétés colonisées.",
+      "explication": "La question que pose le livre : Que devient le monde quand il ne s'agit plus de le découvrir, mais de le traverser ?",
+      "source": {
+        "pages": "91-94",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-fables-1",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Fables » (Jean de La Fontaine) ?",
+      "choix": [
+        "Des animaux qui jouent nos défauts, avec une morale",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »",
+        "Un jeune homme rêveur pendant la révolution de 1848",
+        "Des immigrés broyés dans les abattoirs de Chicago"
+      ],
+      "correct": 0,
+      "explication": "Environ 240 courts poèmes où des animaux — le loup, l'agneau, le corbeau, le renard… — jouent des scènes de la vie humaine. Beaucoup se terminent par une morale devenue proverbe, comme « La raison du plus fort est toujours la meilleure » (Le Loup et l'Agneau).",
+      "source": {
+        "pages": "102",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-fables-2",
+      "oeuvres": [
+        "fables"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Fables » figure-t-il dans le dossier ?",
+      "reponse": "La Fontaine n'était pas un poète officiel : pauvre et mal vu du roi, il a gardé sa liberté face au pouvoir, et ses fables parlent encore de nous.",
+      "exemple": "Le contraste entre ses deux œuvres : les Contes, plus sulfureux, sont attaqués, censurés, diffusés sous le manteau (il risque la prison), tandis que les Fables sont célébrées.",
+      "explication": "La question que pose le livre : Comment un écrivain reste-t-il libre quand il dépend du pouvoir pour vivre ?",
+      "source": {
+        "pages": "102-103",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-chanson-de-roland-1",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « La Chanson de Roland » (Anonyme) ?",
+      "choix": [
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »",
+        "Un homme arrêté sans savoir de quoi on l'accuse",
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "L'assassinat de Kennedy et les peurs de la guerre froide"
+      ],
+      "correct": 0,
+      "explication": "Poème épique du Moyen Âge. Après sept ans de guerre en Espagne contre les « Sarrasins » (les musulmans), l'empereur Charlemagne rentre en France. Trahi par Ganelon, son neveu Roland, qui commande l'arrière-garde, est attaqué dans les Pyrénées, à Roncevaux. Trop fier pour sonner du cor et appeler à l'aide, il meurt en héros ; Charlemagne le venge.",
+      "source": {
+        "pages": "104",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-chanson-de-roland-2",
+      "oeuvres": [
+        "chanson-de-roland"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « La Chanson de Roland » figure-t-il dans le dossier ?",
+      "reponse": "Le poème fabrique une image de l'ennemi musulman — traître, monstrueux, en foule — qu'on retrouve dans le racisme d'aujourd'hui ; mais au Moyen Âge, il suffisait de se convertir pour être accepté.",
+      "exemple": "Charlemagne au vaillant émir Baligant : « Reçois la foi que Dieu nous révèle, la foi chrétienne, et aussitôt je t'aimerai. »",
+      "explication": "La question que pose le livre : La peur de l'autre s'habille-t-elle toujours des mêmes formes ? La littérature a-t-elle contribué à en fixer les contours ?",
+      "source": {
+        "pages": "104-108",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-princesse-de-cleves-1",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « La Princesse de Clèves » (Madame de Lafayette) ?",
+      "choix": [
+        "Une jeune femme mariée, amoureuse d'un autre, qui renonce",
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "L'assassinat de Kennedy et les peurs de la guerre froide",
+        "La Russie face à Napoléon, à travers quelques familles"
+      ],
+      "correct": 0,
+      "explication": "À la cour du roi Henri II, Mlle de Chartres, seize ans, épouse sans amour le prince de Clèves, qu'elle estime. Elle tombe passionnément amoureuse du duc de Nemours. Pour se protéger, elle avoue cette passion à son mari, qui en meurt de chagrin. Devenue libre, elle refuse pourtant d'épouser Nemours et se retire du monde.",
+      "source": {
+        "pages": "84",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-princesse-de-cleves-2",
+      "oeuvres": [
+        "princesse-de-cleves"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « La Princesse de Clèves » figure-t-il dans le dossier ?",
+      "reponse": "Le roman observe les sentiments au microscope : l'héroïne choisit de renoncer à l'amour pour rester maîtresse d'elle-même.",
+      "exemple": "La scène de l'aveu : la princesse confie à son mari la passion qu'elle éprouve pour le duc de Nemours. La scène fit scandale ; Le Mercure galant lança même une enquête auprès de ses lecteurs, dont l'un répondit qu'un homme est plus heureux d'être trahi sans le savoir que confident d'une femme qui le hait vertueusement.",
+      "explication": "La question que pose le livre : Comment rester fidèle — et libre — quand la passion s'impose comme une maladie sans remède ?",
+      "source": {
+        "pages": "84-87",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-la-jungle-1",
+      "oeuvres": [
+        "la-jungle"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « La Jungle » (Upton Sinclair) ?",
+      "choix": [
+        "Des immigrés broyés dans les abattoirs de Chicago",
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "La Russie face à Napoléon, à travers quelques familles",
+        "Une autobiographie où les bêtes et les arbres comptent autant que les humains"
+      ],
+      "correct": 0,
+      "explication": "Au début du XXe siècle, Jurgis, un immigré lituanien, arrive à Chicago avec sa famille. Il travaille dans les gigantesques abattoirs de la ville : salaires de misère, accidents, maladies, escroqueries… La famille est peu à peu broyée.",
+      "source": {
+        "pages": "91",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-la-jungle-2",
+      "oeuvres": [
+        "la-jungle"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « La Jungle » figure-t-il dans le dossier ?",
+      "reponse": "Sinclair voulait émouvoir sur le sort des ouvriers immigrés ; les lecteurs ont surtout eu peur de ce qu'il y avait dans leur assiette.",
+      "exemple": "La phrase de Sinclair sur la réception de son livre : « J'ai visé le cœur du public, et par accident je l'ai touché à l'estomac. »",
+      "explication": "La question que pose le livre : Qui paie le prix de la circulation mondiale des personnes et des marchandises ?",
+      "source": {
+        "pages": "92",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-jules-cesar-1",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Jules César » (William Shakespeare) ?",
+      "choix": [
+        "Un assassinat politique et un discours qui retourne la foule",
+        "La Russie face à Napoléon, à travers quelques familles",
+        "La fabrication d'un faux qui a empoisonné le monde",
+        "Un cri de colère contre le règne de l'argent"
+      ],
+      "correct": 0,
+      "explication": "Rome, 44 avant J.-C. Craignant que César ne devienne roi, des sénateurs menés par Brutus et Cassius l'assassinent. Aux funérailles, Marc-Antoine, ami de César, prononce un discours si habile qu'il retourne la foule contre les conjurés : la guerre civile commence.",
+      "source": {
+        "pages": "117",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-jules-cesar-2",
+      "oeuvres": [
+        "jules-cesar"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Jules César » figure-t-il dans le dossier ?",
+      "reponse": "Shakespeare montre comment un bon orateur manipule une foule — et, dans Richard III, comment un ambitieux se fait supplier de prendre le pouvoir.",
+      "exemple": "Richard III se dit « pas fait pour la pompe et la majesté » et refuse le trône qu'il convoite depuis le début, forçant le peuple à se mettre à genoux.",
+      "explication": "La question que pose le livre : Comment un orateur retourne-t-il une foule ?",
+      "source": {
+        "pages": "117",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-le-proces-1",
+      "oeuvres": [
+        "le-proces"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Le Procès » (Franz Kafka) ?",
+      "choix": [
+        "Un homme arrêté sans savoir de quoi on l'accuse",
+        "Une jeune femme mariée, amoureuse d'un autre, qui renonce",
+        "L'assassinat de Kennedy et les peurs de la guerre froide",
+        "La Russie face à Napoléon, à travers quelques familles"
+      ],
+      "correct": 0,
+      "explication": "Un matin, Joseph K., employé de banque, est arrêté sans savoir pourquoi. Il cherche en vain à comprendre de quoi on l'accuse, face à une justice invisible et interminable, jusqu'à son exécution.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-le-proces-2",
+      "oeuvres": [
+        "le-proces"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Le Procès » figure-t-il dans le dossier ?",
+      "reponse": "Accusé sans raison, Joseph K. finit par chercher sa propre faute — comme nous, parfois, après un attentat.",
+      "exemple": "La première phrase : « On avait sûrement calomnié Joseph K., car, sans avoir rien fait de mal, il fut arrêté un matin. »",
+      "explication": "La question que pose le livre : Pourquoi finissons-nous par chercher notre propre culpabilité quand la violence nous frappe arbitrairement ?",
+      "source": {
+        "pages": "112-113",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-agent-secret-1",
+      "oeuvres": [
+        "agent-secret"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « L'Agent secret » (Joseph Conrad) ?",
+      "choix": [
+        "Un attentat absurde commandé par une puissance étrangère",
+        "Un assassinat politique et un discours qui retourne la foule",
+        "Une autobiographie où les bêtes et les arbres comptent autant que les humains",
+        "Un politicien du peuple qui devient un tyran corrompu"
+      ],
+      "correct": 0,
+      "explication": "Londres, fin du XIXe siècle. M. Verloc, boutiquier et agent secret payé par une ambassade étrangère, reçoit l'ordre d'organiser un attentat contre l'observatoire de Greenwich. L'opération tourne au drame : c'est le jeune frère de sa femme, Stevie, qui meurt dans l'explosion.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-agent-secret-2",
+      "oeuvres": [
+        "agent-secret"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « L'Agent secret » figure-t-il dans le dossier ?",
+      "reponse": "Un attentat absurde, commandé en secret par un État : Conrad réfléchit à la logique folle du terrorisme.",
+      "exemple": "Le projet de faire sauter l'observatoire de Greenwich, repris d'un complot authentique d'anarchistes britanniques.",
+      "explication": "La question que pose le livre : Peut-on comprendre un attentat qui semble défier toute raison ?",
+      "source": {
+        "pages": "112",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-guerre-et-paix-1",
+      "oeuvres": [
+        "guerre-et-paix"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « La Guerre et la Paix » (Léon Tolstoï) ?",
+      "choix": [
+        "La Russie face à Napoléon, à travers quelques familles",
+        "La fabrication d'un faux qui a empoisonné le monde",
+        "Un attentat absurde commandé par une puissance étrangère",
+        "Des nouvelles vertigineuses : bibliothèque infinie, récits qui bifurquent"
+      ],
+      "correct": 0,
+      "explication": "Immense roman qui suit plusieurs familles de l'aristocratie russe pendant les guerres contre Napoléon (1805-1812), jusqu'à l'incendie de Moscou : des bals, des batailles, des amours et une réflexion sur le sens de l'histoire.",
+      "source": {
+        "pages": "91",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-guerre-et-paix-2",
+      "oeuvres": [
+        "guerre-et-paix"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « La Guerre et la Paix » figure-t-il dans le dossier ?",
+      "reponse": "Les élites russes parlaient français et rêvaient d'Europe ; quand la France devient l'ennemie, elles doivent choisir leur camp.",
+      "exemple": "Hélène Kouraguine, « belle et dépourvue de moralité », voit dans la conversion au catholicisme le premier pas vers l'annulation d'un ennuyeux mariage.",
+      "explication": "La question que pose le livre : Comment une élite cosmopolite réagit-elle quand son modèle culturel devient celui de l'ennemi ?",
+      "source": {
+        "pages": "92",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-les-demons-1",
+      "oeuvres": [
+        "les-demons"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Les Démons » (Fédor Dostoïevski) ?",
+      "choix": [
+        "Un groupe de révolutionnaires qui sème le chaos",
+        "Un homme arrêté sans savoir de quoi on l'accuse",
+        "Une jeune femme mariée, amoureuse d'un autre, qui renonce",
+        "Les voyages d'un ethnologue, des Indiens du Brésil à l'Asie"
+      ],
+      "correct": 0,
+      "explication": "Dans une petite ville de province russe, un groupe de jeunes révolutionnaires, manipulés par l'inquiétant Piotr Verkhovenski, prépare des troubles, assassine l'un des leurs et sème le chaos.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-les-demons-2",
+      "oeuvres": [
+        "les-demons"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Les Démons » figure-t-il dans le dossier ?",
+      "reponse": "Des conspirateurs ridicules peuvent provoquer une vraie catastrophe : Dostoïevski décrit déjà la logique du terrorisme.",
+      "exemple": "L'extrait reproduit (p. 115-116) : Piotr Stépanovitch attend, revolver en main, que Kirillov se suicide après avoir signé une fausse confession destinée à couvrir le groupe.",
+      "explication": "La question que pose le livre : Que faire de la liberté individuelle dans un monde sans Dieu ?",
+      "source": {
+        "pages": "112",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-fous-du-roi-1",
+      "oeuvres": [
+        "fous-du-roi"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Les Fous du roi » (Robert Penn Warren) ?",
+      "choix": [
+        "Un politicien du peuple qui devient un tyran corrompu",
+        "Un attentat absurde commandé par une puissance étrangère",
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "La Russie face à Napoléon, à travers quelques familles"
+      ],
+      "correct": 0,
+      "explication": "Dans le sud des États-Unis, dans les années 1930, Willie Stark, petit avocat de campagne, devient un homme politique adulé par le peuple et tout-puissant. Le narrateur, le journaliste Jack Burden, travaille pour lui et assiste à sa transformation en chef qui gouverne par la corruption et le chantage.",
+      "source": {
+        "pages": "117",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-fous-du-roi-2",
+      "oeuvres": [
+        "fous-du-roi"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Les Fous du roi » figure-t-il dans le dossier ?",
+      "reponse": "Un homme sincèrement révolté par la misère prend le pouvoir au nom du peuple… puis s'y corrompt.",
+      "exemple": "Dans l'extrait (p. 119), Willie Stark assure à la foule qu'il n'est venu lui demander « même pas de voter pour [lui] », tout en se moquant des politiciens qui ne cessent de dire « Donnez-moi ! ».",
+      "explication": "La question que pose le livre : Comment un politicien sincèrement révolté devient-il un tyran corrompu ?",
+      "source": {
+        "pages": "118-119",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-education-sentimentale-1",
+      "oeuvres": [
+        "education-sentimentale"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « L'Éducation sentimentale » (Gustave Flaubert) ?",
+      "choix": [
+        "Un jeune homme rêveur pendant la révolution de 1848",
+        "La fabrication d'un faux qui a empoisonné le monde",
+        "L'assassinat de Kennedy et les peurs de la guerre froide",
+        "Des immigrés broyés dans les abattoirs de Chicago"
+      ],
+      "correct": 0,
+      "explication": "Paris, 1840-1851. Le jeune Frédéric Moreau, provincial rêveur, aime toute sa vie une femme mariée, Mme Arnoux, sans jamais rien accomplir. Autour de lui éclate la révolution de 1848, avec ses clubs politiques, ses grands discours et ses désillusions.",
+      "source": {
+        "pages": "117",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-education-sentimentale-2",
+      "oeuvres": [
+        "education-sentimentale"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « L'Éducation sentimentale » figure-t-il dans le dossier ?",
+      "reponse": "Flaubert montre, avec ironie, des révolutionnaires de 1848 qui, au nom du « Peuple », finissent par rejeter tout savoir.",
+      "exemple": "La proposition de faire décerner les diplômes par le suffrage universel ; l'article ajoute qu'une mesure de ce type fut brièvement appliquée en Russie soviétique et aboutit notamment à des autodafés d'œuvres de Tolstoï et de Tchekhov.",
+      "explication": "La question que pose le livre : À quoi ressemble le populisme « en marche » ?",
+      "source": {
+        "pages": "118",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-yourcenar-1",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Le Labyrinthe du monde » (Marguerite Yourcenar) ?",
+      "choix": [
+        "Une autobiographie où les bêtes et les arbres comptent autant que les humains",
+        "L'assassinat de Kennedy et les peurs de la guerre froide",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »",
+        "Un cri de colère contre le règne de l'argent"
+      ],
+      "correct": 0,
+      "explication": "Trois livres de souvenirs où Marguerite Yourcenar raconte l'histoire de sa famille, de ses ancêtres et de sa propre naissance en 1903 — en regardant autant les arbres, les bêtes et les paysages que les humains.",
+      "source": {
+        "pages": "120",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-yourcenar-2",
+      "oeuvres": [
+        "yourcenar"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Le Labyrinthe du monde » figure-t-il dans le dossier ?",
+      "reponse": "Yourcenar se pense comme une part du vivant parmi d'autres : son écologie commence par un changement de regard.",
+      "exemple": "Dans Souvenirs pieux, la croix d'ivoire placée au-dessus de son berceau renvoie à un éléphant tué dans la forêt congolaise, dont les défenses ont été vendues à bas prix : « Cette grande masse de vie intelligente […] a abouti à cela. »",
+      "explication": "La question que pose le livre : Et si l'écologie commençait par cesser de se penser à part du vivant ?",
+      "source": {
+        "pages": "120-124",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-argent-peguy-1",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « L'Argent » (Charles Péguy) ?",
+      "choix": [
+        "Un cri de colère contre le règne de l'argent",
+        "Un politicien du peuple qui devient un tyran corrompu",
+        "Un pari : faire le tour de la Terre en 80 jours",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »"
+      ],
+      "correct": 0,
+      "explication": "Ce n'est pas un roman mais un essai en colère, publié dans la revue de l'auteur. Péguy y compare le monde de son enfance, où l'on aimait le travail bien fait, au monde moderne, où tout se mesure en argent.",
+      "source": {
+        "pages": "98",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-argent-peguy-2",
+      "oeuvres": [
+        "argent-peguy"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « L'Argent » figure-t-il dans le dossier ?",
+      "reponse": "Pour Péguy, l'argent est devenu le seul maître : il sépare les gens et fait oublier la valeur du travail.",
+      "exemple": "Le paradoxe que relève Péguy : ceux qui travaillent n'ont pas le temps de gagner de l'argent, tandis que ceux qui ne travaillent pas ont tout loisir de penser à la manière d'en gagner.",
+      "explication": "La question que pose le livre : Que devient une société où l'argent est devenu l'unique étalon de toute valeur ?",
+      "source": {
+        "pages": "98-101",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-tristes-tropiques-1",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Tristes Tropiques » (Claude Lévi-Strauss) ?",
+      "choix": [
+        "Les voyages d'un ethnologue, des Indiens du Brésil à l'Asie",
+        "Une jeune femme mariée, amoureuse d'un autre, qui renonce",
+        "Un assassinat politique et un discours qui retourne la foule",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »"
+      ],
+      "correct": 0,
+      "explication": "Ni roman ni traité savant : le récit, écrit vingt ans après, des voyages d'un jeune ethnologue français chez les Indiens du Brésil dans les années 1930, puis en Asie, mêlé de souvenirs et de réflexions sur les civilisations.",
+      "source": {
+        "pages": "109",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-tristes-tropiques-2",
+      "oeuvres": [
+        "tristes-tropiques"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Tristes Tropiques » figure-t-il dans le dossier ?",
+      "reponse": "Un grand savant y exprime, à propos de l'islam, une antipathie personnelle : le dossier y voit quelques intuitions, mais aussi de la mauvaise foi.",
+      "exemple": "Dans l'extrait reproduit (chapitre XXXIX), Lévi-Strauss affirme : « l'islam, c'est l'Occident de l'Orient » — il dit retrouver en lui l'univers d'où il vient.",
+      "explication": "La question que pose le livre : Que vaut le regard d'un grand ethnologue quand il exprime sans fard une antipathie ?",
+      "source": {
+        "pages": "109-111",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-fictions-1",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Fictions » (Jorge Luis Borges) ?",
+      "choix": [
+        "Des nouvelles vertigineuses : bibliothèque infinie, récits qui bifurquent",
+        "Un assassinat politique et un discours qui retourne la foule",
+        "Un jeune homme rêveur pendant la révolution de 1848",
+        "Un groupe de révolutionnaires qui sème le chaos"
+      ],
+      "correct": 0,
+      "explication": "Recueil de nouvelles courtes et vertigineuses : une bibliothèque infinie qui contient tous les livres possibles, un homme qui n'oublie rien, un roman où toutes les histoires possibles arrivent en même temps…",
+      "source": {
+        "pages": "95",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-fictions-2",
+      "oeuvres": [
+        "fictions"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Fictions » figure-t-il dans le dossier ?",
+      "reponse": "Borges n'a jamais connu Internet, mais ses bibliothèques infinies et ses récits qui bifurquent y ressemblent étrangement.",
+      "exemple": "Le site libraryofbabel.info de Jonathan Basile transpose réellement la bibliothèque imaginaire de Borges : une quasi-infinité de livres de 410 pages.",
+      "explication": "La question que pose le livre : Un écrivain sans ordinateur a-t-il imaginé Internet ?",
+      "source": {
+        "pages": "95-97",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-vie-et-destin-1",
+      "oeuvres": [
+        "vie-et-destin"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Vie et destin » (Vassili Grossman) ?",
+      "choix": [
+        "Stalingrad, et deux totalitarismes face à face",
+        "Des immigrés broyés dans les abattoirs de Chicago",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »",
+        "La fabrication d'un faux qui a empoisonné le monde"
+      ],
+      "correct": 0,
+      "explication": "1942-1943, pendant la bataille de Stalingrad. Autour d'une famille, le roman passe du front aux camps nazis et aux prisons soviétiques, et montre ce que les deux régimes ont en commun.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-vie-et-destin-2",
+      "oeuvres": [
+        "vie-et-destin"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Vie et destin » figure-t-il dans le dossier ?",
+      "reponse": "Grossman compare nazisme et stalinisme et montre une violence d'État devenue presque une religion.",
+      "exemple": "Le siège de Stalingrad, cadre du roman, où se croisent les deux systèmes.",
+      "explication": "La question que pose le livre : Que devient la violence quand un État puissant la rend sans limite ?",
+      "source": {
+        "pages": "113-114",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-livre-des-rois-1",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « « Le livre des rois et des sots » » (Danilo Kiš) ?",
+      "choix": [
+        "La fabrication d'un faux qui a empoisonné le monde",
+        "Stalingrad, et deux totalitarismes face à face",
+        "Un attentat absurde commandé par une puissance étrangère",
+        "Un jeune homme rêveur pendant la révolution de 1848"
+      ],
+      "correct": 0,
+      "explication": "Courte nouvelle qui raconte, comme un conte, la fabrication des « Protocoles des sages de Sion », un faux document inventé pour faire croire à un complot juif mondial, et ses effets meurtriers jusqu'au nazisme.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-livre-des-rois-2",
+      "oeuvres": [
+        "livre-des-rois"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « « Le livre des rois et des sots » » figure-t-il dans le dossier ?",
+      "reponse": "Un faux fabriqué par une police secrète a trompé le monde entier : c'est l'ancêtre des fake news.",
+      "exemple": "Une scène de la nouvelle : autour d'un feu, dans une vallée des Carpates, des soldats écoutent un officier lire l'histoire du complot fomenté contre la Russie : « Voilà, Messieurs, quelle morale ils prônent. »",
+      "explication": "La question que pose le livre : Comment un faux devient-il une arme de destruction massive ?",
+      "source": {
+        "pages": "114",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-recherche-1",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « À la recherche du temps perdu » (Marcel Proust) ?",
+      "choix": [
+        "Une vie entière racontée par la mémoire, dans le Paris mondain",
+        "Un chevalier trahi qui meurt en héros face aux « Sarrasins »",
+        "Un attentat absurde commandé par une puissance étrangère",
+        "Les voyages d'un ethnologue, des Indiens du Brésil à l'Asie"
+      ],
+      "correct": 0,
+      "explication": "Sept volumes où un narrateur raconte sa vie, de l'enfance à l'âge mûr, dans la haute société parisienne de la Belle Époque : amours, jalousie, salons, snobisme… et la mémoire (la fameuse madeleine). Sodome et Gomorrhe, le quatrième volume, est consacré à l'homosexualité.",
+      "source": {
+        "pages": "88",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-recherche-2",
+      "oeuvres": [
+        "recherche"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « À la recherche du temps perdu » figure-t-il dans le dossier ?",
+      "reponse": "Proust repère les « signes » d'une identité (juive, homosexuelle)… tout en montrant qu'aucune identité n'est figée.",
+      "exemple": "Le narrateur reconnaît à l'oreille, « comme le diapason d'un accordeur », un homme qui copie le langage de son milieu mais dont la « voix fausse » suffit à lui faire dire : « C'est un Charlus ! »",
+      "explication": "La question que pose le livre : Nommer une identité, est-ce l'enfermer — ou commencer à la défaire ?",
+      "source": {
+        "pages": "88-90",
+        "nature": "synthese"
+      }
+    },
+    {
+      "id": "dec-delillo-1",
+      "oeuvres": [
+        "delillo"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quoi parle « Libra et Outremonde » (Don DeLillo) ?",
+      "choix": [
+        "L'assassinat de Kennedy et les peurs de la guerre froide",
+        "Un jeune homme rêveur pendant la révolution de 1848",
+        "La fabrication d'un faux qui a empoisonné le monde",
+        "Un politicien du peuple qui devient un tyran corrompu"
+      ],
+      "correct": 0,
+      "explication": "Libra raconte la vie de Lee Harvey Oswald, l'assassin du président Kennedy (1963), mêlée à un complot imaginé d'anciens agents secrets. Outremonde est un immense roman qui traverse la guerre froide, des années 1950 aux années 1990.",
+      "source": {
+        "pages": "112",
+        "nature": "repere"
+      }
+    },
+    {
+      "id": "dec-delillo-2",
+      "oeuvres": [
+        "delillo"
+      ],
+      "competence": 1,
+      "niveau": 1,
+      "format": "flashcard",
+      "question": "En une phrase : pourquoi « Libra et Outremonde » figure-t-il dans le dossier ?",
+      "reponse": "DeLillo montre comment la peur, les complots et les « déchets » de la guerre froide pèsent encore sur notre époque.",
+      "exemple": "Nick Shay, cadre dans la gestion des déchets : les déchets deviennent la métaphore des terreurs que la guerre froide lègue au siècle suivant.",
+      "explication": "La question que pose le livre : Comment raconter des terreurs dont les causes se perdent dans des courants souterrains ?",
+      "source": {
+        "pages": "114",
+        "nature": "synthese"
+      }
+    },
+    {
       "id": "intro-1",
       "oeuvres": [
         "introduction"
@@ -42,7 +822,8 @@
       "source": {
         "pages": "82",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "intro-2",
@@ -57,7 +838,8 @@
       "source": {
         "pages": "82",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pdc-1",
@@ -72,7 +854,8 @@
       "source": {
         "pages": "84",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "pdc-2",
@@ -93,7 +876,8 @@
       "source": {
         "pages": "84-85",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pdc-3",
@@ -109,7 +893,8 @@
       "source": {
         "pages": "85",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pdc-4",
@@ -130,7 +915,8 @@
       "source": {
         "pages": "86",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pdc-5",
@@ -146,7 +932,8 @@
       "source": {
         "pages": "86",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pdc-6",
@@ -161,7 +948,8 @@
       "source": {
         "pages": "84-86",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "pdc-7",
@@ -183,7 +971,8 @@
       "source": {
         "pages": "86",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "pdc-8",
@@ -203,7 +992,8 @@
       "source": {
         "pages": "84-86",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "rech-1",
@@ -224,7 +1014,8 @@
       "source": {
         "pages": "88",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "rech-2",
@@ -239,7 +1030,8 @@
       "source": {
         "pages": "88",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rech-3",
@@ -260,7 +1052,8 @@
       "source": {
         "pages": "89",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rech-4",
@@ -275,7 +1068,8 @@
       "source": {
         "pages": "89",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rech-5",
@@ -295,7 +1089,8 @@
       "source": {
         "pages": "88-89",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "tdm-1",
@@ -309,7 +1104,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "tdm-2",
@@ -330,7 +1126,8 @@
       "source": {
         "pages": "91-92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "tdm-3",
@@ -345,7 +1142,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "tdm-4",
@@ -366,7 +1164,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "tdm-5",
@@ -388,7 +1187,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "tdm-6",
@@ -408,7 +1208,8 @@
       "source": {
         "pages": "91",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "gep-1",
@@ -423,7 +1224,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "gep-2",
@@ -445,7 +1247,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "gep-3",
@@ -466,7 +1269,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "jun-1",
@@ -480,7 +1284,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "jun-2",
@@ -501,7 +1306,8 @@
       "source": {
         "pages": "92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "jun-3",
@@ -523,7 +1329,8 @@
       "source": {
         "pages": "92",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "bor-1",
@@ -544,7 +1351,8 @@
       "source": {
         "pages": "95",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "bor-2",
@@ -559,7 +1367,8 @@
       "source": {
         "pages": "96",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "bor-3",
@@ -580,7 +1389,8 @@
       "source": {
         "pages": "96",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "bor-4",
@@ -594,7 +1404,8 @@
       "source": {
         "pages": "96",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "bor-5",
@@ -616,7 +1427,8 @@
       "source": {
         "pages": "95",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "bor-6",
@@ -636,7 +1448,8 @@
       "source": {
         "pages": "95-96",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "peg-1",
@@ -650,7 +1463,8 @@
       "source": {
         "pages": "98",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "peg-2",
@@ -671,7 +1485,8 @@
       "source": {
         "pages": "98",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "peg-3",
@@ -692,7 +1507,8 @@
       "source": {
         "pages": "99",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "peg-4",
@@ -706,7 +1522,8 @@
       "source": {
         "pages": "99",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "peg-5",
@@ -721,7 +1538,8 @@
       "source": {
         "pages": "98-99",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "peg-6",
@@ -743,7 +1561,8 @@
       "source": {
         "pages": "99",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "peg-7",
@@ -763,7 +1582,8 @@
       "source": {
         "pages": "98-99",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "laf-1",
@@ -784,7 +1604,8 @@
       "source": {
         "pages": "102",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "laf-2",
@@ -799,7 +1620,8 @@
       "source": {
         "pages": "102",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "laf-3",
@@ -820,7 +1642,8 @@
       "source": {
         "pages": "102-103",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "laf-4",
@@ -834,7 +1657,8 @@
       "source": {
         "pages": "103",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "laf-5",
@@ -848,7 +1672,8 @@
       "source": {
         "pages": "103",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "laf-6",
@@ -870,7 +1695,8 @@
       "source": {
         "pages": "102-103",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "rol-1",
@@ -885,7 +1711,8 @@
       "source": {
         "pages": "104",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "rol-2",
@@ -906,7 +1733,8 @@
       "source": {
         "pages": "105",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rol-3",
@@ -927,7 +1755,8 @@
       "source": {
         "pages": "106",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rol-4",
@@ -942,7 +1771,8 @@
       "source": {
         "pages": "106",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "rol-5",
@@ -956,7 +1786,8 @@
       "source": {
         "pages": "106",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "rol-6",
@@ -978,7 +1809,8 @@
       "source": {
         "pages": "106",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "rol-7",
@@ -998,7 +1830,8 @@
       "source": {
         "pages": "104-105",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "tt-1",
@@ -1019,7 +1852,8 @@
       "source": {
         "pages": "109",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "tt-2",
@@ -1034,7 +1868,8 @@
       "source": {
         "pages": "109",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "tt-3",
@@ -1055,7 +1890,8 @@
       "source": {
         "pages": "109-110",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "tt-4",
@@ -1070,7 +1906,8 @@
       "source": {
         "pages": "110",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "tt-5",
@@ -1090,7 +1927,8 @@
       "source": {
         "pages": "109-110",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "dem-1",
@@ -1105,7 +1943,8 @@
       "source": {
         "pages": "112",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "dem-2",
@@ -1126,7 +1965,8 @@
       "source": {
         "pages": "112",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "dem-3",
@@ -1148,7 +1988,8 @@
       "source": {
         "pages": "112",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "agt-1",
@@ -1169,7 +2010,8 @@
       "source": {
         "pages": "112",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "agt-2",
@@ -1183,7 +2025,8 @@
       "source": {
         "pages": "112",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "agt-3",
@@ -1204,7 +2047,8 @@
       "source": {
         "pages": "112",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pro-1",
@@ -1219,7 +2063,8 @@
       "source": {
         "pages": "112-113",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "pro-2",
@@ -1241,7 +2086,8 @@
       "source": {
         "pages": "113",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "pro-3",
@@ -1261,7 +2107,8 @@
       "source": {
         "pages": "113",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "ved-1",
@@ -1282,7 +2129,8 @@
       "source": {
         "pages": "113",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "ved-2",
@@ -1297,7 +2145,8 @@
       "source": {
         "pages": "113-114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "kis-1",
@@ -1312,7 +2161,8 @@
       "source": {
         "pages": "114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "kis-2",
@@ -1333,7 +2183,8 @@
       "source": {
         "pages": "114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "kis-3",
@@ -1347,7 +2198,8 @@
       "source": {
         "pages": "114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "kis-4",
@@ -1369,7 +2221,8 @@
       "source": {
         "pages": "114",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "del-1",
@@ -1390,7 +2243,8 @@
       "source": {
         "pages": "114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "del-2",
@@ -1404,7 +2258,8 @@
       "source": {
         "pages": "114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "jc-1",
@@ -1425,7 +2280,8 @@
       "source": {
         "pages": "117",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "jc-2",
@@ -1439,7 +2295,8 @@
       "source": {
         "pages": "117",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "jc-3",
@@ -1461,7 +2318,8 @@
       "source": {
         "pages": "117",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "jc-4",
@@ -1476,7 +2334,8 @@
       "source": {
         "pages": "117",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "es-1",
@@ -1490,7 +2349,8 @@
       "source": {
         "pages": "118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "es-2",
@@ -1512,7 +2372,8 @@
       "source": {
         "pages": "117-118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "fdr-1",
@@ -1527,7 +2388,8 @@
       "source": {
         "pages": "118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "fdr-2",
@@ -1548,7 +2410,8 @@
       "source": {
         "pages": "118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "fdr-3",
@@ -1563,7 +2426,8 @@
       "source": {
         "pages": "118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "you-1",
@@ -1584,7 +2448,8 @@
       "source": {
         "pages": "120",
         "nature": "magazine"
-      }
+      },
+      "niveau": 1
     },
     {
       "id": "you-2",
@@ -1599,7 +2464,8 @@
       "source": {
         "pages": "121",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "you-3",
@@ -1620,7 +2486,8 @@
       "source": {
         "pages": "121-122",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "you-4",
@@ -1635,7 +2502,8 @@
       "source": {
         "pages": "122",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "you-5",
@@ -1656,7 +2524,8 @@
       "source": {
         "pages": "122",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     },
     {
       "id": "you-6",
@@ -1678,7 +2547,8 @@
       "source": {
         "pages": "122",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "you-7",
@@ -1698,7 +2568,8 @@
       "source": {
         "pages": "122",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-1",
@@ -1714,7 +2585,8 @@
       "source": {
         "pages": "112, 114",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-2",
@@ -1736,7 +2608,8 @@
       "source": {
         "pages": "104-111",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-3",
@@ -1758,7 +2631,8 @@
       "source": {
         "pages": "85",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-4",
@@ -1774,7 +2648,8 @@
       "source": {
         "pages": "102-103, 95-96",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-5",
@@ -1804,7 +2679,8 @@
       "source": {
         "pages": "112-113",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-6",
@@ -1834,7 +2710,8 @@
       "source": {
         "pages": "117-118",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-7",
@@ -1864,7 +2741,8 @@
       "source": {
         "pages": "91-92",
         "nature": "magazine"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-8",
@@ -1886,7 +2764,8 @@
       "source": {
         "pages": "98-103",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-9",
@@ -1908,7 +2787,8 @@
       "source": {
         "pages": "95-96, 114",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-10",
@@ -1930,7 +2810,8 @@
       "source": {
         "pages": "88-89, 104-106",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-11",
@@ -1946,7 +2827,8 @@
       "source": {
         "pages": "113, 92",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-12",
@@ -1968,7 +2850,8 @@
       "source": {
         "pages": "91, 120",
         "nature": "prolongement"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-13",
@@ -1998,7 +2881,8 @@
       "source": {
         "pages": "98, 103, 118",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "cmp-14",
@@ -2021,7 +2905,8 @@
       "source": {
         "pages": "112-114",
         "nature": "synthese"
-      }
+      },
+      "niveau": 3
     },
     {
       "id": "rol-8",
@@ -2042,7 +2927,8 @@
       "source": {
         "pages": "107",
         "nature": "magazine"
-      }
+      },
+      "niveau": 2
     }
   ]
 }

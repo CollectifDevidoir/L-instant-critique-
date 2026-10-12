@@ -5,6 +5,7 @@ Application web d'apprentissage : quelques minutes par jour pour retenir les cla
 - **Deux mises en page** : sur téléphone, une colonne, barre d'onglets en bas et boutons de réponse sous le pouce ; sur ordinateur, tableau de bord en deux colonnes, fiche avec couverture fixe à gauche, raccourcis clavier en séance.
 - **Installable sur l'écran d'accueil** avec le logo (manifeste + service worker), utilisable hors connexion. Android/Chrome/Edge : bouton « Installer » dans l'application ou menu du navigateur ; iPhone : Safari › Partager › « Sur l'écran d'accueil ».
 - **Défi éclair** : 8 manches pour retrouver le livre derrière une idée ou une citation (sans effet sur les révisions).
+- **Pensée pour qui n'a lu ni les livres ni les articles** : chaque livre est d'abord présenté en trois écrans (le livre en bref, ce qu'en retient le dossier, un exemple) ; les livres s'ouvrent du plus accessible au plus exigeant ; chaque livre a trois paliers (découvrir → comprendre → approfondir), le palier suivant ne s'ouvrant qu'après réussite du précédent ; « coup de pouce » sur les questions ; 48 mots difficiles expliqués d'un toucher (`src/data/glossaire.json`).
 - **Séance du jour** (10-20 min) : révisions dues d'abord, puis nouveautés dans un ordre pédagogique, fiche « En un regard » avant chaque nouvelle œuvre.
 - **5 formats** : flashcard, QCM de distinction, relier œuvre ↔ idée, question d'actualité (avec limites du rapprochement), restitution libre auto-évaluée.
 - **4 compétences suivies séparément** : connaître l'œuvre, comprendre ses idées, penser le présent, comparer.
@@ -18,7 +19,8 @@ Application web d'apprentissage : quelques minutes par jour pour retenir les cla
 | Fichier | Rôle |
 |---|---|
 | `src/data/oeuvres.json` | 11 articles, 20 fiches d'œuvres, introduction, œuvres annoncées, légende des sources |
-| `src/data/cartes.json` | 105 cartes (compétence, format, source paginée, nature : dossier / synthèse / prolongement) |
+| `src/data/glossaire.json` | 48 termes expliqués simplement |
+| `src/data/cartes.json` | 146 cartes, dont 40 de découverte ; (compétence, format, source paginée, nature : dossier / synthèse / prolongement) |
 | `src/data/liens.json` | rapprochements (lien établi par le dossier ou proposé par l'application) et questions ouvertes |
 
 Le rapport de vérification documentaire est dans [`VERIFICATION.md`](VERIFICATION.md).

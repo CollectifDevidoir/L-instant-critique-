@@ -51,7 +51,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font: 400 1.0625rem/1.6 var(--serif); font-optical-sizing: auto;
@@ -239,7 +239,7 @@ main:focus, main:focus-visible { outline: none; }
   border: 1.5px solid var(--rule); border-radius: 12px; padding: .8rem .9rem; cursor: pointer; line-height: 1.4; min-height: 52px;
   transition: border-color .12s, background .12s, transform .12s;
 }
-.choice:hover:not([disabled]) { border-color: var(--ink-2); transform: translateX(2px); }
+
 .choice .key { font-family: var(--label); font-weight: 600; font-size: .8rem; color: var(--ink-3); background: var(--card); border: 1px solid var(--rule-strong); border-radius: 50%; width: 1.7rem; height: 1.7rem; flex: none; display: grid; place-items: center; }
 .choice[disabled] { cursor: default; }
 .choice.correct { border-color: var(--ok); background: var(--ok-soft); animation: pop .35s ease-out; }
@@ -265,13 +265,13 @@ main:focus, main:focus-visible { outline: none; }
   border: 1.5px solid var(--rule); background: var(--paper); cursor: pointer; font-family: var(--label); font-size: .9rem; font-weight: 500;
   transition: transform .1s, border-color .12s;
 }
-.grade:hover { transform: translateY(-2px); }
+
 .grade .gi { font-size: 1.15rem; line-height: 1.2; }
 .grade small { font-weight: 400; font-size: .72rem; color: var(--ink-3); }
-.grade.g1 { color: var(--bad); } .grade.g1:hover { border-color: var(--bad); background: var(--bad-soft); }
-.grade.g2 { color: var(--mid); } .grade.g2:hover { border-color: var(--mid); background: var(--mid-soft); }
-.grade.g3 { color: var(--ok); } .grade.g3:hover { border-color: var(--ok); background: var(--ok-soft); }
-.grade.g4 { color: var(--gold); } .grade.g4:hover { border-color: var(--gold); }
+.grade.g1 { color: var(--bad); }
+.grade.g2 { color: var(--mid); }
+.grade.g3 { color: var(--ok); }
+.grade.g4 { color: var(--gold); }
 .grade.suggested { border-color: currentColor; box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 25%, transparent); }
 
 details.more { margin-top: 1rem; border-top: 1px solid var(--rule); padding-top: .7rem; }
@@ -347,7 +347,7 @@ textarea.free:focus { border-color: var(--ink-2); outline: none; }
 @media (min-width: 640px) { .defi-options { grid-template-columns: repeat(4, 1fr); } }
 .defi-option { display: flex; flex-direction: column; align-items: center; gap: .5rem; padding: .8rem .5rem; border-radius: 14px; border: 1.5px solid var(--rule); background: var(--card); cursor: pointer; font-family: var(--label); font-size: .85rem; line-height: 1.25; transition: transform .15s, border-color .15s; }
 .defi-option .cover { width: 86px; }
-.defi-option:hover:not([disabled]) { transform: translateY(-3px); border-color: var(--ink-2); }
+
 .defi-option.correct { border-color: var(--ok); background: var(--ok-soft); animation: pop .35s; }
 .defi-option.wrong { border-color: var(--bad); background: var(--bad-soft); animation: shake .3s; }
 .defi-option.muted { opacity: .4; }
@@ -545,6 +545,8 @@ kbd { font-family: var(--label); font-size: .75rem; border: 1px solid var(--rule
   .fiche-hero .covers figure:only-child .cover { width: 128px; }
   .fiche-id .btn { width: 100%; margin-top: .4rem; }
   .shelf { margin: 0 -1rem; padding-inline: 1rem; }
+  .book-intro-cover .cover { width: 84px; }
+  .book-intro { gap: .8rem; }
   .defi-text { font-size: 1.2rem; min-height: 0; }
   .defi-options { gap: .6rem; }
   .defi-option { padding: .6rem .4rem; }
@@ -588,3 +590,38 @@ kbd { font-family: var(--label); font-size: .75rem; border: 1px solid var(--rule
 @media (min-width: 760px) and (hover: hover) and (pointer: fine) {
   .kbd-hint { display: block; text-align: center; font-family: var(--label); font-size: .8rem; color: var(--ink-3); margin-top: 1.4rem; }
 }
+
+/* Effets de survol réservés aux souris : sur écran tactile (iOS notamment),
+   le « survol » reste collé à l'endroit du dernier toucher et dessinait un
+   liseré sur une réponse avant même qu'on ait répondu. */
+@media (hover: hover) and (pointer: fine) {
+  .choice:hover:not([disabled]) { border-color: var(--ink-2); transform: translateX(2px); }
+  .grade:hover { transform: translateY(-2px); }
+  .grade.g1:hover { border-color: var(--bad); background: var(--bad-soft); }
+  .grade.g2:hover { border-color: var(--mid); background: var(--mid-soft); }
+  .grade.g3:hover { border-color: var(--ok); background: var(--ok-soft); }
+  .grade.g4:hover { border-color: var(--gold); }
+  .defi-option:hover:not([disabled]) { transform: translateY(-3px); border-color: var(--ink-2); }
+}
+.choice:focus:not(:focus-visible), .defi-option:focus:not(:focus-visible), .grade:focus:not(:focus-visible) { outline: none; }
+
+/* ——— Pédagogie : glossaire, coup de pouce, étapes ——— */
+.gloss { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: help; text-decoration: underline dotted var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: .22em; }
+.gloss-panel { position: fixed; z-index: 30; left: 12px; right: 12px; bottom: calc(80px + env(safe-area-inset-bottom)); background: var(--ink); color: var(--paper); border-radius: 14px; padding: .9rem 2.8rem .9rem 1.1rem; box-shadow: var(--shadow); display: grid; gap: .2rem; font-size: .98rem; line-height: 1.45; animation: rise .2s ease-out; }
+.gloss-panel[hidden] { display: none; }
+.gloss-panel b { font-family: var(--display); font-weight: 400; font-size: 1.1rem; }
+.gloss-panel .close { position: absolute; top: .6rem; right: .6rem; width: 30px; height: 30px; color: var(--paper); border-color: color-mix(in srgb, var(--paper) 40%, transparent); font-size: .8rem; }
+.gloss-panel.floating { right: auto; bottom: auto; width: 320px; }
+body.focus-mode .gloss-panel:not(.floating) { bottom: calc(12px + env(safe-area-inset-bottom)); }
+.hint-btn { background: none; border: 1px dashed var(--rule-strong); border-radius: 999px; padding: .4rem .9rem; font-family: var(--label); font-size: .85rem; color: var(--ink-2); cursor: pointer; margin: 0 0 1rem; }
+.hint-box { background: var(--mid-soft); border-radius: 12px; padding: .8rem 1rem; margin: 0 0 1rem; font-size: .98rem; animation: rise .2s ease-out; }
+.hint-box p { margin: 0 0 .4rem; } .hint-box p:last-child { margin: 0; }
+.steps { display: flex; gap: 6px; margin-bottom: .9rem; }
+.steps i { width: 26px; height: 5px; border-radius: 3px; background: var(--rule); }
+.steps i.on { background: var(--accent); } .steps i.done { background: var(--rule-strong); }
+.chip-c.c1 { background: var(--ok-soft); color: var(--ok); }
+.chip-c.c2 { background: var(--paper-2); color: var(--ink-2); }
+.book-sujet { font-size: .85rem; color: var(--ink-2); line-height: 1.3; margin-top: .2rem; }
+.block.first { margin-top: 0; margin-bottom: 1.6rem; }
+.essential .label { color: var(--accent); }
+.essential .big-question { margin: .8rem 0 0; font-size: 1rem; }

@@ -1,11 +1,11 @@
 // Service worker : rend l'application installable et utilisable hors connexion.
 // Stratégie « réseau d'abord » : on sert toujours la dernière version publiée
 // quand le réseau répond, la copie en cache sinon.
-const CACHE = 'instant-critique-v2';
+const CACHE = 'instant-critique-v3';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './favicon.svg',
   './src/css/app.css', './src/js/app.js', './src/js/data.js', './src/js/srs.js', './src/js/session.js', './src/js/store.js', './src/js/pdf.js',
-  './src/data/oeuvres.json', './src/data/cartes.json', './src/data/liens.json',
+  './src/data/oeuvres.json', './src/data/cartes.json', './src/data/liens.json', './src/data/glossaire.json',
   './assets/icons/icon-192.png', './assets/icons/apple-touch-icon.png',
 ];
 

@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "glossaire": [
+    {
+      "id": "augustinienne-0",
+      "terme": "augustinienne",
+      "formes": [
+        "augustinienne",
+        "augustinien"
+      ],
+      "definition": "Inspirée de saint Augustin (IVe-Ve siècle), qui invite à se méfier des passions humaines, tournées vers soi plutôt que vers Dieu."
+    },
+    {
+      "id": "jansénisme-1",
+      "terme": "jansénisme",
+      "formes": [
+        "jansénisme",
+        "janséniste"
+      ],
+      "definition": "Courant catholique sévère du XVIIe siècle (Pascal en est proche) : l'être humain est faible et ne peut se sauver par ses propres forces."
+    },
+    {
+      "id": "maxime-2",
+      "terme": "maxime",
+      "formes": [
+        "maximes",
+        "maxime"
+      ],
+      "definition": "Phrase courte qui énonce une vérité générale. La Rochefoucauld en a fait un genre littéraire."
+    },
+    {
+      "id": "roman d'analyse-3",
+      "terme": "roman d'analyse",
+      "formes": [
+        "roman d'analyse"
+      ],
+      "definition": "Roman qui décrit en détail les sentiments et les pensées des personnages plutôt que leurs aventures."
+    },
+    {
+      "id": "galante-4",
+      "terme": "galante",
+      "formes": [
+        "nouvelle galante",
+        "galanterie"
+      ],
+      "definition": "Au XVIIe siècle, récit court d'intrigues amoureuses à la cour, très à la mode."
+    },
+    {
+      "id": "queer-5",
+      "terme": "queer",
+      "formes": [
+        "queer"
+      ],
+      "definition": "Mot anglais (« étrange ») repris par des chercheurs pour critiquer les catégories fixes de genre et de sexualité."
+    },
+    {
+      "id": "performativité-6",
+      "terme": "performativité",
+      "formes": [
+        "performativité",
+        "performance"
+      ],
+      "definition": "Idée (Judith Butler) que le genre n'est pas une nature mais quelque chose qu'on « joue » par des gestes répétés."
+    },
+    {
+      "id": "antonomase-7",
+      "terme": "antonomase",
+      "formes": [
+        "antonomase"
+      ],
+      "definition": "Figure de style où un nom propre devient nom commun : « un Harpagon » pour un avare, « un Charlus » chez Proust."
+    },
+    {
+      "id": "études de genre-8",
+      "terme": "études de genre",
+      "formes": [
+        "études de genre"
+      ],
+      "definition": "Recherches sur la façon dont les sociétés construisent le masculin et le féminin."
+    },
+    {
+      "id": "sati-9",
+      "terme": "sati",
+      "formes": [
+        "sati"
+      ],
+      "definition": "Ancienne coutume indienne où une veuve était brûlée avec le corps de son mari."
+    },
+    {
+      "id": "colonisation-10",
+      "terme": "colonisation",
+      "formes": [
+        "colonisation",
+        "colonial",
+        "coloniale",
+        "colonisées"
+      ],
+      "definition": "Domination d'un pays sur des territoires étrangers, comme l'Inde sous les Britanniques."
+    },
+    {
+      "id": "Lumières-11",
+      "terme": "Lumières",
+      "formes": [
+        "Lumières"
+      ],
+      "definition": "Mouvement d'idées du XVIIIe siècle (Voltaire, Diderot, Montesquieu) qui défend la raison, la tolérance et la critique des pouvoirs."
+    },
+    {
+      "id": "mondialisation-12",
+      "terme": "mondialisation",
+      "formes": [
+        "mondialisation"
+      ],
+      "definition": "Intensification des échanges de biens, de personnes et d'idées à l'échelle de la planète."
+    },
+    {
+      "id": "transhumanisme-13",
+      "terme": "transhumanisme",
+      "formes": [
+        "transhumanisme"
+      ],
+      "definition": "Courant qui veut dépasser les limites humaines (la mort, l'oubli) grâce à la technique."
+    },
+    {
+      "id": "hypertexte-14",
+      "terme": "hypertexte",
+      "formes": [
+        "hypertextuelles",
+        "hypertexte",
+        "hypertextes"
+      ],
+      "definition": "Texte relié à d'autres par des liens qu'on suit d'un clic, comme les pages web."
+    },
+    {
+      "id": "rhizome-15",
+      "terme": "rhizome",
+      "formes": [
+        "rhizomes",
+        "rhizome"
+      ],
+      "definition": "Image (Gilles Deleuze) d'un réseau sans centre, comme des racines qui s'étendent dans toutes les directions."
+    },
+    {
+      "id": "OuLiPo-16",
+      "terme": "OuLiPo",
+      "formes": [
+        "OuLiPo"
+      ],
+      "definition": "Groupe d'écrivains (Queneau, Perec) qui écrivent sous contraintes et jouent des combinaisons."
+    },
+    {
+      "id": "dreyfusard-17",
+      "terme": "dreyfusard",
+      "formes": [
+        "dreyfusard"
+      ],
+      "definition": "Partisan de l'innocence du capitaine Dreyfus, officier juif condamné à tort pour trahison en 1894."
+    },
+    {
+      "id": "marxiste-18",
+      "terme": "marxiste",
+      "formes": [
+        "marxiste"
+      ],
+      "definition": "Inspiré de Karl Marx, pour qui l'économie et la lutte des classes expliquent l'histoire."
+    },
+    {
+      "id": "épique-19",
+      "terme": "épique",
+      "formes": [
+        "épique",
+        "chanson de geste"
+      ],
+      "definition": "Qui chante les exploits guerriers de héros. Au Moyen Âge, la « chanson de geste » est un long poème de ce type."
+    },
+    {
+      "id": "Sarrasins-20",
+      "terme": "Sarrasins",
+      "formes": [
+        "Sarrasins",
+        "Sarrasin"
+      ],
+      "definition": "Nom donné au Moyen Âge aux musulmans."
+    },
+    {
+      "id": "ordalie-21",
+      "terme": "ordalie",
+      "formes": [
+        "ordalie"
+      ],
+      "definition": "Épreuve, souvent un combat, censée révéler la volonté de Dieu pour désigner le coupable."
+    },
+    {
+      "id": "croisade-22",
+      "terme": "croisade",
+      "formes": [
+        "croisade"
+      ],
+      "definition": "Expédition militaire chrétienne vers la Terre sainte, à partir de 1095."
+    },
+    {
+      "id": "monothéisme-23",
+      "terme": "monothéisme",
+      "formes": [
+        "monothéisme",
+        "monothéiste"
+      ],
+      "definition": "Croyance en un Dieu unique (judaïsme, christianisme, islam)."
+    },
+    {
+      "id": "idolâtre-24",
+      "terme": "idolâtre",
+      "formes": [
+        "idolâtres",
+        "idolâtre",
+        "idolâtrie"
+      ],
+      "definition": "Qui adore des statues ou de faux dieux."
+    },
+    {
+      "id": "ethnologue-25",
+      "terme": "ethnologue",
+      "formes": [
+        "ethnologue",
+        "ethnologie"
+      ],
+      "definition": "Savant qui étudie les cultures et les sociétés humaines, souvent en vivant parmi elles."
+    },
+    {
+      "id": "structurale-26",
+      "terme": "structurale",
+      "formes": [
+        "structurale",
+        "structuralisme"
+      ],
+      "definition": "Méthode qui étudie les relations entre les éléments d'un système plutôt que chaque élément isolé."
+    },
+    {
+      "id": "laïcité-27",
+      "terme": "laïcité",
+      "formes": [
+        "laïcité"
+      ],
+      "definition": "Séparation des religions et de l'État ; en France, loi de 1905."
+    },
+    {
+      "id": "nihiliste-28",
+      "terme": "nihiliste",
+      "formes": [
+        "nihiliste",
+        "nihilisme"
+      ],
+      "definition": "Qui rejette toutes les valeurs et croyances établies."
+    },
+    {
+      "id": "anarchiste-29",
+      "terme": "anarchiste",
+      "formes": [
+        "anarchistes",
+        "anarchiste"
+      ],
+      "definition": "Militant qui veut supprimer l'État et toute autorité."
+    },
+    {
+      "id": "totalitarisme-30",
+      "terme": "totalitarisme",
+      "formes": [
+        "totalitarismes",
+        "totalitarisme"
+      ],
+      "definition": "Régime qui veut tout contrôler — politique, société, pensées — comme le nazisme ou le stalinisme."
+    },
+    {
+      "id": "fouriériste-31",
+      "terme": "fouriériste",
+      "formes": [
+        "fouriéristes",
+        "fouriériste"
+      ],
+      "definition": "Disciple de Charles Fourier, penseur socialiste du XIXe siècle."
+    },
+    {
+      "id": "populisme-32",
+      "terme": "populisme",
+      "formes": [
+        "populisme",
+        "populiste"
+      ],
+      "definition": "Discours qui oppose un « peuple » présenté comme pur à des « élites » jugées corrompues."
+    },
+    {
+      "id": "démagogie-33",
+      "terme": "démagogie",
+      "formes": [
+        "démagogie"
+      ],
+      "definition": "Art de flatter le peuple pour gagner son soutien."
+    },
+    {
+      "id": "servitude volontaire-34",
+      "terme": "servitude volontaire",
+      "formes": [
+        "servitude volontaire"
+      ],
+      "definition": "Idée de La Boétie (XVIe siècle) : un tyran ne tient que parce que le peuple accepte de lui obéir."
+    },
+    {
+      "id": "complot-35",
+      "terme": "complot",
+      "formes": [
+        "conspirationnistes",
+        "complotistes",
+        "théories du complot"
+      ],
+      "definition": "Explication des événements par l'action cachée d'un groupe secret."
+    },
+    {
+      "id": "fake news-36",
+      "terme": "fake news",
+      "formes": [
+        "fake news"
+      ],
+      "definition": "Fausse information diffusée volontairement pour tromper."
+    },
+    {
+      "id": "guerre froide-37",
+      "terme": "guerre froide",
+      "formes": [
+        "guerre froide"
+      ],
+      "definition": "Affrontement indirect entre les États-Unis et l'URSS (1947-1991), sous la menace nucléaire."
+    },
+    {
+      "id": "anthropocentrisme-38",
+      "terme": "anthropocentrisme",
+      "formes": [
+        "anthropocentrisme"
+      ],
+      "definition": "Fait de placer l'être humain au centre de tout, au-dessus des autres vivants."
+    },
+    {
+      "id": "animal-machine-39",
+      "terme": "animal-machine",
+      "formes": [
+        "animal-machine"
+      ],
+      "definition": "Thèse attribuée à Descartes : l'animal serait une simple mécanique, sans pensée ni sensibilité."
+    },
+    {
+      "id": "mécène-40",
+      "terme": "mécène",
+      "formes": [
+        "mécène"
+      ],
+      "definition": "Personne riche ou puissante qui finance des artistes."
+    },
+    {
+      "id": "surintendant-41",
+      "terme": "surintendant",
+      "formes": [
+        "surintendant"
+      ],
+      "definition": "Sous l'Ancien Régime, ministre chargé des finances du royaume (Fouquet sous Louis XIV)."
+    },
+    {
+      "id": "Académie française-42",
+      "terme": "Académie française",
+      "formes": [
+        "Académie française"
+      ],
+      "definition": "Institution fondée en 1635 qui réunit quarante écrivains, « les Immortels »."
+    },
+    {
+      "id": "altérité-43",
+      "terme": "altérité",
+      "formes": [
+        "altérité"
+      ],
+      "definition": "Le fait d'être autre : la façon dont on se représente ceux qui sont différents de soi."
+    },
+    {
+      "id": "ethnologue-44",
+      "terme": "ethnologue",
+      "formes": [
+        "anthropologue",
+        "anthropologique"
+      ],
+      "definition": "Savant qui étudie l'être humain dans ses sociétés et ses cultures."
+    },
+    {
+      "id": "finitude-45",
+      "terme": "finitude",
+      "formes": [
+        "finitude"
+      ],
+      "definition": "Le fait d'être limité : mortel, imparfait."
+    },
+    {
+      "id": "métaphysique-46",
+      "terme": "métaphysique",
+      "formes": [
+        "métaphysique"
+      ],
+      "definition": "Réflexion sur ce qui dépasse le monde visible : le sens, l'être, le temps."
+    },
+    {
+      "id": "épistolaire-47",
+      "terme": "épistolaire",
+      "formes": [
+        "épistolaire"
+      ],
+      "definition": "Écrit sous forme de lettres."
+    }
+  ]
+}

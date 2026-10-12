@@ -1,7 +1,7 @@
 import { loadContent, search, pdfPageFor } from './data.js';
 import { createStore, exportText, validateImport, dayKey } from './store.js';
 import { review, status, isDue, isNew, isAcquired, mastery, GRADE_LABELS, DAY, MINUTE, startOfDay } from './srs.js';
-import { buildSession, requeue, eligibleNew } from './session.js';
+import { buildSession, requeue, eligibleNew, levelOf } from './session.js';
 import { initPdf, savePdf, removePdf, hasPdf, pdfHref } from './pdf.js';
 
 const REPO = 'https://github.com/CollectifDevidoir/L-instant-critique-';
@@ -77,6 +77,51 @@ function intervalLabel(state, now = Date.now()) {
   if (days < 31) return `dans ${days} j`;
   return `dans ${Math.round(days / 30)} mois`;
 }
+
+/* ————————————————— glossaire : mots difficiles cliquables ————————————————— */
+
+let glossRe = null;
+const glossByForm = new Map();
+const glossById = new Map();
+function buildGloss() {
+  const forms = [];
+  for (const g of C.glossaire) {
+    glossById.set(g.id, g);
+    for (const f of g.formes) { forms.push(f); glossByForm.set(f.toLowerCase(), g); }
+  }
+  forms.sort((a, b) => b.length - a.length);
+  const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  glossRe = forms.length ? new RegExp(`(?<![\\p{L}])(${forms.map(reEsc).join('|')})(?![\\p{L}])`, 'giu') : null;
+}
+// Texte échappé, avec la première occurrence de chaque terme du glossaire rendue cliquable.
+function gl(text) {
+  const safe = esc(text).replace(/&#39;/g, "'");
+  if (!glossRe) return safe;
+  const used = new Set();
+  return safe.replace(glossRe, (m) => {
+    const g = glossByForm.get(m.toLowerCase());
+    if (!g || used.has(g.terme)) return m;
+    used.add(g.terme);
+    return `<button type="button" class="gloss" data-action="gloss" data-g="${g.id}">${m}</button>`;
+  });
+}
+function showGloss(id, anchor) {
+  const g = glossById.get(id);
+  const panel = document.getElementById('gloss');
+  if (!g || !panel) return;
+  panel.innerHTML = `<b>${esc(g.terme)}</b><span>${esc(g.definition)}</span><button type="button" class="close" data-gloss-close aria-label="Fermer">✕</button>`;
+  panel.hidden = false;
+  if (anchor && matchMedia('(min-width: 760px)').matches) {
+    const r = anchor.getBoundingClientRect();
+    panel.style.left = `${Math.min(window.innerWidth - 340, Math.max(12, r.left))}px`;
+    panel.style.top = `${r.bottom + 8}px`;
+    panel.classList.add('floating');
+  } else {
+    panel.style.left = panel.style.top = '';
+    panel.classList.remove('floating');
+  }
+}
+function hideGloss() { const p = document.getElementById('gloss'); if (p) p.hidden = true; }
 
 /* ————————————————— installation sur l'écran d'accueil ————————————————— */
 
@@ -215,7 +260,9 @@ function route() {
 function render(html, { focus = true, foot = true } = {}) {
   main.innerHTML = `<div class="view">${html}${foot ? footer() : ''}</div>`;
   if (focus) { main.focus({ preventScroll: true }); window.scrollTo(0, 0); }
-  main.querySelector('[autofocus]')?.focus({ preventScroll: true });
+  const af = main.querySelector('[autofocus]');
+  if (af && !matchMedia('(pointer: coarse)').matches) af.focus({ preventScroll: true });
+  else if (document.activeElement && document.activeElement !== main && document.activeElement !== document.body) document.activeElement.blur();
 }
 
 function footer() {
@@ -318,7 +365,8 @@ function onboarding() {
   return `<section class="onboarding" aria-label="Comment ça marche">
     <h2>Comment ça marche</h2>
     <ol>
-      <li><b>Une courte séance par jour.</b> Une dizaine de cartes : des notions à revoir, quelques nouvelles.</li>
+      <li><b>Pas besoin d'avoir lu les livres.</b> Chaque livre vous est d'abord raconté simplement, puis on avance pas à pas : découvrir, comprendre, approfondir.</li>
+      <li><b>Une courte séance par jour.</b> Une dizaine de cartes : des notions à revoir, quelques nouvelles. Un mot souligné en pointillé ? Touchez-le pour son explication.</li>
       <li><b>Répondez de mémoire</b>, puis dites honnêtement si vous saviez. Personne ne vous juge.</li>
       <li><b>Chaque notion revient au bon moment</b> : bientôt si vous hésitez, de plus en plus tard si vous la maîtrisez.</li>
     </ol>
@@ -422,7 +470,8 @@ function renderItem() {
   if (ta) { ta.value = ui.text || ''; if (!ui.revealed) ta.focus({ preventScroll: true }); }
 }
 
-const COMP_SHORT = { 1: 'Le livre', 2: 'Les idées', 3: 'Aujourd\'hui', 4: 'Relier' };
+const LEVEL_CHIP = { 1: 'Découvrir', 2: 'Comprendre', 3: 'Approfondir' };
+const levelLabel = (card) => (card.competence === 4 ? 'Relier' : LEVEL_CHIP[levelOf(card)]);
 const FORMAT_HINT = { flashcard: 'Carte mémoire', qcm: 'Choix', actualite: 'Actualité', relier: 'Associer', libre: 'Avec vos mots' };
 
 function cardTop(card, item) {
@@ -431,7 +480,7 @@ function cardTop(card, item) {
     <div class="mini-covers">${works.length ? works.slice(0, 3).map((o) => coverOf(o, 'mini-cover', false)).join('') : '<span class="mini-cover cover-blank">§</span>'}</div>
     <div class="card-top-text">
       <span class="card-work">${esc(card.oeuvres.map(oeuvreTitle).join(' · '))}</span>
-      <span class="chips-inline"><span class="chip-c c${card.competence}">${COMP_SHORT[card.competence]}</span><span class="chip-f">${FORMAT_HINT[card.format]}</span>${item?.isNew ? '<span class="chip-new">Nouveau</span>' : ''}${item?.relearn ? '<span class="chip-new">2ᵉ essai</span>' : ''}</span>
+      <span class="chips-inline"><span class="chip-c c${card.competence === 4 ? 4 : levelOf(card)}">${levelLabel(card)}</span><span class="chip-f">${FORMAT_HINT[card.format]}</span>${item?.isNew ? '<span class="chip-new">Nouveau</span>' : ''}${item?.relearn ? '<span class="chip-new">2ᵉ essai</span>' : ''}</span>
     </div>
   </header>`;
 }
@@ -456,15 +505,32 @@ function renderIntro(oeuvreId) {
     </article>`;
   }
   const o = C.byId.get(oeuvreId);
+  const a = C.articles.get(o.article);
+  const step = ui.step || 0;
+  const dots = `<div class="steps" aria-hidden="true">${[0, 1, 2].map((i) => `<i class="${i === step ? 'on' : i < step ? 'done' : ''}"></i>`).join('')}</div>`;
+  const pages = [
+    `<p class="kicker">Nouveau livre · 1/3 · Le livre en bref</p>
+     <h1 class="question"><em>${esc(o.titre)}</em></h1>
+     <p class="by">${gl(o.auteurBref)}</p>
+     <p class="intro-big">${gl(o.enBref)}</p>
+     <p class="hint">${natureTag('repere')} Ce résumé sert de repère : il ne vient pas du magazine.</p>`,
+    `<p class="kicker">2/3 · Ce qu'en retient le dossier</p>
+     <p class="intro-q">${gl(o.question)}</p>
+     <p class="intro-big"><strong>En clair :</strong> ${gl(o.enClair)}</p>
+     <p class="hint">D'après l'article « ${esc(a.titre)} » de ${esc(a.auteurs)}, <em>Le Magazine littéraire</em> (2017).</p>`,
+    `<p class="kicker">3/3 · Pour s'en souvenir</p>
+     <div class="example-box"><span class="label">Un exemple</span><p>${gl(o.exemple)}</p></div>
+     <div class="notion"><span class="label">Le mot à retenir</span><p><strong>${esc(o.notion.terme)}</strong> — ${gl(o.notion.definition)}</p></div>`,
+  ];
   return `<article class="card intro-card book-intro">
     <div class="book-intro-cover">${coverOf(o.id, 'cover')}</div>
     <div>
-      <p class="kicker">Nouveau livre</p>
-      <h1 class="question"><em>${esc(o.titre)}</em></h1>
-      <p class="by">${esc(o.auteur)} · ${esc(o.date)}</p>
-      <p class="intro-q">${esc(o.question)}</p>
-      <p class="intro-big">${esc(o.ideeCentrale)}</p>
-      <div class="actions"><button class="btn big" data-action="intro-done" autofocus>J'ai lu, aux questions</button><a class="linkbtn" href="#/oeuvre/${o.id}">Voir la fiche</a></div>
+      ${dots}
+      ${pages[step]}
+      <div class="actions">
+        ${step > 0 ? '<button class="btn ghost" data-action="intro-prev">Retour</button>' : ''}
+        ${step < 2 ? '<button class="btn big" data-action="intro-next" autofocus>Suivant</button>' : '<button class="btn big" data-action="intro-done" autofocus>Aux questions</button>'}
+      </div>
     </div>
   </article>`;
 }
@@ -483,14 +549,23 @@ function gradeButtons(card, suggested = 0) {
     `<button class="grade g${g}${g === suggested ? ' suggested' : ''}" data-action="grade" data-g="${g}"><span class="gi" aria-hidden="true">${icons[g]}</span><span>${GRADE_LABELS[g]}</span><small>${esc(intervalLabel(review(s, g, now), now))}</small></button>`).join('')}</div>`;
 }
 
+function hintBlock(card) {
+  const works = card.oeuvres.filter((o) => C.byId.has(o));
+  // Pas d'indice sur les cartes de découverte : il donnerait la réponse.
+  if (!works.length || card.id.startsWith('dec-')) return '';
+  if (!ui.hint) return `<button class="hint-btn" data-action="hint">Un coup de pouce ?</button>`;
+  return `<div class="hint-box">${works.map((id) => { const o = C.byId.get(id); return `<p><b><em>${esc(shortTitle(o))}</em></b> — ${gl(o.sujet)}. ${gl(o.enClair)}</p>`; }).join('')}</div>`;
+}
+
 function renderFlashcard(card) {
-  return `<h1 class="question">${esc(card.question)}</h1>
+  return `<h1 class="question">${gl(card.question)}</h1>
     ${!ui.revealed ? `<p class="prompt">Prenez quelques secondes pour formuler la réponse dans votre tête.</p>
+      ${hintBlock(card)}
       <div class="actions"><button class="btn big" data-action="reveal" autofocus>Retourner la carte</button></div>` : `
     <div class="reveal flip">
-      <div class="answer">${esc(card.reponse)}</div>
-      ${card.exemple ? `<p class="example"><b>Exemple —</b> ${esc(card.exemple)}</p>` : ''}
-      ${card.explication ? `<p class="why">${esc(card.explication)}</p>` : ''}
+      <div class="answer">${gl(card.reponse)}</div>
+      ${card.exemple ? `<p class="example"><b>Exemple —</b> ${gl(card.exemple)}</p>` : ''}
+      ${card.explication ? `<p class="why">${gl(card.explication)}</p>` : ''}
       ${more(card)}
       ${gradeButtons(card)}
     </div>`}`;
@@ -512,16 +587,17 @@ function renderChoice(card) {
     if (answered) cls = o.i === card.correct ? 'correct' : o.i === ui.choice ? 'wrong' : 'muted';
     return `<li><button class="choice ${cls}" data-action="choose" data-i="${o.i}" ${answered ? 'disabled' : ''}><span class="key">${answered && o.i === card.correct ? '✓' : answered && o.i === ui.choice ? '✕' : 'ABCD'[k]}</span><span>${esc(o.t)}</span></button></li>`;
   }).join('');
-  return `${situation ? `<div class="situation"><span class="label">La situation</span>${esc(situation)}</div>` : ''}
-    <h1 class="question">${esc(q)}</h1>
+  return `${situation ? `<div class="situation"><span class="label">La situation</span>${gl(situation)}</div>` : ''}
+    <h1 class="question">${gl(q)}</h1>
+    ${!answered ? hintBlock(card) : ''}
     <ol class="choices">${list}</ol>
     ${answered ? `<div class="reveal">
       <p class="verdict ${ok ? 'ok' : 'ko'}">${ok ? pick(['Bien vu !', 'Exactement.', 'Juste !', 'Bonne réponse.'], card.id) : 'Pas tout à fait.'}</p>
-      <p class="why">${esc(card.explication)}</p>
+      <p class="why">${gl(card.explication)}</p>
       ${more(card)}
       <div class="after">
-        <button class="btn big" data-action="grade" data-g="${ok ? 3 : 1}" autofocus>Continuer</button>
-        ${ok ? `<span class="after-alt"><button class="linkbtn" data-action="grade" data-g="2">J'ai hésité</button> · <button class="linkbtn" data-action="grade" data-g="4">Trop facile</button></span>` : '<span class="after-alt">Cette carte reviendra un peu plus loin.</span>'}
+        <button class="btn big" data-action="grade" data-g="${ok ? (ui.hint ? 2 : 3) : 1}" autofocus>Continuer</button>
+        ${ok && ui.hint ? '<span class="after-alt">Trouvé avec un coup de pouce : la carte reviendra un peu plus tôt.</span>' : ok ? `<span class="after-alt"><button class="linkbtn" data-action="grade" data-g="2">J'ai hésité</button> · <button class="linkbtn" data-action="grade" data-g="4">Trop facile</button></span>` : '<span class="after-alt">Cette carte reviendra un peu plus loin.</span>'}
       </div></div>` : ''}`;
 }
 
@@ -546,7 +622,7 @@ function renderMatch(card) {
   };
   const all = Object.keys(pairs).length === card.paires.length;
   const okCount = Object.entries(pairs).filter(([l, r]) => Number(l) === r).length;
-  return `<h1 class="question">${esc(card.question)}</h1>
+  return `<h1 class="question">${gl(card.question)}</h1>
     ${!checked ? `<p class="prompt">${ui.sel != null ? 'Maintenant, touchez l\'idée qui lui correspond.' : 'Touchez un livre, puis l\'idée qui lui correspond.'}</p>` : ''}
     <div class="match">
       <div class="match-col">${lefts.map((l) => { const n = pairNumber('l', l.i); return `<button class="match-item left ${cls('l', l.i)}" data-action="match-l" data-i="${l.i}" ${n ? `data-pair="${n}"` : ''} ${checked ? 'disabled' : ''}>${esc(l.t)}</button>`; }).join('')}</div>
@@ -556,7 +632,7 @@ function renderMatch(card) {
     <div class="reveal">
       <p class="verdict ${okCount === card.paires.length ? 'ok' : 'ko'}">${okCount === card.paires.length ? 'Tout juste !' : `${okCount} sur ${card.paires.length}`}</p>
       ${okCount < card.paires.length ? `<ul class="pairs-solution">${card.paires.map((p) => `<li><em>${esc(p.gauche)}</em><span>${esc(p.droite)}</span></li>`).join('')}</ul>` : ''}
-      <p class="why">${esc(card.explication)}</p>
+      <p class="why">${gl(card.explication)}</p>
       ${more(card)}
       <div class="after"><button class="btn big" data-action="grade" data-g="${okCount === card.paires.length ? 3 : okCount ? 2 : 1}" autofocus>Continuer</button></div>
     </div>`}`;
@@ -565,7 +641,8 @@ function renderMatch(card) {
 function renderFree(card) {
   if (!ui.revealed) {
     const last = P().cards[card.id]?.lastAnswer;
-    return `<h1 class="question">${esc(card.question)}</h1>
+    return `<h1 class="question">${gl(card.question)}</h1>
+      ${hintBlock(card)}
       <label class="sr-only" for="free-${esc(card.id)}">Votre réponse</label>
       <textarea id="free-${esc(card.id)}" class="free" data-action="free-input" placeholder="Deux ou trois phrases, avec vos mots. Vous comparerez vous-même ensuite."></textarea>
       ${last ? `<details class="more"><summary>Votre réponse la dernière fois</summary><p class="your-answer">${esc(last)}</p></details>` : ''}
@@ -574,12 +651,13 @@ function renderFree(card) {
   ui.ticks ||= [];
   const ratio = card.points.length ? ui.ticks.filter(Boolean).length / card.points.length : 0;
   const suggested = ui.blank ? 1 : ratio >= 0.75 ? 3 : ratio >= 0.4 ? 2 : 1;
-  return `<h1 class="question">${esc(card.question)}</h1>
+  return `<h1 class="question">${gl(card.question)}</h1>
     <div class="reveal">
       ${ui.text ? `<p class="your-answer">${esc(ui.text)}</p>` : ''}
-      <p class="label">Cochez les idées que vous aviez (même dites autrement)</p>
+      <p class="label">La correction</p>
+      <div class="answer">${gl(card.reponse)}</div>
+      <p class="label">Cochez les idées que vous aviez, même dites autrement</p>
       <ul class="checklist">${card.points.map((pt, k) => `<li><label><input type="checkbox" data-action="tick" data-k="${k}" ${ui.ticks[k] ? 'checked' : ''}><span>${esc(pt)}</span></label></li>`).join('')}</ul>
-      <details class="more"><summary>Correction rédigée</summary><p>${esc(card.reponse)}</p>${card.explication ? `<p>${esc(card.explication)}</p>` : ''}</details>
       ${more(card)}
       ${gradeButtons(card, suggested)}
     </div>`;
@@ -651,7 +729,7 @@ function viewLibrary() {
   render(`
     <header class="page-head">
       <h1>L'étagère</h1>
-      <p>${C.oeuvres.length} livres. Touchez une couverture pour ouvrir sa fiche.</p>
+      <p>${C.oeuvres.length} livres, rangés du plus accessible au plus exigeant. Touchez une couverture pour découvrir le livre.</p>
     </header>
     <div class="searchbar" role="search">
       <label class="sr-only" for="lib-q">Rechercher</label>
@@ -680,6 +758,7 @@ function libraryResults() {
       <span class="book-cover">${coverOf(o.id, 'cover')}</span>
       <span class="book-title">${esc(shortTitle(o))}</span>
       <span class="book-author">${esc(shortAuthor(o.auteur))}</span>
+      <span class="book-sujet">${esc(o.sujet)}</span>
       <span class="book-state">${notches(bp.level)} ${LEVEL_LABEL[bp.level]}</span>
     </a>`;
   }).join('')}</div>`;
@@ -709,22 +788,30 @@ function viewOeuvre(id) {
     </div></header>
     <div class="fiche-body">
 
+    <section class="block first">
+      <h2>Le livre en bref</h2>
+      <p>${gl(o.enBref)}</p>
+      <p class="hint">${gl(o.auteurBref)} ${natureTag('repere')}</p>
+    </section>
+
     <section class="essential">
-      <p class="big-question">${esc(o.question)}</p>
-      <p class="central">${esc(o.ideeCentrale)}</p>
+      <span class="label">En clair</span>
+      <p class="central">${gl(o.enClair)}</p>
+      <p class="big-question">${gl(o.question)}</p>
+      <details class="more"><summary>L'analyse du dossier en une phrase</summary><p>${gl(o.ideeCentrale)}</p></details>
     </section>
 
     <section class="block">
       <h2>À retenir</h2>
-      <ol class="ideas">${o.idees.map((t) => `<li>${esc(t)}</li>`).join('')}</ol>
-      <div class="example-box"><span class="label">L'exemple qui aide à se souvenir</span><p>${esc(o.exemple)}</p></div>
-      <div class="notion"><span class="label">Le mot à retenir</span><p><strong>${esc(o.notion.terme)}</strong> — ${esc(o.notion.definition)}</p></div>
+      <ol class="ideas">${o.idees.map((t) => `<li>${gl(t)}</li>`).join('')}</ol>
+      <div class="example-box"><span class="label">L'exemple qui aide à se souvenir</span><p>${gl(o.exemple)}</p></div>
+      <div class="notion"><span class="label">Le mot à retenir</span><p><strong>${esc(o.notion.terme)}</strong> — ${gl(o.notion.definition)}</p></div>
     </section>
 
     <section class="block">
       <h2>Et aujourd'hui ?</h2>
-      <p>${esc(o.aujourdhui.magazine)} ${natureTag('magazine')}</p>
-      <p class="app-voice">${esc(o.aujourdhui.piste)} ${natureTag('prolongement')}</p>
+      <p>${gl(o.aujourdhui.magazine)} ${natureTag('magazine')}</p>
+      <p class="app-voice">${gl(o.aujourdhui.piste)} ${natureTag('prolongement')}</p>
       <p class="ponder">${esc(o.questionReflexion)}</p>
     </section>
 
@@ -1099,6 +1186,10 @@ function rerenderKeepScroll(fn) {
   window.scrollTo(0, y);
 }
 
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-gloss-close]') || !e.target.closest('#gloss, .gloss')) hideGloss();
+});
+
 main.addEventListener('click', async (e) => {
   const el = e.target.closest('[data-action]');
   if (!el) return;
@@ -1112,6 +1203,10 @@ main.addEventListener('click', async (e) => {
     case 'show-onboarding': P().settings.onboarded = false; store.save(); location.hash = '#/'; break;
     case 'quit': session.done = true; persistSession(); location.hash = '#/'; break;
     case 'intro-done': P().opened[currentItem().oeuvre] = Date.now(); store.save(); advance(); break;
+    case 'intro-next': ui.step = (ui.step || 0) + 1; renderItem(); break;
+    case 'intro-prev': ui.step = Math.max(0, (ui.step || 0) - 1); renderItem(); break;
+    case 'hint': ui.hint = true; rerenderKeepScroll(renderItem); break;
+    case 'gloss': e.preventDefault(); e.stopPropagation(); showGloss(el.dataset.g, el); return;
     case 'reveal': ui.revealed = true; renderItem(); main.querySelector('.reveal')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); break;
     case 'reveal-blank': ui.revealed = true; ui.blank = true; renderItem(); break;
     case 'choose':
@@ -1220,7 +1315,7 @@ document.addEventListener('keydown', (e) => {
   const item = currentItem();
   if (!item) return;
   if (e.key === 'Escape') return press('[data-action="quit"]');
-  if (item.type === 'intro') { if (e.key === 'Enter' || e.key === ' ') press('[data-action="intro-done"]'); return; }
+  if (item.type === 'intro') { if (e.key === 'Enter' || e.key === ' ') { if (!press('[data-action="intro-next"]')) press('[data-action="intro-done"]'); } return; }
   if (e.key === ' ' || e.key === 'Enter') {
     if (press('[data-action="reveal"]')) return;
     if (press('.after .btn')) return;
@@ -1253,6 +1348,7 @@ async function start() {
     main.innerHTML = `<div class="view"><p class="warn">Le contenu n'a pas pu être chargé (${esc(err.message)}). Si vous ouvrez le fichier directement depuis le disque, lancez plutôt un petit serveur local (voir le README).</p></div>`;
     return;
   }
+  buildGloss();
   await initPdf();
   if (navigator.storage?.persist) navigator.storage.persist().catch(() => {});
   if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('./sw.js').catch(() => {});

@@ -41,6 +41,7 @@ function watch(page, label) {
 
 // Répond à l'élément courant de la séance, quel que soit son format.
 async function answerCurrent(page, strategy = 'good') {
+  if (await page.locator('[data-action="intro-next"]').count()) return page.click('[data-action="intro-next"]');
   if (await page.locator('[data-action="intro-done"]').count()) return page.click('[data-action="intro-done"]');
   if (await page.locator('[data-action="choose"]').count()) {
     await page.locator('[data-action="choose"]').first().click();
@@ -93,7 +94,7 @@ try {
     await page.waitForSelector('.card');
     await page.waitForTimeout(400);
     await page.screenshot({ path: `${OUT}seance-intro.png` });
-    for (let guard = 0; guard < 40 && !(await page.locator('.session-end').count()); guard++) {
+    for (let guard = 0; guard < 60 && !(await page.locator('.session-end').count()); guard++) {
       await answerCurrent(page, answered === 2 ? 'bad' : 'good');
       if (await page.locator('.reveal, .grades').count() === 0) answered++;
       await page.waitForTimeout(30);
@@ -160,7 +161,7 @@ try {
     const h2 = await page.locator('.fiche .block > h2').allTextContents();
     for (const t of ['À retenir', 'Et aujourd\'hui ?']) assert.ok(h2.includes(t), t);
     assert.ok(await page.locator('.fiche .essential .central').count());
-    await page.click('.fiche details.more:last-of-type summary');
+    await page.locator('.fiche details.more summary', { hasText: 'Source' }).click();
     assert.match(await page.textContent('.fiche'), /p\. 104-108 · PDF p\. 22/);
     await page.click('.fiche [data-action="report"]');
     await page.fill('#report-text', 'Test de signalement');
@@ -187,9 +188,10 @@ try {
   await check('sources, séance ciblée sur une œuvre, liens internes', async () => {
     await page.goto(BASE + '#/sources');
     await page.waitForSelector('.prose');
-    await page.goto(BASE + '#/seance/oeuvre/fables');
+    await page.goto(BASE + '#/seance/oeuvre/chanson-de-roland');
     await page.waitForSelector('.card');
-    assert.match(await page.textContent('.card'), /Fables|La Fontaine/);
+    assert.match(await page.textContent('.card'), /Roland/);
+    assert.equal(await page.locator('[data-action="intro-next"]').count(), 1, 'présentation en trois écrans');
     const hrefs = await page.$$eval('a[href^="#/"]', (as) => as.map((a) => a.getAttribute('href')));
     for (const h of new Set(hrefs)) {
       await page.goto(BASE + h);

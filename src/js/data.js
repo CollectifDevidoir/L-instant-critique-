@@ -1,15 +1,15 @@
 // Chargement et indexation du contenu pédagogique (fichiers JSON séparés du code).
 
-const FILES = ['oeuvres', 'cartes', 'liens'];
+const FILES = ['oeuvres', 'cartes', 'liens', 'glossaire'];
 
 export async function loadContent(base = './src/data/') {
-  const [oeuvres, cartes, liens] = await Promise.all(
+  const [oeuvres, cartes, liens, glossaire] = await Promise.all(
     FILES.map((f) => fetch(`${base}${f}.json`, { cache: 'no-cache' }).then((r) => {
       if (!r.ok) throw new Error(`Impossible de charger ${f}.json (${r.status})`);
       return r.json();
     })),
   );
-  return indexContent(oeuvres, cartes, liens);
+  return indexContent(oeuvres, cartes, liens, glossaire);
 }
 
 export function normalizeText(s) {
@@ -20,7 +20,7 @@ export function normalizeText(s) {
     .replace(/[’']/g, ' ');
 }
 
-export function indexContent(oeuvresData, cartesData, liensData) {
+export function indexContent(oeuvresData, cartesData, liensData, glossaireData = { glossaire: [] }) {
   const oeuvres = oeuvresData.oeuvres;
   const byId = new Map(oeuvres.map((o) => [o.id, o]));
   const articles = new Map(oeuvresData.articles.map((a) => [a.id, a]));
@@ -38,7 +38,7 @@ export function indexContent(oeuvresData, cartesData, liensData) {
   const searchIndex = oeuvres.map((o) => ({
     id: o.id,
     text: normalizeText([
-      o.titre, o.auteur, o.date, o.question, o.ideeCentrale, o.notion?.terme, o.notion?.definition,
+      o.titre, o.auteur, o.date, o.question, o.sujet, o.enBref, o.enClair, o.ideeCentrale, o.notion?.terme, o.notion?.definition,
       ...(o.idees || []), o.exemple, o.contexte,
       ...(o.themes || []).map((t) => themes.get(t)?.label),
       articles.get(o.article)?.rubrique, articles.get(o.article)?.titre, articles.get(o.article)?.auteurs,
@@ -52,6 +52,7 @@ export function indexContent(oeuvresData, cartesData, liensData) {
     competences: cartesData.competences,
     oeuvres, byId, articles, themes, cards, cardById, cardsByOeuvre, order, searchIndex,
     liens: liensData,
+    glossaire: glossaireData.glossaire,
   };
 }
 

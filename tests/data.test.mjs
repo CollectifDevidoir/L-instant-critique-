@@ -19,6 +19,8 @@ test('fiches complètes et cohérentes', () => {
     for (const k of ['titre', 'auteur', 'date', 'contexte', 'question', 'ideeCentrale', 'exemple', 'limites']) assert.ok(o[k]?.length > 3, `${o.id}.${k}`);
     assert.ok(o.idees.length >= 2 && o.idees.length <= 3, `${o.id} : 2 ou 3 idées`);
     assert.ok(o.notion?.terme && o.notion?.definition, `${o.id}.notion`);
+    for (const k of ['enBref', 'enClair', 'sujet', 'auteurBref']) assert.ok(o[k]?.length > 10, `${o.id}.${k} (pédagogie)`);
+    assert.ok(Number.isInteger(o.ordre), `${o.id}.ordre`);
     assert.ok(o.aujourdhui?.magazine && o.aujourdhui?.piste, `${o.id}.aujourdhui`);
     assert.ok(C.articles.has(o.article), `${o.id} : article ${o.article}`);
     assert.ok(inRange(o.pages.magazine), `${o.id} : pages ${o.pages.magazine}`);
@@ -49,7 +51,8 @@ test('chaque carte renvoie à une œuvre et à une source traçable', () => {
     for (const o of c.oeuvres) assert.ok(o === 'introduction' || ids.has(o), `${c.id} → ${o}`);
     assert.ok([1, 2, 3, 4].includes(c.competence), c.id);
     assert.ok(c.source && inRange(c.source.pages), `${c.id} : source ${c.source?.pages}`);
-    assert.ok(['magazine', 'synthese', 'prolongement'].includes(c.source.nature), c.id);
+    assert.ok(['magazine', 'synthese', 'prolongement', 'repere'].includes(c.source.nature), c.id);
+    assert.ok([1, 2, 3].includes(c.niveau), `${c.id} : niveau`);
     if (c.competence === 4) assert.ok(c.oeuvres.length >= 2, `${c.id} : comparaison à deux œuvres au moins`);
   }
 });
@@ -103,6 +106,16 @@ test('rapprochements : œuvres existantes, fondement explicite ou proposé', () 
     assert.ok(r.convergences.length && r.oppositions.length && r.nuances && r.question, r.id);
   }
   for (const q of L.questionsOuvertes) assert.ok(q.oeuvres.every((o) => ids.has(o)));
+});
+
+test('glossaire : termes définis, formes uniques', () => {
+  const G = load('glossaire').glossaire;
+  const forms = new Set();
+  for (const g of G) {
+    assert.ok(g.definition.length > 20, g.terme);
+    for (const f of g.formes) { assert.ok(!forms.has(f.toLowerCase()), `forme en double : ${f}`); forms.add(f.toLowerCase()); }
+  }
+  assert.ok(G.length >= 40);
 });
 
 test('recherche plein texte (accents ignorés)', () => {

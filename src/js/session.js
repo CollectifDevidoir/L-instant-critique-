@@ -1,36 +1,58 @@
 // Composition de la séance du jour (fonctions pures, testables).
 //
-// Principes :
+// Principes (pensés pour quelqu'un qui n'a lu ni les livres ni les articles) :
 //  1. Les révisions dues passent d'abord, les plus en retard en tête.
 //  2. Les nouvelles notions complètent la séance, sans jamais l'emporter sur
 //     les révisions : 2 au minimum si la séance le permet, 8 au maximum, et
 //     aucune si l'arriéré de révisions dépasse une séance et demie.
-//  3. Les nouveautés suivent un ordre pédagogique : on termine une œuvre
-//     entamée avant d'en ouvrir une autre (2 œuvres nouvelles maximum par
-//     séance), et, pour chaque œuvre, on va de la connaissance de l'œuvre (1)
-//     à ses idées (2) puis au présent (3).
-//  4. Les questions de comparaison (4) ne sont proposées que lorsque toutes
-//     les œuvres concernées ont déjà été réussies au moins une fois.
-//  5. La première rencontre avec une œuvre est précédée de sa fiche « En un
-//     regard » ; révisions et nouveautés sont ensuite entremêlées.
+//  3. Les livres s'ouvrent dans l'ordre du parcours (des plus accessibles aux
+//     plus exigeants), deux nouveaux livres au plus par séance, quatre cartes
+//     nouvelles au plus par livre et par séance.
+//  4. Pour chaque livre, trois paliers : 1 découvrir (de quoi parle le livre,
+//     pourquoi il compte), 2 comprendre (ses idées), 3 approfondir (avec vos
+//     mots, actualité). Un palier ne s'ouvre qu'une fois toutes les cartes du
+//     palier précédent réussies au moins une fois — donc lors d'une séance
+//     ultérieure : la difficulté monte d'un jour à l'autre.
+//  5. Les questions de comparaison ne sont proposées que lorsque chacun des
+//     livres concernés a atteint le palier 2.
+//  6. La première rencontre avec un livre est précédée de sa présentation.
 
 import { isDue, isNew, overdueRatio } from './srs.js';
 
-export const SESSION_DEFAULTS = Object.freeze({ size: 15, maxNew: 8, minNew: 2, maxNewOeuvres: 2 });
+export const SESSION_DEFAULTS = Object.freeze({ size: 15, maxNew: 8, minNew: 2, maxNewOeuvres: 2, maxNewPerOeuvre: 4 });
+
+export function levelOf(c) {
+  if (Number.isInteger(c.niveau)) return c.niveau;
+  if (c.competence === 1) return 1;
+  if (c.format === 'libre' || c.format === 'actualite' || c.competence >= 3) return 3;
+  return 2;
+}
 
 function oeuvreStarted(oeuvreId, cards, states) {
   return cards.some((c) => c.oeuvres[0] === oeuvreId && !isNew(states[c.id]));
 }
 
-function oeuvrePassed(oeuvreId, cards, states) {
-  return cards.some((c) => c.oeuvres.includes(oeuvreId) && c.competence < 4 && (states[c.id]?.reps || 0) >= 1);
+const passed = (c, states) => (states[c.id]?.reps || 0) >= 1;
+
+// Palier atteint pour un livre : le plus haut palier dont tous les paliers
+// inférieurs sont réussis.
+export function unlockedLevel(oeuvreId, cards, states) {
+  const own = cards.filter((c) => c.oeuvres[0] === oeuvreId && c.competence < 4);
+  let lvl = 1;
+  for (const n of [1, 2]) {
+    const tier = own.filter((c) => levelOf(c) === n);
+    if (tier.length && tier.every((c) => passed(c, states))) lvl = n + 1; else break;
+  }
+  return lvl;
 }
 
 export function eligibleNew(cards, states) {
+  const cache = new Map();
+  const unlocked = (o) => { if (!cache.has(o)) cache.set(o, unlockedLevel(o, cards, states)); return cache.get(o); };
   return cards.filter((c) => {
     if (!isNew(states[c.id])) return false;
-    if (c.competence === 4) return c.oeuvres.every((o) => oeuvrePassed(o, cards, states));
-    return true;
+    if (c.competence === 4) return c.oeuvres.every((o) => unlocked(o) >= 2);
+    return levelOf(c) <= unlocked(c.oeuvres[0]);
   });
 }
 
@@ -54,18 +76,22 @@ export function buildSession({ cards, states, oeuvreOrder, now = Date.now(), opt
       (a.c.competence === 4) - (b.c.competence === 4) ||
       b.started - a.started ||
       a.r - b.r ||
-      a.c.competence - b.c.competence ||
+      levelOf(a.c) - levelOf(b.c) ||
       cards.indexOf(a.c) - cards.indexOf(b.c));
 
   const fresh = [];
   const openedOeuvres = new Set();
+  const perOeuvre = new Map();
   for (const { c, started } of candidates) {
     if (fresh.length >= newBudget) break;
     const o = c.oeuvres[0];
+    if (c.competence < 4 && (perOeuvre.get(o) || 0) >= opt.maxNewPerOeuvre) continue;
     if (!started && c.competence < 4 && !openedOeuvres.has(o)) {
-      if (openedOeuvres.size >= opt.maxNewOeuvres) continue;
+      const books = [...openedOeuvres].filter((x) => x !== 'introduction').length;
+      if (o !== 'introduction' && books >= opt.maxNewOeuvres) continue;
       openedOeuvres.add(o);
     }
+    perOeuvre.set(o, (perOeuvre.get(o) || 0) + 1);
     fresh.push(c);
   }
   // Une comparaison au plus par séance si des nouveautés « simples » restent.
